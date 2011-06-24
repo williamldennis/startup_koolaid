@@ -11,6 +11,6 @@ module ApplicationHelper
   end
   
   def logo
-    image_tag("SpinlisterLogo.png", :alt => "Spinlister", :class => "round")
+    image_tag("spinlisterlogo.png", :alt => "Spinlister", :class => "round")
   end
 end
