@@ -2,6 +2,10 @@ require 'spec_helper'
 
 describe PagesController do
   render_views
+  
+  before(:each) do
+    @base_title = "Spinlister"
+  end
 
   describe "GET 'home'" do
     it "should be successful" do
@@ -12,7 +16,7 @@ describe PagesController do
      it "should have the right title" do
         get 'home'
         response.should have_selector("title",
-                                      :content => "Spinlister | Home")
+                                      :content => "#{@base_title} | Home")
      end
     
     it "should have a non-blank body" do
@@ -30,7 +34,7 @@ describe PagesController do
     it "should have the right title" do
         get 'contact'
         response.should have_selector("title",
-                                      :content => "Spinlister | Contact")
+                                      :content => "#{@base_title} | Contact")
     end
   end
   
@@ -43,7 +47,7 @@ describe PagesController do
      it "should have the right title" do
          get 'about'
          response.should have_selector("title",
-                                       :content => "Spinlister | About")
+                                       :content => "#{@base_title} | About")
      end
    end
    
@@ -56,7 +60,7 @@ describe PagesController do
       it "should have the right title" do
           get 'faq'
           response.should have_selector("title",
-                                        :content => "Spinlister | FAQ")
+                                        :content => "#{@base_title} | FAQ")
       end
     end
     
@@ -69,7 +73,7 @@ describe PagesController do
        it "should have the right title" do
            get 'signup'
            response.should have_selector("title",
-                                         :content => "Spinlister | Sign Up")
+                                         :content => "#{@base_title} | Sign Up")
        end
      end
      
@@ -82,7 +86,7 @@ describe PagesController do
         it "should have the right title" do
             get 'signin'
             response.should have_selector("title",
-                                          :content => "Spinlister | Sign In")
+                                          :content => "#{@base_title} | Sign In")
         end
       end
       
@@ -95,7 +99,7 @@ describe PagesController do
           it "should have the right title" do
               get 'howitworks'
               response.should have_selector("title",
-                                            :content => "Spinlister | How it Works")
+                                            :content => "#{@base_title} | How it Works")
           end
         end
         
@@ -108,7 +112,7 @@ describe PagesController do
             it "should have the right title" do
                 get 'listyourbike'
                 response.should have_selector("title",
-                                              :content => "Spinlister | List Your Bike")
+                                              :content => "#{@base_title} | List Your Bike")
             end
           end
 end
