@@ -1,15 +1,18 @@
 Spinlister::Application.routes.draw do
   
+  get "users/new"
+
   root :to => "pages#home"
   
   match '/contact',       :to =>'pages#contact'
   match '/about',         :to =>'pages#about'
   match '/faq',           :to =>'pages#faq'
-  match '/signup',        :to =>'pages#signup'
   match '/signin',        :to =>'pages#signin'
   match '/howitworks',    :to =>'pages#howitworks'
   match '/listyourbike',  :to =>'pages#listyourbike'
- 
+  
+  match '/signup',        :to =>'users#new'
+  
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
