@@ -1,7 +1,12 @@
 Spinlister::Application.routes.draw do
   get "pages/home"
-
   get "pages/contact"
+  get "pages/about"
+  get "pages/faq"
+  get "pages/signup"
+  get "pages/signin"
+  get "pages/howitworks"
+  get "pages/listyourbike"
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
