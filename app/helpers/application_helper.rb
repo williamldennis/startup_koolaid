@@ -13,4 +13,8 @@ module ApplicationHelper
   def logo
     image_tag("spinlisterlogo.png", :alt => "Spinlister", :class => "round")
   end
+  
+  def bike
+    image_tag("bike-jpeg-blog.png", :alt => "Great looking bike", :class => "round")
+  end
 end
