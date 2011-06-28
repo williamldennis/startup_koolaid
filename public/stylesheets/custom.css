@@ -40,6 +40,15 @@ section img {
 	height: 100%;
 }
 
+#faqquestion {
+	font-size: 13pt;
+	font-weight: bold;
+}
+
+#faqheader {
+	margin: 10px 0 30px 0px;
+}
+
 section {
 	margin-top: 1em;
 	font-size: 120%;
@@ -140,10 +149,8 @@ a.signup_button {
 		text-shadow:1px 1px 0px #000000;
 		float: left;
 		margin-right: 30px;
-
-
 }
-	
+
 
 /* Round corners */
 
@@ -217,6 +224,16 @@ div.field, div.actions {
 #signuppagetitle {
 	margin-top: 0px;
 	margin-left: 400px;
+}
+
+#signinpagetitle {
+	margin-top: 50px;
+	margin-left: 400px;
+}
+
+#signupsignin {
+	margin-top: 40px;
+	margin-left: 373px;
 }
 
 /*Error Messages*/
