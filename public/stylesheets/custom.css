@@ -198,6 +198,16 @@ td.sidebar {
 
 .profile img.gravatar {
 	border: 1px solid #999;
-	margin-bottom: -15px;
-	margin-left: 50px;
+	margin-bottom: 0px;
+	margin-top: 10px;
+	height: 100px;
 }
+
+div.field, div.actions {
+	margin-bottom: -60px;
+	margin-top: 0px;
+	margin-right: 60px;
+	
+}
+
+
