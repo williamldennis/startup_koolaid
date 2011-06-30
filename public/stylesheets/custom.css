@@ -6,7 +6,6 @@
 /*light green background = #90EE90*/
 
 
-
 body {
 	background: #fff;
 }
@@ -20,7 +19,7 @@ header {
 
 header nav {
 	margin-top: 30px;
-	font-size: 13pt;
+	font-size: 10pt;
 }
 
 header img {
@@ -164,10 +163,8 @@ a.signup_button {
 
 footer {
   text-align: center;
-  margin-top: 10px;
-
-  margin-left: 120px;
-  margin-right: auto;
+  margin: 0px auto;
+  padding: 5px;
 }
 
 footer nav {
