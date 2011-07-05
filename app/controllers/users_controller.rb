@@ -1,7 +1,12 @@
 class UsersController < ApplicationController
-  before_filter :authenticate, :only => [:edit, :update]
+  before_filter :authenticate, :only => [:index, :edit, :update]
   before_filter :correct_user, :only => [:edit, :update]
  
+  def index 
+    @users = User.all
+    @title = "All Bike Owners"
+  end 
+  
   def show
      @user = User.find(params[:id])
      @title = @user.name 
@@ -13,7 +18,7 @@ class UsersController < ApplicationController
   end
   
   def create
-    @user = User.new(params[:user])
+    @user = User.new(params[ :user])
     if @user.save
       sign_in @user
       redirect_to @user, :flash => { :success => "Welcome to Spinlister!" }
