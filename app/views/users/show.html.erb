@@ -11,6 +11,11 @@
 		<td class="sidebar round">
 			<strong>Name</strong> <%= @user.name %><br />
 			<strong>URL</strong>  <%= link_to user_path(@user), @user %>
+			<!-- <% if signed_in? %>
+						<% if current_user == @user  %>
+						<li><%= link_to "Settings", edit_user_path(current_user) %></li>
+						<% end %>
+						<% end %> -->
 		</td>
 	</tr>
 	
