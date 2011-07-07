@@ -11,5 +11,9 @@ end
 
 Factory.define :bike do |bike|
   bike.name "Foobar"
+  bike.description "lorem ipsum"
+  bike.size "size"
+  bike.biketype "road"
+  bike.price "6.00" 
   bike.association :user
 end

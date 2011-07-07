@@ -1,5 +1,5 @@
 # == Schema Information
-# Schema version: 20110707192016
+# Schema version: 20110707222237
 #
 # Table name: bikes
 #
@@ -7,7 +7,7 @@
 #  name               :string(255)
 #  description        :text
 #  size               :string(255)
-#  type               :string(255)
+#  biketype           :string(255)
 #  created_at         :datetime
 #  updated_at         :datetime
 #  photo_file_name    :string(255)
@@ -22,22 +22,18 @@ class Bike < ActiveRecord::Base
   
   has_attached_file :photo
   
-  attr_accessible :name, :description, :size, :type, :price
+  attr_accessible :name, :description, :size, :biketype, :price
   
   belongs_to :user
   
   default_scope :order => 'bikes.created_at DESC'
   
- 
-    
-    # validates :name,        :presence => true, 
-    #                         :length   => {:maximum => 50}
-    # validates :description, :presence   => true,
-    #                         :length   => {:maximum => 300}     
-    # validates :size,        :presence => true,
-    #                         :length => { :within => 3..40 }
-    # validates :type,        :presence => true,
-    #                         :length => { :within => 3..40 }
-    # validates :price,       :presence => true,
-    #                         :length => { :within => 1..10 }
+  validates :name,        :presence => true 
+  validates :description, :presence => true
+  validates :size,        :presence => true
+  validates :biketype,    :presence => true
+  validates :price,       :presence => true
+  validates :user_id,     :presence => true
+  
+  
 end
