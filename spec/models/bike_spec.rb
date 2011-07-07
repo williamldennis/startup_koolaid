@@ -55,8 +55,6 @@ describe Bike do
           
     it "should require nonblank price" do
       @user.bikes.build(:price => "  ").should_not be_valid  
-    end
-    
-    
+    end  
   end
 end

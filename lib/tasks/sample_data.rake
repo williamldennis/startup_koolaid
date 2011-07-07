@@ -18,6 +18,15 @@ namespace :db do
                    :password => password,
                    :password_confirmation => password)
     end
+    
+    User.all(:limit => 6).each do |user|
+      3.times do
+        user.bikes.create!(:name => "Will's Sweet Ride", 
+                           :description => "this is a great bike",
+                           :size => "6 feet",
+                           :biketype => "Road",
+                           :price => 19.50)
+      end
+    end
   end
-  
 end

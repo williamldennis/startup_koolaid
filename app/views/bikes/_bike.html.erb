@@ -1,0 +1,11 @@
+<tr>
+	<td class="bike">
+		<span class="name"><%= bike.name %></span>
+		<span class="biketype">
+			<%= bike.biketype %>
+		</span>
+		<span class="timestamp">
+			Listed <%= time_ago_in_words(bike.created_at) %> ago.
+		</span>
+	</td>
+</tr>

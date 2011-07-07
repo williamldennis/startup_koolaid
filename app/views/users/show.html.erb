@@ -7,11 +7,17 @@
 			<h1 id="username">
 				<%= @user.name %>
 			</h1>
+			<% if @user.bikes.any? %>
+				<table class="bikes" summary="User bikes">
+					<%= render @bikes %>
+				</table>
+				<%= will_paginate @bikes %>
+			<% end %>
 		</td>
 		<td class="sidebar round">
 			<strong>Name</strong> <%= @user.name %><br />
 			<strong>URL</strong>  <%= link_to user_path(@user), @user %><br />
-		    <%= link_to mybikes_path(@bike), @bike if current_user == @user %>
+			<strong>Bikes</strong> <%= @user.bikes.count %>
 		</td>
 	</tr>
 	
