@@ -1,0 +1,23 @@
+<h1>Your Listing</h1>
+
+<%= @bike.name %>
+
+<%= image_tag @bike.photo.url %>
+
+<%= simple_format h(@bike.description) %>
+
+<p>
+	<strong>Price:</strong>
+	<%= @bike.price %>
+</p>
+<p>
+	<strong>Fits someone:</strong>
+	<%= @bike.size %> plus or minus 3 inches
+</p>
+<p>
+	<strong>Style:</strong>
+	<%= @bike.type %>
+</p>
+
+
+

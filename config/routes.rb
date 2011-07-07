@@ -1,6 +1,7 @@
 Spinlister::Application.routes.draw do
   
   resources :users
+  resources :bikes
   resources :sessions, :only => [:new, :create, :destroy]
 
   root :to => "pages#home"
@@ -9,7 +10,9 @@ Spinlister::Application.routes.draw do
   match '/about',         :to =>'pages#about'
   match '/faq',           :to =>'pages#faq'
   match '/howitworks',    :to =>'pages#howitworks'
-  match '/listyourbike',  :to =>'pages#listyourbike'
+  
+  match '/listyourbike',  :to =>'bikes#listyourbike'
+  match '/mybikes',     :to =>'bikes#show'
   
   match '/signup',        :to =>'users#new'
   

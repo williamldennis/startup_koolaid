@@ -1,0 +1,24 @@
+<%= render 'error_bike_fields' %>
+<div class="field" id="namefield">
+	<%= f.label :name, "Title" %> <br />
+	<%= f.text_field :name %>
+</div>
+<div class="field">
+	<%= f.label :description, "A little about your bike" %> <br />
+	<%= f.text_field :description, :rows => 5 %>
+</div>
+<div class="field">
+	<%= f.label :size, "Your Height" %> <br />
+	<%= f.text_field :size %>
+</div>
+<div class="field">
+	<%= f.label :type, "Bike Type (ex Road, Mountain, Pro)" %> <br />
+	<%= f.text_field :type %>
+</div>
+<div class="field">
+	<%= f.label :price, "Daily Rental Price" %> <br />
+	<%= f.text_field :price %>
+</div>
+<div>
+	<%= f.file_field :photo %>
+</div>

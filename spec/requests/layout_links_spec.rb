@@ -22,10 +22,10 @@ describe "LayoutLinks" do
     response.should have_selector('title', :content => "Sign In")
   end
   
-  it "should have a List your bike page at '/listyourbike'" do
-    get '/listyourbike'
-    response.should have_selector('title', :content => "List Your Bike")
-  end
+  # it "should have a List your bike page at '/listyourbike'" do
+  #    get '/listyourbike'
+  #    response.should have_selector('title', :content => "List Your Bike")
+  #  end
   
   it "should have a Sign Up page at '/signup'" do
     get '/signup'
@@ -57,8 +57,8 @@ describe "LayoutLinks" do
     # response.should have_selector('title', :content => "Home")
     click_link "Sign Up"
     response.should have_selector('title', :content => "Sign Up")
-    click_link "List Your Bike"
-    response.should have_selector('title', :content => "List Your Bike")
+    # click_link "List Your Bike"
+    #     response.should have_selector('title', :content => "List Your Bike")
     response.should have_selector('a[href="/"]>img')
   end
   

@@ -77,16 +77,5 @@ describe PagesController do
           end
         end
         
-        describe "GET 'listyourbike'" do
-            it "should be successful" do
-              get 'listyourbike'
-              response.should be_success
-            end
-
-            it "should have the right title" do
-                get 'listyourbike'
-                response.should have_selector("title",
-                                              :content => "#{@base_title} | List Your Bike")
-            end
-          end
+       
 end

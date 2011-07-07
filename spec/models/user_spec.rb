@@ -171,4 +171,29 @@ describe User do
       @user.should be_admin
     end
   end
+  
+  describe "bike associations" do
+     
+    before(:each) do
+        @user = User.create(@attr)
+        @mp1 = Factory(:bike, :user => @user, :created_at => 1.day.ago)
+        @mp2 = Factory(:bike, :user => @user, :created_at => 1.hour.ago)
+    end
+    
+  #   it "should have a microposts attribute" do
+  #     @user.should respond_to(:bike)
+  
+    it "should have the right bikes in the right order" do
+      @user.bikes.should == [@mp2, @mp1]
+    end
+    
+    it "should destroy associated bikes" do
+      @user.destroy
+      [@mp1, @mp2].each do |bike|
+        lambda do
+          Bike.find(bike)
+        end.should raise_error(ActiveRecord::RecordNotFound)
+      end
+    end
+  end
 end

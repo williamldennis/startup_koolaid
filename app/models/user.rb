@@ -1,5 +1,5 @@
 # == Schema Information
-# Schema version: 20110706192528
+# Schema version: 20110707152235
 #
 # Table name: users
 #
@@ -11,12 +11,17 @@
 #  encrypted_password :string(255)
 #  salt               :string(255)
 #  admin              :boolean
+#  photo_file_name    :string(255)
+#  photo_content_type :string(255)
+#  photo_file_size    :integer
 #
 
 class User < ActiveRecord::Base
   attr_accessor   :password
   attr_accessible :name, :email, :password, :password_confirmation
   
+  has_many :bikes, :dependent => :destroy
+    
     email_regex = /\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i
     
     validates :name,  :presence => true, 

@@ -1,0 +1,9 @@
+<h1>List Your Bike</h1>
+
+<%= form_for(@bike) do |f| %>
+	<%= render 'bike_fields', :f => f %>  
+	<div class="actions">
+	  	<%= f.submit "Submit" %> 
+    </div>
+<% end %>
+
