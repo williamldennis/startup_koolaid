@@ -20,7 +20,7 @@ class BikesController < ApplicationController
    end
    
    def show
-     @bike = Bike.find(params[:id])
+     @bike = Bike.new if signed_in?
      @title = @bike.name
    end
 end

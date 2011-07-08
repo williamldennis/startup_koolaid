@@ -1,0 +1,11 @@
+<div class="user_info" id="userinfobox">
+	<a href="<%= user_path(current_user) %>">
+		<%= gravatar_for current_user, :size => 30 %>
+		<span class="user_name">
+			<%= current_user.name %>
+		</span>
+		<span class="bikes">
+			<%= pluralize(current_user.bikes.count, "bike") %>
+		</span>
+	</a>
+</div>

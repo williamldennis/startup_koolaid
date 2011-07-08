@@ -1,9 +1,15 @@
+<h1>List Your Bike</h1>
+
 <% if signed_in? %>
 
 <%= render 'shared/bike_fields' %>
+<%= render 'shared/user_info' %>
 	
 <% else %>
 
+<p>
+	To list your bike you must be signed in.	
+</p>
 
-
+<%= link_to "Sign In", signin_path, :class => "signup_button round" %> 
 <% end %>
