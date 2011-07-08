@@ -1,9 +1,9 @@
-<h1>List Your Bike</h1>
+<% if signed_in? %>
 
-<%= form_for(@bike) do |f| %>
-	<%= render 'bike_fields', :f => f %>  
-	<div class="actions">
-	  	<%= f.submit "Submit" %> 
-    </div>
+<%= render 'shared/bike_fields' %>
+	
+<% else %>
+
+
+
 <% end %>
-

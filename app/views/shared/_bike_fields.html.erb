@@ -1,11 +1,13 @@
-<%= render 'error_bike_fields' %>
+<%= form_for(@bike) do |f| %>
+
+<%= render 'shared/error_messages', :object => f.object %>
 <div class="field" id="namefield">
 	<%= f.label :name, "Title" %> <br />
 	<%= f.text_field :name %>
 </div>
 <div class="field">
 	<%= f.label :description, "A little about your bike" %> <br />
-	<%= f.text_field :description, :rows => 5 %>
+	<%= f.text_area :description, :rows => 5 %>
 </div>
 <div class="field">
 	<%= f.label :size, "Your Height" %> <br />
@@ -22,3 +24,8 @@
 <div>
 	<%= f.file_field :photo %>
 </div>
+<div class="actions">
+   <%= f.submit "List Your Bike" %>
+	(It's free)
+</div>
+<% end %>
