@@ -1,23 +1,6 @@
-<h1>Your Listing</h1>
+<h1>Your Listings</h1>
 
-<%= current_user.bikes.name %>
+<%= render 'shared/feed' %>
 
-<%= image_tag @bike.photo.url %>
-
-<%= simple_format h(@bike.description) %>
-
-<p>
-	<strong>Price:</strong>
-	<%= @bike.price %>
-</p>
-<p>
-	<strong>Fits someone:</strong>
-	<%= @bike.size %> plus or minus 3 inches
-</p>
-<p>
-	<strong>Bike Type:</strong>
-	<%= @bike.biketype %>
-</p>
-
-
+<%= link_to "Add Another Bike", listyourbike_path  %>
 

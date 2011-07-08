@@ -32,6 +32,10 @@ header nav {
 	font-size: 11pt;
 }
 
+#filefield {
+	text-align: center;
+}
+
 header img {
 	padding: 1em;
 /*	background: #fff;*/
@@ -41,8 +45,6 @@ header img {
 	margin-top: 5px;
 	margin-left: -20px;
 }
-
-
 
 section img {
 	float: right;

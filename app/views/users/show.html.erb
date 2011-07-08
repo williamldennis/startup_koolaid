@@ -17,7 +17,7 @@
 		<td class="sidebar round">
 			<strong>Name</strong> <%= @user.name %><br />
 			<strong>URL</strong>  <%= link_to user_path(@user), @user %><br />
-			<strong>Bikes</strong> <%= @user.bikes.count %>
+			<strong>Bikes <%= @user.bikes.count %></strong> <%= link_to "My Bikes", mybikes_path if @user == current_user %>
 		</td>
 	</tr>
 	

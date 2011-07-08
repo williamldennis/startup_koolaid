@@ -35,5 +35,8 @@ class Bike < ActiveRecord::Base
   validates :price,       :presence => true
   validates :user_id,     :presence => true
   
+  def feed
+    Bike.where("user_id = ?", id)
+  end
   
 end

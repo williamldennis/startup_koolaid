@@ -2,8 +2,14 @@
 
 <% if signed_in? %>
 
-<%= render 'shared/bike_fields' %>
-<%= render 'shared/user_info' %>
+<%= form_for(@bike) do |f| %>
+<%= render 'shared/error_messages', :object => f.object %>
+<%= render 'shared/bike_fields', :f => f %>
+<div class="actions">
+   <%= f.submit "List Your Bike" %>
+	(It's free)
+</div>
+<% end %>
 	
 <% else %>
 
@@ -13,3 +19,4 @@
 
 <%= link_to "Sign In", signin_path, :class => "signup_button round" %> 
 <% end %>
+

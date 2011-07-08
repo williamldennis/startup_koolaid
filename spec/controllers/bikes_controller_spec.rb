@@ -71,4 +71,89 @@ describe BikesController do
       end
     end
   end
+  
+  describe "DELETE 'destroy'" do
+    
+    describe "for an unautorized user" do
+      
+      before(:each) do
+        @user = Factory(:user)
+        wrong_user = Factory(:user, :email => Factory.next(:email))
+        @bike = Factory(:bike, :user => @user)
+        test_sign_in(wrong_user)
+      end
+      
+      it "should deny access" do
+        delete :destroy, :id => @bike
+        response.should redirect_to(root_path)
+      end
+    end
+    
+    describe "for an authorized user" do
+      
+      before(:each) do
+        @user = test_sign_in(Factory(:user))
+        @bike = Factory(:bike, :user => @user)
+      end
+      
+      it "should destroy the micropost" do
+        lambda do
+          delete :destroy, :id => @bike
+          flash[:success].should =~ /deleted/i
+          response.should redirect_to(mybikes_path)
+        end.should change(Bike, :count).by(-1)
+      end
+    end
+  end
+  
+  
+  
+  # describe "PUT 'update'" do
+  #     
+  #     before(:each) do
+  #       @bike = Factory(:bike)
+  #       test_sign_in(@user)
+  #     end
+  #     
+  #     describe "failure" do
+  #       before(:each) do
+  #         @attr = { :name => "", :description => "", :size => "",
+  #                   :biketype => "", :price => "" }
+  #       end
+  #       
+  #       it "should render the 'edit' page" do
+  #         put :update, :id => @bike, :bike => @attr
+  #         response.should render_template('edit')
+  #       end
+  #       
+  #       it "should render the right title" do
+  #         put :update, :id => @bike, :bike => @attr
+  #         response.should have_selector('title', :content => "Edit Bike")
+  #       end
+  #     end
+  #     
+  #     describe "success" do
+  #       
+  #       before(:each) do
+  #         @attr = { :name => "My Bike", :description => "The Best Bike", :size => "6 feet",
+  #                   :biketype => "Road", :price => "19" }
+  #       end
+  #       
+  #       it "should change the bike's attributes" do
+  #         put :update, :id => @bike, :bike => @attr
+  #         bike = assigns(:bike)
+  #         @bike.reload
+  #         @bike.name.should == bike.name
+  #         @bike.description.should == bike.description
+  #         @bike.size.should == bike.size
+  #         @bike.price.should == bike.price
+  #       end
+  #       
+  #       it "should have a flash message" do
+  #         put :update, :id => @user, :bike => @attr
+  #         flash[:success].should =~ /Bike Updated/
+  #       end
+  #     end
+  #   end
+  
 end
