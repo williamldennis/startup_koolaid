@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110707222237) do
+ActiveRecord::Schema.define(:version => 20110711163457) do
 
   create_table "bikes", :force => true do |t|
     t.string   "name"
@@ -19,22 +19,15 @@ ActiveRecord::Schema.define(:version => 20110707222237) do
     t.string   "biketype"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.decimal  "price"
+    t.integer  "user_id"
     t.string   "photo_file_name"
     t.string   "photo_content_type"
     t.integer  "photo_file_size"
     t.datetime "photo_updated_at"
-    t.decimal  "price"
-    t.integer  "user_id"
   end
 
   add_index "bikes", ["user_id"], :name => "index_bikes_on_user_id"
-
-  create_table "photos", :force => true do |t|
-    t.string "description"
-    t.string "content_type"
-    t.string "filename"
-    t.binary "binary_data"
-  end
 
   create_table "users", :force => true do |t|
     t.string   "name"
@@ -44,9 +37,6 @@ ActiveRecord::Schema.define(:version => 20110707222237) do
     t.string   "encrypted_password"
     t.string   "salt"
     t.boolean  "admin"
-    t.string   "photo_file_name"
-    t.string   "photo_content_type"
-    t.integer  "photo_file_size"
   end
 
   add_index "users", ["email"], :name => "index_users_on_email", :unique => true

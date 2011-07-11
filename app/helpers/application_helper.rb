@@ -15,6 +15,6 @@ module ApplicationHelper
   end
   
   def bike
-    image_tag("bike-jpeg-blog.png", :alt => "Great looking bike", :class => "round")
+    image_tag("bike-jpeg-blog.gif", :alt => "Great looking bike", :class => "round")
   end
 end

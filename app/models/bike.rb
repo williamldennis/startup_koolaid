@@ -1,5 +1,5 @@
 # == Schema Information
-# Schema version: 20110707222237
+# Schema version: 20110711163457
 #
 # Table name: bikes
 #
@@ -10,19 +10,24 @@
 #  biketype           :string(255)
 #  created_at         :datetime
 #  updated_at         :datetime
+#  price              :decimal(, )
+#  user_id            :integer
 #  photo_file_name    :string(255)
 #  photo_content_type :string(255)
 #  photo_file_size    :integer
 #  photo_updated_at   :datetime
-#  price              :decimal(, )
-#  user_id            :integer
 #
 
 class Bike < ActiveRecord::Base
   
-  has_attached_file :photo
+  has_attached_file :photo, :styles => { :small => "200X200>", :medium => "300X300" }
+                    
+                    #                    :url    => "/public/images/:id/:style/:basename.:extension",
+                    #                    :path   => ":rails_projects/spinlister/public/images/:id/:style/:basename.:extension"
+                    #  
+
   
-  attr_accessible :name, :description, :size, :biketype, :price
+  attr_accessible :name, :description, :size, :biketype, :price, :photo
   
   belongs_to :user
   
@@ -32,8 +37,12 @@ class Bike < ActiveRecord::Base
   validates :description, :presence => true
   validates :size,        :presence => true
   validates :biketype,    :presence => true
-  validates :price,       :presence => true
+  validates :price,       :presence => true 
   validates :user_id,     :presence => true
+  validates :photo,       :presence => true
+  validates_attachment_size :photo, :less_than => 5.megabytes
+  # validates_attachment_content_type :photo, :content_type => ['image/jpeg', 'image/png']
+   
   
   def feed
     Bike.where("user_id = ?", id)

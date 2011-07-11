@@ -13,7 +13,7 @@ Spinlister::Application.routes.draw do
   
   match '/listyourbike',  :to =>'bikes#listyourbike'
   match '/mybikes',       :to =>'bikes#show'
-  match '/editlisting',   :to =>'bikes#edit'
+  # match '/editlisting',   :to =>'bikes#edit'
   
   match '/signup',        :to =>'users#new'
   

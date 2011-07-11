@@ -217,28 +217,27 @@ td.sidebar {
 }
 
 .profile img.gravatar {
-	border: 1px solid #999;
+	border: 3px solid #999;
 	margin-bottom: 0px;
-	margin-top: 50px;
-	margin-left: 20px;
-	height: 30px;
+	margin-top: -80px;
+	margin-left: 0px;
+	height: 200px;
 	float: left;
 }
 
-/*#gravatariconupdate {
-	margin-left: 300px; 
-}*/
+
 
 #username {
 	margin-left: 10px;	
 	margin-top: -50px;
 }
 
-#gravataricon {
-	padding: 1em;
-	height: 30px;
-	margin: 0px auto;
-}
+/*#gravataricon {
+	padding: 2em;
+	height: 40px;
+	margin: 10px 0 -100px 0px;
+	size: 300%;*/
+/*}*/
 
 div.field, div.actions {
 	margin-bottom: 5px;
@@ -320,17 +319,23 @@ h1.bike {
 
 table.bikes {
   margin-top: 1em;
+  margin-left: 240px;
+  font-size: 15pt;
+}
+
+#yourlistings {
+	margin: 0 auto;
 }
 
 table.bikes tr {
   height: 70px;
 }
 
-table.bikes tr td.gravatar {
+/*table.bikes tr td.gravatar {
   border-top: 1px solid #ccc;
   vertical-align: top;
-  width: 50px;
-}
+  width:  10px;
+}*/
 
 table.bikes tr td.bike {
   border-top: 1px solid #ccc;

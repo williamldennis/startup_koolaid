@@ -29,16 +29,14 @@ class BikesController < ApplicationController
    end
    
    def edit
-     @bike = Bike.new
+     @bike = Bike.find(params[:id])
      @title = "Edit Bike"
-     @feed_items = current_user.feed
    end
    
    def update
-     @bike = Bike.new
-     @feed_items = current_user.feed
-     if @bike.update_attributes(params[:user])
-       redirect_to @bike, :flash => { :success => "Bike Updated" }
+     @bike = Bike.find(params[:id])
+     if @bike.update_attributes(params[:bike])
+       redirect_to @bike, :flash => { :success => "Profile Updated" }
      else
       @title = "Edit Bike"
       render 'edit'

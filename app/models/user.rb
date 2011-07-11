@@ -1,5 +1,5 @@
 # == Schema Information
-# Schema version: 20110707152235
+# Schema version: 20110711162655
 #
 # Table name: users
 #
@@ -11,14 +11,11 @@
 #  encrypted_password :string(255)
 #  salt               :string(255)
 #  admin              :boolean
-#  photo_file_name    :string(255)
-#  photo_content_type :string(255)
-#  photo_file_size    :integer
 #
 
 class User < ActiveRecord::Base
   attr_accessor   :password
-  attr_accessible :name, :email, :password, :password_confirmation
+  attr_accessible :name, :email, :password, :password_confirmation, :photo
   
   has_many :bikes, :dependent => :destroy
     

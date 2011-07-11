@@ -2,9 +2,9 @@ Back to <%= link_to "My Bikes", mybikes_path %>
 
 <h1>Edit Bike</h1>
 
-<%= form_for(@bike)  do |f| %>
+<%= form_for(@bike, :html => {:multipart => true})  do |f| %>
     <%= render 'shared/error_messages', :object => f.object %>
-	<%= render 'shared/bike_fields', :f => f %>  
+ 	<%= render 'shared/bike_fields', :f => f %>  
 	<div class="actions">
 	  	<%= f.submit "Update" %> 
     </div>

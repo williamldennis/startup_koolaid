@@ -75,6 +75,7 @@ GEM
       rake (>= 0.8.4)
       thor (~> 0.14.0)
     rake (0.9.2)
+    rmagick (2.13.1)
     rspec (2.6.0)
       rspec-core (~> 2.6.0)
       rspec-expectations (~> 2.6.0)
@@ -112,6 +113,7 @@ DEPENDENCIES
   paperclip (~> 2.3)
   rails (= 3.0.1)
   rake (= 0.9.2)
+  rmagick
   rspec (= 2.6.0)
   rspec-rails (= 2.6.1)
   spork (= 0.8.4)

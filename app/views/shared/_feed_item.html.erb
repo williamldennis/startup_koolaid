@@ -1,6 +1,7 @@
 <tr>
-	<td class="gravatar">
-		<%= link_to gravatar_for(feed_item.user), feed_item.user %>
+	<td class="bikeimage">
+		<%= image_tag feed_item.photo.url(:medium) %>
+
 	</td>
 	<td id="bikefeatures">
 		<span class="user">
@@ -14,7 +15,7 @@
 		 							     :title => feed_item.name %>
 	</td>
 	<td>
-		<%= link_to "Edit", edit_bike_path(current_user) %> 
+		<%= link_to "edit", edit_bike_path(feed_item.id) %> 
 	</td>
 
 </tr>
