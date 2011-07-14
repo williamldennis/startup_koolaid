@@ -1,7 +1,14 @@
 <h1 id="hometitle">Find a bike to ride.</h1> 
 <p><%= link_to bike, root_path	%></p>
 <p>Rent bikes from real people all over the world.</p>
-<%= link_to "Find a bike in New York City", bikes_path, :class => "signup_button round" %>
+<!-- <%= link_to "Find a bike in New York City", bikes_path, :class => "signup_button round" %>
+<% form_tag bikes_path, :method => 'get' do  %> </br> -->
 
-
+<p>
+	<strong>Where You Want to Ride </strong></br>
+	<%= text_field_tag :search, params[:search] %> </br>
+	ex. New York </br>
+	<%= submit_tag "Search for Bikes", :name => nil %> 
+</p>
+<% end %>
 

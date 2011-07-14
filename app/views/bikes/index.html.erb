@@ -1,9 +1,18 @@
 <h1>All Bikes</h1>
 
-<ul class="bikes">
+<% form_tag bikes_path, :method => 'get' do  %>
+<p>
+	<%= text_field_tag :search, params[:search] %>
+	<%= submit_tag "Search", :name => nil %>
+</p>
+<% end %>
+
+<ul>
   <% @bikes.each do |bike| %>
     <li>
       <%= link_to bike.name, bike %>
+	  <%= image_tag bike.photo.url(:small) %>
+	  
     </li>
   <% end %>
 </ul>

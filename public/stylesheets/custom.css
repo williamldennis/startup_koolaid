@@ -52,7 +52,7 @@ section img {
 	float: right;
 	margin-top: -100px;
 	margin-right: -20px;
-	height: 65%;
+	height: 370px;
 }
 
 #faqquestion {
@@ -78,7 +78,7 @@ section {
 	margin-left: 0px;
 	margin-right: 0;
 	width: 100%;
-	height: 600px;
+	height: 800px;
 	margin-top: 40px;
 }
 
@@ -145,7 +145,7 @@ nav ul li a:hover {
 
 /* Sign up button */
 
-a.signup_button {
+p.signup_button {
   	-moz-box-shadow:inset 0px 1px 0px 0px #6db05c;
 		-webkit-box-shadow:inset 0px 1px 0px 0px #6db05c;
 		box-shadow:inset 0px 1px 0px 0px #6db05c;

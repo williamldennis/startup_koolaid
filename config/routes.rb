@@ -15,6 +15,7 @@ Spinlister::Application.routes.draw do
   match '/mybikes',       :to =>'bikes#bikeshow'
   # match '/bikeshow',      :to =>'bikes#bikeshow'
 
+
   
   match '/signup',        :to =>'users#new'
   

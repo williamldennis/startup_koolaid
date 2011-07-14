@@ -8,7 +8,7 @@
 			<!-- <li><%= link_to "Home", root_path %></li> -->
 			<% if signed_in?  %>
 			<li id="listyourbike"><%= link_to "Profile", current_user %></li>
-			<li id="listyourbike"><%= link_to "Bike Owners", users_path %></li>
+			<!-- <li id="listyourbike"><%= link_to "Bike Owners", users_path %></li> -->
 			<li id="listyourbike"><%= link_to "Settings", edit_user_path(current_user) %></li>
 			<% end %>
 			<% if signed_in? %>

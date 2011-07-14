@@ -13,8 +13,12 @@ class BikesController < ApplicationController
    end
    
    def index 
-     @bikes = Bike.all
      @title = "Bikes"
+     if params[:search]
+       @bikes = Bike.find(:all, :conditions => ['city LIKE ?', "%#{params[:search]}%"])
+     else
+       @bikes = Bike.all
+     end
    end
    
    def create

@@ -1,10 +1,14 @@
-	<h1><%= @bike.name %></h1>
-	
-	<%= image_tag @bike.photo.url %>
+<%= link_to "Back to Search", bikes_path %>
+
+<h1><%= @bike.name %></h1>
+
+<%= image_tag @bike.photo.url %>
 
 <strong>Owner:</strong>       <%= link_to @bike.user.name, @bike.user %> </br>
 <strong>Size:</strong>        <%= @bike.size %> </br>
 <strong>Description:</strong> <%= @bike.description %> </br>
+<strong>Bike Type:</strong>   <%= @bike.biketype %> </br>
+<strong>City:</strong>        <%= @bike.city %> </br>
 <strong>Price:</strong>       $<%= @bike.price %>
 	
 

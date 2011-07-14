@@ -1,5 +1,5 @@
 # == Schema Information
-# Schema version: 20110711163457
+# Schema version: 20110714173504
 #
 # Table name: bikes
 #
@@ -16,6 +16,10 @@
 #  photo_content_type :string(255)
 #  photo_file_size    :integer
 #  photo_updated_at   :datetime
+#  address            :string(255)
+#  city               :string(255)
+#  state              :string(255)
+#  zip                :string(255)
 #
 
 class Bike < ActiveRecord::Base
@@ -29,7 +33,7 @@ class Bike < ActiveRecord::Base
                                                                               
                               
   
-  attr_accessible :name, :description, :size, :biketype, :price, :photo, :id
+  attr_accessible :name, :description, :size, :biketype, :price, :photo, :id, :address, :city, :state, :zip
   
   belongs_to :user
   
