@@ -12,8 +12,9 @@ Spinlister::Application.routes.draw do
   match '/howitworks',    :to =>'pages#howitworks'
   
   match '/listyourbike',  :to =>'bikes#listyourbike'
-  match '/mybikes',       :to =>'bikes#show'
-  # match '/editlisting',   :to =>'bikes#edit'
+  match '/mybikes',       :to =>'bikes#bikeshow'
+  # match '/bikeshow',      :to =>'bikes#bikeshow'
+
   
   match '/signup',        :to =>'users#new'
   

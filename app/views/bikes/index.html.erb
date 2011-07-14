@@ -1,0 +1,10 @@
+<h1>All Bikes</h1>
+
+<ul class="bikes">
+  <% @bikes.each do |bike| %>
+    <li>
+      <%= link_to bike.name, bike %>
+    </li>
+  <% end %>
+</ul>
+

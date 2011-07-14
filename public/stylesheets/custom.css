@@ -15,6 +15,8 @@ body {
 }
 
 
+
+
 header {
 	padding-top: 10px; 
 	padding-bottom: 20px;
@@ -311,6 +313,15 @@ ul.users li {
 	
 }
 
+ul.bikes {
+	padding: 0px;
+}
+
+ul.bikes li {
+	list-style: none;
+	
+}
+
 /*micropost/bikes styling*/
 
 h1.bike {
@@ -372,4 +383,43 @@ form.new_bike {
 form.new_bike textarea {
   height: 4em;
   margin-bottom: 0;
+}
+
+/*feed item*/
+
+.addanotherbike {
+	margin-top: -45px;
+	font-size: 15pt;
+}
+
+.feeditem {
+	height: 100px;
+	width: 900px;
+	padding: 2em;
+}
+
+.aboutbike {
+	font-size: 15pt;
+	margin-left: 500px;
+}
+
+.bikefeatures {
+	font-size: 11pt;
+	width: 300px;
+}
+
+.bikeimage {
+	height: 300px;
+	margin-right: 620px;
+	margin-top: -50px;
+}
+.bikename {
+	font-weight: bold;
+}
+
+
+
+.feedbuttons{
+	font-size: 14pt;
+	margin-left: 85px;
 }

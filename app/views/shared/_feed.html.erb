@@ -1,7 +1,7 @@
 <% if @feed_items.any? %>
 	
-	<table class="bikes" id="yourlistings" summary="bike feed">
+	<div class="bikes" id="yourlistings" summary="bike feed">
 		<%= render :partial => 'shared/feed_item', :collection => @feed_items %>
-	</table>
+	</div>
 
 <% end %>

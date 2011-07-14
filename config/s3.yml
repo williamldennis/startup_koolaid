@@ -1,0 +1,14 @@
+development:
+    bucket: Spinlister.dev.july11
+    access_key_id: AKIAJRSETVU4V7L6ONPQ
+    secret_access_key: 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
+
+test:
+    bucket: Spinlister.test.july11
+    access_key_id: AKIAJRSETVU4V7L6ONPQ
+    secret_access_key: 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
+        
+production:
+    bucket: Spinlister.production.july11
+    access_key_id: AKIAJRSETVU4V7L6ONPQ
+    secret_access_key: 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

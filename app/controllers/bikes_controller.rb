@@ -1,11 +1,20 @@
 class BikesController < ApplicationController
 
-  before_filter :authenticate
+  before_filter :authenticate, :except => :index
   before_filter :authorized_user, :only => :destroy
   
   def listyourbike 
      @bike = Bike.new if signed_in?
      @title = "List Your Bike"
+   end
+   
+   def bikeshow
+     @bikes = current_user.bikes
+   end
+   
+   def index 
+     @bikes = Bike.all
+     @title = "Bikes"
    end
    
    def create
@@ -23,7 +32,7 @@ class BikesController < ApplicationController
    end
    
    def show
-     @bike = Bike.new
+     @bike = Bike.find(params[:id])
      @title = @bike.name
      @feed_items = current_user.feed
    end

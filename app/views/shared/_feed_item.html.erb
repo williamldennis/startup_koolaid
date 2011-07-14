@@ -1,21 +1,20 @@
-<tr>
-	<td class="bikeimage">
-		<%= image_tag feed_item.photo.url(:medium) %>
-
-	</td>
-	<td id="bikefeatures">
-		<span class="user">
-			<%= link_to feed_item.user.name, feed_item.user %>
-		</span>
-		<span class"name"><%= feed_item.name %></span>
-		<span class"biketype"><%= feed_item.biketype %></span>
-	</td>
-	<td>
-		<%= link_to "delete", feed_item, :method => :delete, :confirm => "You sure?",
-		 							     :title => feed_item.name %>
-	</td>
-	<td>
-		<%= link_to "edit", edit_bike_path(feed_item.id) %> 
-	</td>
-
-</tr>
+<div class="feeditem">	
+	<div class="aboutbike">
+		<div class="bikename"><%= feed_item.name %></div> </br>
+		<div class="bikefeatures"><%= feed_item.biketype %> </br>
+							  <%= feed_item.description %> </br>
+							 Good for a rider <%= feed_item.size %> +/- 3 inches</br>
+							  $<%= feed_item.price %>
+		</div>
+	</div>
+	<div class="bikeimage">
+			<%= image_tag feed_item.photo.url(:medium) %>
+			<!-- <%= link_to feed_item.user.name, feed_item.user %> -->
+			<div class="feedbuttons">
+					<%= link_to "delete", feed_item, :method => :delete, :confirm => "You sure?",
+					 							     :title => feed_item.name %> |
+					<%= link_to "edit", edit_bike_path(feed_item.id) %> 
+		    </div>
+	</div>
+	
+</div>

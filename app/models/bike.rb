@@ -20,14 +20,16 @@
 
 class Bike < ActiveRecord::Base
   
-  has_attached_file :photo, :styles => { :small => "200X200>", :medium => "300X300" }
-                    
-                    #                    :url    => "/public/images/:id/:style/:basename.:extension",
-                    #                    :path   => ":rails_projects/spinlister/public/images/:id/:style/:basename.:extension"
-                    #  
-
+  has_attached_file :photo, :styles => { :small => "200X200>", :medium => "300X300" },
+                            :storage => :s3,
+                            :bucket => 'Spinlister.dev.july11',
+                            :s3_credentials => "#{Rails.root}/config/s3.yml", 
+                            :url    => "/public/images/:id/:style/:basename.:extension",
+                            :path   => "/public/images/:id/:style/:basename.:extension"
+                                                                              
+                              
   
-  attr_accessible :name, :description, :size, :biketype, :price, :photo
+  attr_accessible :name, :description, :size, :biketype, :price, :photo, :id
   
   belongs_to :user
   

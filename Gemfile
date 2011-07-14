@@ -7,6 +7,7 @@ gem 'rake', '0.9.2'
 gem 'will_paginate', '3.0.pre'
 gem "paperclip", "~> 2.3"
 gem 'rmagick'
+gem 'aws-s3'
 
 group :development do
    gem 'rspec-rails', '2.6.1'
