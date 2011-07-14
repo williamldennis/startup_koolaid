@@ -15,7 +15,7 @@ class BikesController < ApplicationController
    def index 
      @title = "Bikes"
      if params[:search]
-       @bikes = Bike.find(:all, :conditions => ['city LIKE ?', "%#{params[:search]}%"])
+       @bikes = Bike.find(:all, :conditions => ['LOWER (city) LIKE ?', "%#{params[:search.downcase]}%"])
      else
        @bikes = Bike.all
      end
