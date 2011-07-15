@@ -1,12 +1,8 @@
 <table class="profile" summary= "Profile information">
 	<tr>
 		<td class="main">
-			<h1 id="gravataricon">
-				<%= gravatar_for @user %>
-			</h1>
-			<h1 id="username">
-				<%= @user.name %>
-			</h1>
+
+
 			<% if @user.bikes.any? %>
 				<table class="bikes" summary="User bikes">
 					<%= render @bikes %>
@@ -15,6 +11,17 @@
 			<% end %>
 		</td>
 		<td class="sidebar round">
+			<h1 id="gravataricon">
+				<%= gravatar_for @user %>
+			</h1>
+			<br />
+			</br>
+			</br>
+			</br>
+			</br>
+			</br>
+			</br>
+			</br>
 			<strong>Name</strong> <%= @user.name %><br />
 			<strong>URL</strong>  <%= link_to user_path(@user), @user %><br />
 			<strong>Bikes <%= @user.bikes.count %></strong> <%= link_to "My Bikes", mybikes_path if @user == current_user %>

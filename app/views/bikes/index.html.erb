@@ -1,18 +1,24 @@
-<h1>All Bikes</h1>
+<h1>Bikes</h1>
 <% form_tag bikes_path, :method => 'get' do  %>
 <p>
 	<%= text_field_tag :search, params[:search], :size => 50 %>
 	<%= submit_tag "Find Bikes by City", :name => nil %> </br>
-	ex. Los Angeles
+	ex. New York City
 </p>
 <% end %>
 
-<ul>
+<%= will_paginate @bikes %>
+<ul id="indexitem">
   <% @bikes.each do |bike| %>
-	  <%= link_to image_tag(bike.photo.url(:bigsquare)), bike %>
+	<%= link_to image_tag(bike.photo.url(:bigsquare)), bike %>
       <!-- <%= link_to bike.name, bike %> -->
 	 
-	  
-  <% end %>
+	  <%= image_tag 			"http://maps.googleapis.com/maps/api/staticmap?zoom=14&size=300x300&sensor=false&markers=#{bike.latitude}%2C#{bike.longitude}" %> 
+
+	<strong id="indexinfo"><%= bike.city %> </br>       
+$<%= bike.price %> per day</strong>        
+
+  <% end %> 
 </ul>
 
+<%= will_paginate @bikes %>

@@ -1,5 +1,5 @@
-<li>
-	<%= image_tag bike.photo.url(:medium) %>
+<li id="mybikes">
+	<%= image_tag bike.photo.url(:thumb) %>
 	<%= link_to bike.name, bike %>
 	<% if current_user=bike.user%>
 	|
