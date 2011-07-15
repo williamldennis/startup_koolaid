@@ -16,17 +16,11 @@
 			<h1 id="gravataricon">
 				<%= gravatar_for @user %>
 			</h1>
-			<br />
-			</br>
-			</br>
-			</br>
-			</br>
-			</br>
-			</br>
-			</br>
+			<div id="usershowinfo">
 			<strong>Name</strong> <%= @user.name %><br />
 			<strong>URL</strong>  <%= link_to user_path(@user), @user %><br />
 			<strong>Bikes <%= @user.bikes.count %></strong> <%= link_to "My Bikes", mybikes_path if @user == current_user %>
+			</div>
 		</td>
 	</tr>
 	

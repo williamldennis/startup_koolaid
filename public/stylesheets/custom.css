@@ -213,18 +213,31 @@ li#mybikes {
 .profile img.gravatar {
 	border: 1px solid #999;
 	height: 150px;
-	float: left;
+	float: center;
 	padding: 0em;
 }
 
-
+div#homepic {
+	float: right;
+	margin-top: -215px;
+}
 
 #username {
 	margin-left: 10px;	
 	margin-top: -50px;
 }
 
+strong#rentthis {
+	font-size: 25pt;
+}
 
+div#usershowinfo {
+	font-size: 15pt;
+}
+
+li#mybikes {
+	font-size: 15pt;
+}
 
 div.field, div.actions {
 	margin-bottom: 5px;
