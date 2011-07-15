@@ -41,9 +41,11 @@ class Bike < ActiveRecord::Base
   
   attr_accessible :name, :description, :size, :biketype, :price, :photo, :id, :address, :city, :state, :zip, :latitude, :longitude
                   
-  geocoded_by :address
+  
   
   after_validation :geocode, :if => :address_changed?
+  
+  geocoded_by :address
   
   belongs_to :user
   

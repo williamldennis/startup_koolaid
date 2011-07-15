@@ -209,6 +209,7 @@ td.sidebar {
 	margin-left: 0px;
 	height: 200px;
 	float: left;
+	padding: 0em;
 }
 
 
@@ -298,7 +299,7 @@ ul.users li {
 }
 
 ul.bikes {
-	padding: 0px;
+	margin-top: 200px;
 }
 
 ul.bikes li {
