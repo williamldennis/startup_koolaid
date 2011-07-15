@@ -1,19 +1,18 @@
 <h1>All Bikes</h1>
-
 <% form_tag bikes_path, :method => 'get' do  %>
 <p>
-	<%= text_field_tag :search, params[:search] %>
-	<%= submit_tag "Search", :name => nil %>
+	<%= text_field_tag :search, params[:search], :size => 50 %>
+	<%= submit_tag "Find Bikes by City", :name => nil %> </br>
+	ex. Los Angeles
 </p>
 <% end %>
 
 <ul>
   <% @bikes.each do |bike| %>
-    <li>
-      <%= link_to bike.name, bike %>
-	  <%= image_tag bike.photo.url(:small) %>
+	  <%= link_to image_tag(bike.photo.url(:bigsquare)), bike %>
+      <!-- <%= link_to bike.name, bike %> -->
+	 
 	  
-    </li>
   <% end %>
 </ul>
 

@@ -1,5 +1,13 @@
 <li>
-	<%= image_tag bike.photo.url %>
+	<%= image_tag bike.photo.url(:medium) %>
 	<%= link_to bike.name, bike %>
+	<% if current_user=bike.user%>
+	|
+	<%= link_to "delete", bike, :method => :delete, :confirm => "You sure?",
+	 							:title => "Delete #{bike.name}"%>
+	|
+	<%= link_to "edit", edit_bike_path(bike) %>
+	<% else %>
+	<% end %>
 </li>
 

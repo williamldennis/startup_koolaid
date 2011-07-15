@@ -8,6 +8,7 @@ gem 'will_paginate', '3.0.pre'
 gem "paperclip", "~> 2.3"
 gem 'rmagick'
 gem 'aws-s3'
+gem 'geocoder'
 
 group :development do
    gem 'rspec-rails', '2.6.1'

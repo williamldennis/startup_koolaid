@@ -1,13 +1,14 @@
 <h1 id="hometitle">Find a bike to ride.</h1> 
-<p><%= link_to bike, root_path	%></p>
+
 <p>Rent bikes from real people all over the world.</p>
-<% form_tag bikes_path, :method => 'get' do  %> </br>
-</br>
+<% form_tag bikes_path, :method => 'get' do  %> 
+
 <p>
-	<strong>Where You Want to Ride </strong></br>
-	<%= text_field_tag :search, params[:search] %> </br>
+	<strong id="whereride">Where Do You Want to Ride? </strong></br>
+	<%= text_field_tag :search, params[:search], :size => 50 %> </br>
 	ex. New York </br>
-	<%= submit_tag "Search for Bikes", :name => nil %> 
+	<%= submit_tag "Find a Bike", :name => nil %> 
 </p>
 <% end %>
+<div id="homepic"><%= image_tag("bike-jpeg-blog.gif", :alt => "Great looking bike", :class => "round homeimage") %></div>
 

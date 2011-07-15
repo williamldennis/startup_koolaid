@@ -1,5 +1,5 @@
 # == Schema Information
-# Schema version: 20110714173504
+# Schema version: 20110715200442
 #
 # Table name: bikes
 #
@@ -20,20 +20,30 @@
 #  city               :string(255)
 #  state              :string(255)
 #  zip                :string(255)
+#  latitude           :float
+#  longitude          :float
 #
 
 class Bike < ActiveRecord::Base
   
-  has_attached_file :photo, :styles => { :small => "200X200>", :medium => "300X300" },
+  has_attached_file :photo, :styles => { :small => "200X200>", 
+                                         :medium => "300X300>", 
+                                         :thumb => "100X100#", 
+                                         :bigsquare => "300x300#",
+                                         :large => "400x400>" },
                             :storage => :s3,
                             :bucket => 'Spinlister.dev.july11',
                             :s3_credentials => "#{Rails.root}/config/s3.yml", 
                             :url    => "/public/images/:id/:style/:basename.:extension",
                             :path   => "/public/images/:id/:style/:basename.:extension"
                                                                               
-                              
+                           
   
-  attr_accessible :name, :description, :size, :biketype, :price, :photo, :id, :address, :city, :state, :zip
+  attr_accessible :name, :description, :size, :biketype, :price, :photo, :id, :address, :city, :state, :zip, :latitude, :longitude
+                  
+  geocoded_by :address
+  
+  after_validation :geocode, :if => :address_changed?
   
   belongs_to :user
   
