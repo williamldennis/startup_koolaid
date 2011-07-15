@@ -8,6 +8,8 @@
 					<%= render @bikes %>
 				</table>
 				<%= will_paginate @bikes %>
+			<% else %>
+			<%= link_to "Add Another Bike", listyourbike_path  %>
 			<% end %>
 		</td>
 		<td class="sidebar round">
