@@ -1,8 +1,8 @@
 <div class="field" id="namefield">
-	<%= f.label :address, "Your Bike's Address" %> <br />
-	<%= f.text_field :address %>
+	<%= f.label :address, "Your Bike's Full Address (Private)" %> <br />
+	<%= f.text_field :address, :size => 50 %>
 </div>
-<div class="field">
+<!-- <div class="field">
 	<%= f.label :city, "City" %> <br />
 	<%= f.text_field :city %>
 </div>
@@ -13,26 +13,26 @@
 <div class="field">
 	<%= f.label :zip, "Zip" %> <br />
 	<%= f.text_field :zip %>
-</div>
+</div> -->
 <div class="field" id="namefield">
 	<%= f.label :name, "Title" %> <br />
-	<%= f.text_field :name %>
+	<%= f.text_field :name, :size => 50 %>
 </div>
 <div class="field">
 	<%= f.label :description, "A little about your bike" %> <br />
-	<%= f.text_area :description, :rows => 5 %>
+	<%= f.text_area :description, :rows => 5, :size => 50 %>
 </div>
 <div class="field">
 	<%= f.label :size, "Your Height" %> <br />
-	<%= f.text_field :size %>
+	<%= f.text_field :size, :size => 50 %>
 </div>
 <div class="field">
 	<%= f.label :biketype, "Bike Type (ex Road, Mountain, Pro)" %> <br />
-	<%= f.text_field :biketype %>
+	<%= f.text_field :biketype, :size => 50 %>
 </div>
 <div class="field"> 
 	<%= f.label :price, "Daily Rental Price" %> <br />
-	<%= f.text_field :price %>
+	<%= f.text_field :price, :size => 15 %>
 </div>
 <div id="filefield">
 	<%= f.label :photo, "Upload a Picture of Your Bike" %> <br />
