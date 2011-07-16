@@ -107,6 +107,15 @@ div#listabike {
 	width: 500px;
 	margin-left: 280px;
 }
+
+div#indexbikes {
+	background: #99D6FF;
+	padding: 2em;
+	width: 500px;
+	margin-left: 280px;
+	height: 70px;
+}
+
 p#hometext {
 	font-size: 15pt;
 }
@@ -216,6 +225,11 @@ table.profile {
 td.main {
 	width: 70%;
 	padding: 1em;
+}
+
+.hometextfield {
+	font-size: 14pt;
+	width: 300px;
 }
 
 td.sidebar {
