@@ -1,17 +1,18 @@
 .container {
-	width: 900px;
+	width: 1100px;
 	margin: 0px auto;
 }
 
-/*light green background = #90EE90*/
+/*light green background = #90EE90, light grey = #E0E0E0*/
 
 
 body {
-	background: #fff;
+	background: #E0E0E0 ;
 }
 
-#hometitle {
+h1#hometitle {
 	text-align: left;
+	font-size: 40pt;
 }
 
 
@@ -38,7 +39,7 @@ header {
 header nav {
 	margin-top: 40px;
 	margin-right: -25px;
-	font-size: 11pt;
+	font-size: 13pt;
 }
 
 #filefield {
@@ -53,6 +54,7 @@ header img {
 	height: 50px;
 	margin-top: 5px;
 	margin-left: -20px;
+	
 }
 
 /*section img {
@@ -61,9 +63,7 @@ header img {
 	margin-right: -20px;*/
 }
 
-#homepic {
-	float: right;
-}
+
 
 #faqquestion {
 	font-size: 13pt;
@@ -81,23 +81,42 @@ section {
 	margin-top: 1em;
 	font-size: 120%;
 	padding: 20px;
-	background: #90EE90;
-	-moz-box-shadow: 5px 5px 2px #888;
-	-webkit-box-shadow: 5px 5px 2px #888;
-	box-shadow: 5px 5px 2px #888;
+	background: #fff;
+	-moz-box-shadow: 4px 4px 2px #989898;
+	-webkit-box-shadow: 4px 4px 2px #989898;
+	box-shadow: 4px 4px 2px #989898;
 	margin-left: 0px;
 	margin-right: 0;
 	width: 100%;
 	height: 800px;
 	margin-top: 40px;
+	border: 1px solid #B0B0B0 ;
 }
 
+div#findabike {
+	background: #99D6FF;
+	padding: 1em;
+	width: 350px;
+	height: 130px;
+	
+}
+
+div#listabike {
+	background: #99D6FF;
+	padding: 2em;
+	width: 500px;
+	margin-left: 280px;
+}
+p#hometext {
+	font-size: 15pt;
+}
 
 section h1 {
 	font-size: 200%;
 	margin-right: 30px;
 	margin-top: 20px;
 	text-align: center;
+	
 }
 
 section p {
@@ -203,7 +222,7 @@ td.sidebar {
 	width: 30%;
 	padding: 1em;
 	vertical-align: top;
-	background: #fff;
+	background: #99D6FF;
 }
 
 li#mybikes {
@@ -219,7 +238,7 @@ li#mybikes {
 
 div#homepic {
 	float: right;
-	margin-top: -215px;
+	margin-top: -300px;
 }
 
 #username {
@@ -240,8 +259,7 @@ li#mybikes {
 }
 
 div.field, div.actions {
-	margin-bottom: 5px;
-	margin-left: 370px;
+    margin-left: 50px;
 }
 
 #signuppagetitle {

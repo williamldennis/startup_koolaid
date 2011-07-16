@@ -1,5 +1,5 @@
 <h1 id="signuppagetitle">Edit User</h1>
-
+<div id="listabike" class="round">
 <%= form_for(@user)  do |f| %>
     <%= render 'shared/error_messages', :object => f.object %>
 	<%= render 'fields', :f => f %>  
@@ -11,4 +11,5 @@
 <div id="gravataricon">
 	<%= gravatar_for @user %> </br>
 	<a href="http://gravatar.com/emails" target=_blank>Change Profile Picture</a>
+</div>
 </div>
