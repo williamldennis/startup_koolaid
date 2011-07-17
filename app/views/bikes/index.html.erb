@@ -1,25 +1,29 @@
-<!-- <h1>Bikes</h1> -->
+<%= will_paginate @bikes %>
+    <div>
+	<ul id="indexitem">
+	<li>
+  <% @bikes.each do |bike| %>
+<strong id="indexinfo">
+    <%= link_to bike.name, bike %></br>
+	<%= link_to image_tag(bike.photo.url(:bigsquare)), bike %> </br>
+    $<%= bike.price %> per day</strong> 
+
+	   <!-- <%= image_tag 			"http://maps.googleapis.com/maps/api/staticmap?zoom=14&size=300x150&sensor=false&markers=#{bike.latitude}%2C#{bike.longitude}" %>   -->
+  <% end %> 
+
+
+</li>
+</ul>
+</div>
+<%= will_paginate @bikes %>
+
 
 <% form_tag bikes_path, :method => 'get' do  %>
 <div id="indexbikes" class="round">
 <p>
 	<%= text_field_tag :search, params[:search], :size => 50, :class => 'hometextfield' %>
 	<%= submit_tag "Find Bikes by City", :name => nil %> </br>
-	ex. New York City
+	<!-- ex. New York City -->
 </p>
 </div>
 <% end %>
-
-<%= will_paginate @bikes %>
-<ul id="indexitem">
-  <% @bikes.each do |bike| %>
-	<%= link_to image_tag(bike.photo.url(:bigsquare)), bike %>
-      <!-- <%= link_to bike.name, bike %> -->
-	  <%= image_tag 			"http://maps.googleapis.com/maps/api/staticmap?zoom=14&size=300x300&sensor=false&markers=#{bike.latitude}%2C#{bike.longitude}" %> 
-	<strong id="indexinfo"><!-- <%= bike.city %> </br>  -->      
-$<%= bike.price %> per day</strong>        
-  <% end %> 
-<%= will_paginate @bikes %>
-</ul>
-
-

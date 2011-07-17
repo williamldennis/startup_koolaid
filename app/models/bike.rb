@@ -58,6 +58,7 @@ class Bike < ActiveRecord::Base
   validates :price,       :presence => true 
   validates :user_id,     :presence => true
   validates :photo,       :presence => true
+  validates :address,     :presence => true
   validates_attachment_size :photo, :less_than => 5.megabytes
   # validates_attachment_content_type :photo, :content_type => ['image/jpeg', 'image/png']
    

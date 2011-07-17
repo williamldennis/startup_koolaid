@@ -2,7 +2,7 @@
 
 <h1><%= @bike.name %></h1>
 
-<%= image_tag @bike.photo.url(:medium) %>
+<%= image_tag @bike.photo.url(:large) %>
 
 <div class="bikeinfo">
 <strong>Owner:</strong>       <%= link_to @bike.user.name, @bike.user %> </br>
@@ -20,5 +20,5 @@
 
 </div>
 
-<%= image_tag "http://maps.googleapis.com/maps/api/staticmap?zoom=14&size=300x300&sensor=false&markers=#{@bike.latitude}%2C#{@bike.longitude}" %>
+<%= image_tag "http://maps.googleapis.com/maps/api/staticmap?zoom=14&size=400x200&sensor=false&markers=#{@bike.latitude}%2C#{@bike.longitude}" %>
 

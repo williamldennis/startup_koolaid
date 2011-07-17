@@ -16,14 +16,18 @@ h1#hometitle {
 }
 
 
+
 div.bikeinfo {
     float: right;
 	font-size: 15pt;
 }
 
-ul#indexitem {
-	padding: 1em;
+#indexitem li {
+	padding: .75em;
+	list-style-type: none;
+	display: inline-block;
 }
+
 
 header {
 	padding-top: 10px; 
@@ -88,7 +92,7 @@ section {
 	margin-left: 0px;
 	margin-right: 0;
 	width: 100%;
-	height: 800px;
+	height: 1000px;
 	margin-top: 40px;
 	border: 1px solid #B0B0B0 ;
 }
@@ -113,10 +117,10 @@ div#listabike {
 
 div#indexbikes {
 	background: #99D6FF;
-	padding: 2em;
+	padding: 1em;
 	width: 500px;
 	margin-left: 280px;
-	height: 70px;
+	height: 40px;
 	border: 1px solid #75C8FF;
 }
 
@@ -393,8 +397,10 @@ ul.bikes li {
 }
 
 strong#indexinfo {
-	font-size: 25pt;
+	font-size: 15pt;
 	float: right;
+	text-align: center;
+	padding-left: 1em;
 }
 
 /*micropost/bikes styling*/
