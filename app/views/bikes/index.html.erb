@@ -1,4 +1,4 @@
-<h1>Bikes</h1>
+<!-- <h1>Bikes</h1> -->
 
 <% form_tag bikes_path, :method => 'get' do  %>
 <div id="indexbikes" class="round">
@@ -15,13 +15,11 @@
   <% @bikes.each do |bike| %>
 	<%= link_to image_tag(bike.photo.url(:bigsquare)), bike %>
       <!-- <%= link_to bike.name, bike %> -->
-	 
 	  <%= image_tag 			"http://maps.googleapis.com/maps/api/staticmap?zoom=14&size=300x300&sensor=false&markers=#{bike.latitude}%2C#{bike.longitude}" %> 
-
 	<strong id="indexinfo"><!-- <%= bike.city %> </br>  -->      
 $<%= bike.price %> per day</strong>        
-
   <% end %> 
+<%= will_paginate @bikes %>
 </ul>
 
-<%= will_paginate @bikes %>
+
