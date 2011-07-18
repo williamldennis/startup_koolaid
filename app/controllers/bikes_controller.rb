@@ -15,9 +15,9 @@ class BikesController < ApplicationController
    def index 
      @title = "Bikes"
      if params[:search]
-       @bikes = Bike.find(:all, :conditions => ['LOWER (address) LIKE ?', "%#{params[:search].downcase}%"]).paginate(:page => params[:page], :per_page => 3)
+       @bikes = Bike.find(:all, :conditions => ['LOWER (address) LIKE ?', "%#{params[:search].downcase}%"]).paginate(:page => params[:page], :per_page => 9)
      else
-       @bikes = Bike.paginate(:page => params[:page], :per_page => 3)
+       @bikes = Bike.paginate(:page => params[:page], :per_page => 9)
      end
    end
    

@@ -1,5 +1,5 @@
 <h1 id="hometitle">Find a bike to ride.</h1> 
-
+<div>
 <p id="hometext">Rent bikes from real people all over the world.</p>
 <% form_tag bikes_path, :method => 'get' do  %> 
 
@@ -10,7 +10,12 @@
 	ex. New York </br>
 	<%= submit_tag "Find a Bike", :name => nil, :class => 'findabikebutton' %> 
 </p>
-<% end %>
-</div>
-<div id="homepic"><%= image_tag("bike-jpeg-blog.gif", :alt => "Great looking bike", :class => "round homeimage", :height => 380 ) %></div>
 
+<% end %>
+
+</div>
+<div id="homepic">
+<%= image_tag("bike-jpeg-blog.gif", :alt => "Great looking bike", :class => "round", :height => 325) %>
+</div>
+
+</div>

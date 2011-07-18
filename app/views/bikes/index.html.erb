@@ -1,20 +1,19 @@
 <%= will_paginate @bikes %>
-    <div>
-	<ul id="indexitem">
-	<li>
-  <% @bikes.each do |bike| %>
-<strong id="indexinfo">
-    <%= link_to bike.name, bike %></br>
-	<%= link_to image_tag(bike.photo.url(:bigsquare)), bike %> </br>
-    $<%= bike.price %> per day</strong> 
 
-	   <!-- <%= image_tag 			"http://maps.googleapis.com/maps/api/staticmap?zoom=14&size=300x150&sensor=false&markers=#{bike.latitude}%2C#{bike.longitude}" %>   -->
-  <% end %> 
+<% @bikes.each do |bike| %>
+  <div id="indexborder" class="round">
+	     <li id="indexitem" class="round">
+			<strong id="indexinfo" class="round">
+			    <%= link_to bike.name, bike %></br>
+				<%= link_to image_tag(bike.photo.url(:bigsquare)), bike %> </br>
+			    $<%= bike.price %> per day
+			</strong> 
+	     </li>
+  </div>
+<% end %> 
 
 
-</li>
-</ul>
-</div>
+
 <%= will_paginate @bikes %>
 
 
@@ -27,3 +26,4 @@
 </p>
 </div>
 <% end %>
+

@@ -22,12 +22,6 @@ div.bikeinfo {
 	font-size: 15pt;
 }
 
-#indexitem li {
-	padding: .75em;
-	list-style-type: none;
-	display: inline-block;
-}
-
 
 header {
 	padding-top: 10px; 
@@ -92,7 +86,7 @@ section {
 	margin-left: 0px;
 	margin-right: 0;
 	width: 100%;
-	height: 1000px;
+/*	height: 1400px;*/
 	margin-top: 40px;
 	border: 1px solid #B0B0B0 ;
 }
@@ -145,7 +139,7 @@ p#hometext {
 	-webkit-border-radius:9px;
 	border-radius:9px;
 	display:inline-block;
-	color:#ffffff;
+	color: #fff;
 	font-family:Arial;
 	font-size:18px;
 	font-weight:normal;
@@ -294,10 +288,12 @@ li#mybikes {
 	padding: 0em;
 }
 
-div#homepic {
+#homepic {
 	float: right;
-	margin-top: -300px;
+	margin-top: -330px;
+	size: 80%;
 }
+
 
 #username {
 	margin-left: 10px;	
@@ -396,11 +392,30 @@ ul.bikes li {
 	
 }
 
+/*index formatting*/
+
+#indexitem {
+	list-style-type: none;
+	display: inline-block;
+		-moz-box-shadow: 4px 4px 2px #989898;
+		-webkit-box-shadow: 4px 4px 2px #989898;
+		box-shadow: 4px 4px 2px #989898;
+}
+
 strong#indexinfo {
 	font-size: 15pt;
 	float: right;
 	text-align: center;
-	padding-left: 1em;
+	padding: .5em;
+	border: 1px solid #999;
+	
+}
+
+#indexborder {
+		list-style-type: none;
+		display: inline-block;
+		padding: 1em;
+	
 }
 
 /*micropost/bikes styling*/
@@ -470,7 +485,7 @@ form.new_bike textarea {
 
 .addanotherbike {
 	margin-top: -45px;
-	font-size: 15pt;
+	font-size: 18pt;
 }
 
 .feeditem {
