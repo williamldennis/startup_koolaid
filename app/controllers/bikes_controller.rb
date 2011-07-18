@@ -1,6 +1,6 @@
 class BikesController < ApplicationController
 
-  before_filter :authenticate, :except => :index
+  before_filter :authenticate, :except => [:index, :show]
   before_filter :authorized_user, :only => :destroy
   
   def listyourbike 
@@ -38,7 +38,7 @@ class BikesController < ApplicationController
    def show
      @bike = Bike.find(params[:id])
      @title = @bike.name
-     @feed_items = current_user.feed
+     # @feed_items = current_user.feed
    end
    
    def edit
