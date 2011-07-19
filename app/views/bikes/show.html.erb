@@ -31,7 +31,7 @@
 			</div>
 			<div id="nearbybikeitem" class="round">
 				Nearby Bikes </br>
-			<% for bike in @bike.nearbys(10) %>
+			<% for bike in @bike.nearbys(10).limit(2) %>
 			  <li id="nearbybikes"><%=  link_to image_tag(bike.photo(:thumb)), bike %> </br> (<%= bike.distance.to_f.round(2) %> miles)</li>
 			<% end %>
 			</div>
