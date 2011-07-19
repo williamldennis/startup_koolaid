@@ -1,5 +1,5 @@
 # == Schema Information
-# Schema version: 20110719162754
+# Schema version: 20110719180737
 #
 # Table name: bikes
 #
@@ -22,6 +22,7 @@
 #  latitude           :float
 #  longitude          :float
 #  price              :decimal(8, 2)
+#  neighborhood       :string(255)
 #
 
 class Bike < ActiveRecord::Base
@@ -39,7 +40,7 @@ class Bike < ActiveRecord::Base
                                                                               
                            
   
-  attr_accessible :name, :description, :size, :biketype, :price, :photo, :id, :address, :city, :state, :zip, :latitude, :longitude
+  attr_accessible :name, :description, :size, :biketype, :price, :photo, :id, :address, :city, :state, :zip, :latitude, :longitude, :neighborhood 
                   
   
   
@@ -51,13 +52,14 @@ class Bike < ActiveRecord::Base
   
   default_scope :order => 'bikes.created_at DESC'
   
-  validates :name,        :presence => true 
-  validates :description, :presence => true
-  validates :size,        :presence => true
-  validates :biketype,    :presence => true
-  validates :price,       :presence => true 
-  validates :user_id,     :presence => true
-  validates :address,     :presence => true
+  validates :name,         :presence => true 
+  validates :description,  :presence => true
+  validates :size,         :presence => true
+  validates :biketype,     :presence => true
+  validates :price,        :presence => true 
+  validates :user_id,      :presence => true
+  validates :address,      :presence => true
+  validates :neighborhood, :presence => true
   validates_attachment_presence :photo
   validates_attachment_size :photo, :less_than => 5.megabytes
   # validates_attachment_content_type :photo, :content_type => ['image/jpeg', 'image/png']

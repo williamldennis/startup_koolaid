@@ -15,7 +15,7 @@ class BikesController < ApplicationController
    def index 
      @title = "Bikes"
      if params[:search]
-       @bikes = Bike.find(:all, :conditions => ['LOWER (address) LIKE ?', "%#{params[:search].downcase}%"]).paginate(:page => params[:page], :per_page => 9)
+       @bikes = Bike.near(params[:search], 50, :order => :distance).paginate(:page => params[:page], :per_page => 9)
      else
        @bikes = Bike.paginate(:page => params[:page], :per_page => 9)
      end
@@ -28,7 +28,7 @@ class BikesController < ApplicationController
       else
         render 'bikes/listyourbike'
       end
-   end
+   end 
    
    def destroy
      @bike.destroy

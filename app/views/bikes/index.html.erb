@@ -6,7 +6,8 @@
 			<strong id="indexinfo" class="round">
 			    <%= link_to bike.name, bike %></br>
 				<%= link_to image_tag(bike.photo.url(:bigsquare)), bike %> </br>
-			    <%= number_to_currency(bike.price, :unit => "$") %> per day
+			    <%= number_to_currency(bike.price, :unit => "$") %> per day </br>
+				<%= bike.neighborhood %>
 			</strong> 
 	     </li>
   </div>

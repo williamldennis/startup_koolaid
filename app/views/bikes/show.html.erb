@@ -1,5 +1,5 @@
 <div>
-<%= link_to "Back to Search", bikes_path %>
+<%= link_to_function "Back to Search", "history.back()"%>
 </div>
 
 <div id="everythingshow">
@@ -18,9 +18,10 @@
 			<div id="showinfopadding">
 				<li id="showinfoitem" class="round">
 						<strong>Owner:</strong>       <%= link_to @bike.user.name, @bike.user %> </br>
-						<strong>Size:</strong>        <%= @bike.size %> </br>
-						<strong>Description:</strong> <%= @bike.description %> </br>
-						<strong>Bike Type:</strong>   <%= @bike.biketype %>
+						<strong>Rider Size:</strong>  <%= @bike.size %> (+/- 3 inches) </br>
+						<strong>Bike Type:</strong>   <%= @bike.biketype %> </br>
+						<strong>Neighborhood:</strong> <%= @bike.neighborhood %> </br>
+						<strong>Description:</strong> <%= @bike.description %> 
 				</li>
 			</div>
 			<div id="showinfopadding">
@@ -28,12 +29,17 @@
 							    <%= image_tag "http://maps.googleapis.com/maps/api/staticmap?zoom=14&size=300x300&sensor=false&markers=#{@bike.latitude}%2C#{@bike.longitude}" %>
 				</li>
 			</div>
+			<div id="nearbybikeitem" class="round">
+				Nearby Bikes </br>
+			<% for bike in @bike.nearbys(10) %>
+			  <li id="nearbybikes"><%=  link_to image_tag(bike.photo(:thumb)), bike %> </br> (<%= bike.distance.to_f.round(2) %> miles)</li>
+			<% end %>
+			</div>
 			
 		</div>
 	</ul>
 	</div>
 </div>
-
 
 
 

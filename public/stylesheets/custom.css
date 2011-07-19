@@ -465,6 +465,25 @@ strong#indexinfo {
 	margin: 0 auto;
 }
 
+#nearbybikeitem {
+	border: 1px solid #999;
+	-moz-box-shadow: 4px 4px 2px #989898;
+	-webkit-box-shadow: 4px 4px 2px #989898;
+	box-shadow: 4px 4px 2px #989898;
+	text-align: center;
+	font-size: 18pt;
+	padding-top: .2em;
+	
+}
+
+#nearbybikes {
+	list-style: none;
+	display: inline-block;
+	padding: .5em 1em 1em 1em;
+	font-size: 13pt;
+}
+
+
 /*micropost/bikes styling*/
 
 h1.bike {

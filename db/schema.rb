@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110719162754) do
+ActiveRecord::Schema.define(:version => 20110719180737) do
 
   create_table "bikes", :force => true do |t|
     t.string   "name"
@@ -31,6 +31,7 @@ ActiveRecord::Schema.define(:version => 20110719162754) do
     t.float    "latitude"
     t.float    "longitude"
     t.decimal  "price",              :precision => 8, :scale => 2
+    t.string   "neighborhood"
   end
 
   add_index "bikes", ["user_id"], :name => "index_bikes_on_user_id"
