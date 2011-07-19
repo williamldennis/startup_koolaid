@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110715200442) do
+ActiveRecord::Schema.define(:version => 20110719162754) do
 
   create_table "bikes", :force => true do |t|
     t.string   "name"
@@ -19,7 +19,6 @@ ActiveRecord::Schema.define(:version => 20110715200442) do
     t.string   "biketype"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.decimal  "price"
     t.integer  "user_id"
     t.string   "photo_file_name"
     t.string   "photo_content_type"
@@ -31,6 +30,7 @@ ActiveRecord::Schema.define(:version => 20110715200442) do
     t.string   "zip"
     t.float    "latitude"
     t.float    "longitude"
+    t.decimal  "price",              :precision => 8, :scale => 2
   end
 
   add_index "bikes", ["user_id"], :name => "index_bikes_on_user_id"

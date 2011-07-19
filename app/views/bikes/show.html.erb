@@ -1,24 +1,45 @@
+<div>
 <%= link_to "Back to Search", bikes_path %>
-
-<h1><%= @bike.name %></h1>
-
-<%= image_tag @bike.photo.url(:large) %>
-
-<div class="bikeinfo">
-<strong>Owner:</strong>       <%= link_to @bike.user.name, @bike.user %> </br>
-<strong>Size:</strong>        <%= @bike.size %> </br>
-<strong>Description:</strong> <%= @bike.description %> </br>
-<strong>Bike Type:</strong>   <%= @bike.biketype %> </br>
-<!-- <strong>City:</strong>        <%= @bike.city %> </br> -->
-<strong>Price per Day:</strong>       $<%= @bike.price %> </br>
-</br>
-</br>
-</br>
-<strong id="rentthis">
-	<%=  link_to "Rent this sexy Bicycle!", rentit_path %>
-</strong> </br>
-
 </div>
 
-<%= image_tag "http://maps.googleapis.com/maps/api/staticmap?zoom=14&size=400x200&sensor=false&markers=#{@bike.latitude}%2C#{@bike.longitude}" %>
+<div id="everythingshow">
+	<div id="showtable">
+	<ul id="showlist">
+		<div id="showitemoutside">
+			<li id="showbikeitem" class="round">
+						    <%= @bike.name %></br>
+							<%= image_tag(@bike.photo.url(:large)) %> </br>
+						    <%= number_to_currency(@bike.price, :unit => "$") %> per day </br>
+							<%=  link_to "Rent this sexy Bicycle!", rentit_path, :id => "rentthisbike" %> </br>
+			</li>
+		</div>
+					
+		<div id="showitemoutside">
+			<div id="showinfopadding">
+				<li id="showinfoitem" class="round">
+						<strong>Owner:</strong>       <%= link_to @bike.user.name, @bike.user %> </br>
+						<strong>Size:</strong>        <%= @bike.size %> </br>
+						<strong>Description:</strong> <%= @bike.description %> </br>
+						<strong>Bike Type:</strong>   <%= @bike.biketype %>
+				</li>
+			</div>
+			<div id="showinfopadding">
+				<li id="showmapitem" class="round">
+							    <%= image_tag "http://maps.googleapis.com/maps/api/staticmap?zoom=14&size=300x300&sensor=false&markers=#{@bike.latitude}%2C#{@bike.longitude}" %>
+				</li>
+			</div>
+			
+		</div>
+	</ul>
+	</div>
+</div>
+
+
+
+
+
+
+
+
+
 

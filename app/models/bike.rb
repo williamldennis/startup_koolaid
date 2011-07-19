@@ -1,5 +1,5 @@
 # == Schema Information
-# Schema version: 20110715200442
+# Schema version: 20110719162754
 #
 # Table name: bikes
 #
@@ -10,7 +10,6 @@
 #  biketype           :string(255)
 #  created_at         :datetime
 #  updated_at         :datetime
-#  price              :decimal(, )
 #  user_id            :integer
 #  photo_file_name    :string(255)
 #  photo_content_type :string(255)
@@ -22,6 +21,7 @@
 #  zip                :string(255)
 #  latitude           :float
 #  longitude          :float
+#  price              :decimal(8, 2)
 #
 
 class Bike < ActiveRecord::Base
@@ -57,8 +57,8 @@ class Bike < ActiveRecord::Base
   validates :biketype,    :presence => true
   validates :price,       :presence => true 
   validates :user_id,     :presence => true
-  validates :photo,       :presence => true
   validates :address,     :presence => true
+  validates_attachment_presence :photo
   validates_attachment_size :photo, :less_than => 5.megabytes
   # validates_attachment_content_type :photo, :content_type => ['image/jpeg', 'image/png']
    

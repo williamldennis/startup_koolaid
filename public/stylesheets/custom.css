@@ -15,13 +15,10 @@ h1#hometitle {
 	font-size: 40pt;
 }
 
-
-
 div.bikeinfo {
     float: right;
 	font-size: 15pt;
 }
-
 
 header {
 	padding-top: 10px; 
@@ -46,22 +43,12 @@ header nav {
 
 header img {
 	padding: 1em;
-/*	background: #fff;*/
-	padding-bottom: 0px;
 	float: left;
 	height: 50px;
 	margin-top: 5px;
 	margin-left: -20px;
 	
 }
-
-/*section img {
-	float: right;
-	margin-top: -100px;
-	margin-right: -20px;*/
-}
-
-
 
 #faqquestion {
 	font-size: 13pt;
@@ -83,10 +70,7 @@ section {
 	-moz-box-shadow: 4px 4px 2px #989898;
 	-webkit-box-shadow: 4px 4px 2px #989898;
 	box-shadow: 4px 4px 2px #989898;
-	margin-left: 0px;
-	margin-right: 0;
 	width: 100%;
-/*	height: 1400px;*/
 	margin-top: 40px;
 	border: 1px solid #B0B0B0 ;
 }
@@ -128,13 +112,6 @@ p#hometext {
 }
 
 .findabikebutton  {
-	/*-moz-box-shadow:inset 0px 0px 0px 0px #f7f7f7;
-		-webkit-box-shadow:inset 0px 0px 0px 0px #f7f7f7;
-		box-shadow:inset 0px 0px 0px 0px #f7f7f7;*/
-/*	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #a3abff), color-stop(1, #0303fa) );
-	background:-moz-linear-gradient( center top, #a3abff 5%, #0303fa 100% );
-	/*filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#a3abff', endColorstr='#0303fa');*/
-	/*background-color:#a3abff;*/
 	-moz-border-radius:9px;
 	-webkit-border-radius:9px;
 	border-radius:9px;
@@ -148,19 +125,8 @@ p#hometext {
 	text-shadow:1px 1px 0px #000000;
 	margin-left: 245px;
 }
-/*
-.findabikebutton:hover {
-	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #0303fa), color-stop(1, #a3abff) );
-	background:-moz-linear-gradient( center top, #0303fa 5%, #a3abff 100% );
-	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#0303fa', endColorstr='#a3abff');
-	background-color:#0303fa;
-}
 
-.findabikebutton:active {
-	position:relative;
-	top:1px;
-}
-*/
+
 
 section h1 {
 	font-size: 200%;
@@ -257,12 +223,6 @@ table.profile {
 	margin-top: 20px;
 }
 
-.stylishfields {
-	background-color: #ffc;
-	-moz-box-shadow: 5px 5px 2px #888;
-	-webkit-box-shadow: 5px 5px 2px #888;
-	box-shadow: 5px 5px 2px #888;
-}
 
 td.main {
 	width: 70%;
@@ -290,8 +250,13 @@ li#mybikes {
 
 #homepic {
 	float: right;
-	margin-top: -330px;
-	size: 80%;
+	margin-top: -310px;
+}
+
+
+
+#hometextdiv {
+	padding: 10px 50px 50px 50px;
 }
 
 
@@ -300,8 +265,9 @@ li#mybikes {
 	margin-top: -50px;
 }
 
-strong#rentthis {
+#rentthis {
 	font-size: 25pt;
+	float: right;
 }
 
 div#usershowinfo {
@@ -397,9 +363,9 @@ ul.bikes li {
 #indexitem {
 	list-style-type: none;
 	display: inline-block;
-		-moz-box-shadow: 4px 4px 2px #989898;
-		-webkit-box-shadow: 4px 4px 2px #989898;
-		box-shadow: 4px 4px 2px #989898;
+	-moz-box-shadow: 4px 4px 2px #989898;
+	-webkit-box-shadow: 4px 4px 2px #989898;
+	box-shadow: 4px 4px 2px #989898;
 }
 
 strong#indexinfo {
@@ -412,10 +378,90 @@ strong#indexinfo {
 }
 
 #indexborder {
-		list-style-type: none;
-		display: inline-block;
-		padding: 1em;
+	list-style-type: none;
+	display: inline-block;
+	padding: 1em;
 	
+}
+
+/*bike show formatting*/
+
+
+#showbikeitem {
+
+	border: 1px solid #999;
+	padding: 1em;
+	-moz-box-shadow: 4px 4px 2px #989898;
+	-webkit-box-shadow: 4px 4px 2px #989898;
+	box-shadow: 4px 4px 2px #989898;
+	font-size: 17pt;
+	width: auto;
+	text-align: center;
+}
+
+
+#showmapitem {
+
+	border: 1px solid #999;
+	padding: 1em;
+	-moz-box-shadow: 4px 4px 2px #989898;
+	-webkit-box-shadow: 4px 4px 2px #989898;
+	box-shadow: 4px 4px 2px #989898;
+	font-size: 15pt;
+	width: 300px;
+}
+
+#showinfoitem {
+	border: 1px solid #999;
+	padding: 1em;
+	-moz-box-shadow: 4px 4px 2px #989898;
+	-webkit-box-shadow: 4px 4px 2px #989898;
+	box-shadow: 4px 4px 2px #989898;
+	font-size: 13pt;
+	width: 300px;
+}
+
+#rentthisbike {
+			background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #88c4f2), color-stop(1, #0b28e0) );
+			background:-moz-linear-gradient( center top, #88c4f2 5%, #0b28e0 100% );
+			filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#88c4f2', endColorstr='#0b28e0');
+			-moz-border-radius:14px;
+			-webkit-border-radius:14px;
+			border-radius:14px;
+			display:inline-block;
+			color:#FFF;
+			font-family:Arial;
+			font-size:20px;
+			font-weight:bold;
+			font-color: #fff;
+			padding:8px 18px;
+			text-decoration:none;
+			text-shadow:1px 1px 2px #1a021a;
+			text-align: center;
+			margin: 0px auto;
+}
+
+
+#showinfopadding {
+	padding-bottom: 2em;
+}
+
+#showtable {
+	display: table;   /* Allow the centering to work */
+	margin: 0 auto;
+}
+#everythingshow {
+	margin: 0 auto;
+}
+#showitemoutside {
+	padding: 1em;
+	list-style-type: none;
+	float: left;
+}
+
+#showlist {
+	display: inline-block;
+	margin: 0 auto;
 }
 
 /*micropost/bikes styling*/
@@ -438,11 +484,6 @@ table.bikes tr {
   height: 70px;
 }
 
-/*table.bikes tr td.gravatar {
-  border-top: 1px solid #ccc;
-  vertical-align: top;
-  width:  10px;
-}*/
 
 table.bikes tr td.bike {
   border-top: 1px solid #ccc;
