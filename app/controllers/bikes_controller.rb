@@ -14,7 +14,7 @@ class BikesController < ApplicationController
    
    def index 
      @title = "Bikes"
-     if params[:search]
+     if params[:search].present?
        @bikes = Bike.near(params[:search], 50, :order => :distance).paginate(:page => params[:page], :per_page => 9)
      else
        @bikes = Bike.paginate(:page => params[:page], :per_page => 9)
