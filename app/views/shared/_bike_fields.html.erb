@@ -7,18 +7,6 @@
 	<%= f.label :neighborhood, "Your Bike's Neighborhood" %> <br />
 	<%= f.text_field :neighborhood, :size => 50 %>
 </div>
-<!-- <div class="field">
-	<%= f.label :city, "City" %> <br />
-	<%= f.text_field :city %>
-</div>
-<div class="field">
-	<%= f.label :state, "State" %> <br />
-	<%= f.text_field :size %>
-</div>
-<div class="field">
-	<%= f.label :zip, "Zip" %> <br />
-	<%= f.text_field :zip %>
-</div> -->
 <div class="field" id="namefield">
 	<%= f.label :name, "Title" %> <br />
 	<%= f.text_field :name, :size => 50 %>
@@ -28,12 +16,12 @@
 	<%= f.text_area :description, :rows => 5, :size => 50 %>
 </div>
 <div class="field">
-	<%= f.label :size, "Your Height" %> <br />
-	<%= f.text_field :size, :size => 50 %>
+	<%= f.label :size, "Your Approximate Height (or Best for Your Bike)" %> <br />
+	<%= f.select :size, [['4ft or less','4ft or less'],['4ft 3in','4ft 3in'],['4ft 6in','4ft 6in'],['4ft 9in','4ft 9in'],['5ft','5ft'],['5ft 3in','5ft 3in'],['5ft 6in','5ft 6in'],['5ft 9in','5ft 9in'],['6ft','6ft'],['6ft 3in','6ft 3in'],['6ft 6in','6ft 6in'],['6ft 9in','6ft 9in'],['7ft or taller','7ft or taller']], :include_blank => true  %>
 </div>
 <div class="field">
 	<%= f.label :biketype, "Bike Type (ex Road, Mountain, Pro)" %> <br />
-	<%= f.text_field :biketype, :size => 50 %>
+	<%= f.select :biketype, [['Road','Road'],['Mountain','Mountain'],['Cruiser','Cruiser'],['Fixed Gear','Fixed Gear'],['Single Speed','Single Speed'],['Professional Road','Professional Road'],['Professional Mountain','Professional Mountain'],['Unicycle','Unicycle'],['Tandem Bicycle','Tandem Bicycle'],['BMX','BMX'],['My bike is one of a kind','One of a Kind']], :include_blank => true   %>
 </div>
 <div class="field"> 
 	<%= f.label :price, "Daily Rental Price" %> <br />
