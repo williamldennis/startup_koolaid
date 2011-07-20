@@ -9,6 +9,7 @@ gem "paperclip", "~> 2.3"
 gem 'rmagick'
 gem 'aws-s3'
 gem 'geocoder'
+gem 'meta_search'
 
 group :development do
    gem 'rspec-rails', '2.6.1'
