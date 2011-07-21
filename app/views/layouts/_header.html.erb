@@ -2,8 +2,8 @@
 	<%= link_to logo, root_path	%>
 	<nav class="round">
 		<ul class="links">
-			<li id="listyourbike"><%= link_to "Browse Bikes", bikes_path %></li>
-			<li id="listyourbike"><%= link_to "List Your Bike", listyourbike_path %></li>
+			<!-- <li id="listyourbike"><%= link_to "Browse Bikes", bikes_path %></li> -->
+			<li id="listyourbike"><%= link_to "List Your Bike", listyourbike_path(current_user) %></li>
 			
 			<!-- <li><%= link_to "Home", root_path %></li> -->
 			<% if signed_in?  %>

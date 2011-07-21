@@ -1,21 +1,12 @@
 <h1>List Your Bike (It's Free)</h1>
 <div id="listabike" class="round">
-<% if signed_in? %>
 
-<%= form_for(@bike, :html => {:multipart => true}) do |f| %>
-<%= render 'shared/error_messages', :object => f.object %>
-<%= render 'shared/bike_fields', :f => f %>
-<div class="actions">
-   <%= f.submit "List Your Bike", :class => 'findabikebutton' %></br>
-</div>
-<% end %>
-	
-<% else %>
+	<%= form_for(@bike, :html => {:multipart => true}) do |f| %>
+	<%= render 'shared/error_messages', :object => f.object %>
+	<%= render 'shared/bike_fields', :f => f %>
+	<div class="actions">
+	   <%= f.submit "List Your Bike", :class => 'findabikebutton' %></br>
+	</div>
+	<% end %>
 
-<p>
-	To list your bike you must be signed in.	
-</p>
-
-<%= link_to "Sign In", signin_path, :class => "signup_button round" %> 
-<% end %>
 </div>

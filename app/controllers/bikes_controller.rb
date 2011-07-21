@@ -1,10 +1,10 @@
 class BikesController < ApplicationController
 
   before_filter :authenticate, :except => [:index, :show]
-  before_filter :authorized_user, :only => :destroy
+  before_filter :authorized_user, :only => [:destroy]
   
   def listyourbike 
-     @bike = Bike.new if signed_in?
+     @bike = Bike.new 
      @title = "List Your Bike"
    end
    
@@ -22,11 +22,15 @@ class BikesController < ApplicationController
    end
    
    def create
-     @bike = current_user.bikes.build(params[:bike])
-      if @bike.save
-        redirect_to mybikes_path, :flash => { :success => "Your Bike is Listed!" }
+     if signed_in?
+       @bike = current_user.bikes.build(params[:bike])
+        if @bike.save
+          redirect_to mybikes_path, :flash => { :success => "Your Bike is Listed!" }
+        else
+          render 'bikes/listyourbike'
+        end
       else
-        render 'bikes/listyourbike'
+        render 'sessions/new'
       end
    end 
    
