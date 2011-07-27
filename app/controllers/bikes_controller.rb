@@ -15,16 +15,13 @@ class BikesController < ApplicationController
    end
    
    def index 
-     if Bike.near(location, 50, :order => :distance).present?
+     
      #@bikes = Bike.near(location, 50, :order => :distance).paginate(:page => params[:page], :per_page => 9)
-         scope = Bike.near(location, 50, :order => :distance)
-         if (biketype.present?)
-           scope = scope.where(:biketype => biketype)
-         end
-         @bikes = scope.paginate(:page => params[:page], :per_page => 9)
-     else
-       @bikes = Bikes.all
+     scope = Bike.near(location, 50, :order => :distance)
+     if (biketype.present?)
+       scope = scope.where(:biketype => biketype)
      end
+     @bikes = scope.paginate(:page => params[:page], :per_page => 9)
      
      
    end
