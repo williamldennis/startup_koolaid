@@ -65,13 +65,13 @@ class BikesController < ApplicationController
      end
    end
    
-   def location
-     session[:location] = params[:search] || session[:location]
-   end
+
    
    private
    
-
+      def location
+        session[:location] = params[:search] || session[:location]
+      end
    
       def authorized_user
         @bike = Bike.find(params[:id])
