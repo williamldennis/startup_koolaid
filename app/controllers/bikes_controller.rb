@@ -19,7 +19,7 @@ class BikesController < ApplicationController
      #@bikes = Bike.near(location, 50, :order => :distance).paginate(:page => params[:page], :per_page => 9)
      scope = Bike.near(location, 50, :order => :distance)
      if (biketype.present?)
-       scope = scope.where(:biketype=>biketype)
+       scope = scope.where(:biketype => biketype)
      end
      @bikes = scope.paginate(:page => params[:page], :per_page => 9)
      
@@ -69,10 +69,10 @@ class BikesController < ApplicationController
    
    private
    
-      def location
-        session[:location] = params[:search] || session[:location]
-      end
-   
+   def location
+     session[:location] = params[:search] || session[:location]
+   end
+  
       def authorized_user
         @bike = Bike.find(params[:id])
         redirect_to root_path unless current_user?(@bike.user)
