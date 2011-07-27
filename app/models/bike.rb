@@ -49,7 +49,7 @@ class Bike < ActiveRecord::Base
   
   attr_accessible :name, :description, :size, :biketype, :price, :photo, :id, :address, :city, :state, :zip, :latitude, :longitude, :neighborhood 
                   
-  BIKETYPES = ['Road', 'Mountain', 'Cruiser', 'Fixed Gear', 'Single Speed', 'Profesional Road', 'Professional Mountain', 'Unicycle', 'Tandem Bicycle', 'BMX', 'One of A Kind' ]
+  BIKETYPES = [ 'Road', 'Mountain', 'Cruiser', 'Fixed Gear', 'Single Speed', 'Profesional Road', 'Professional Mountain', 'Unicycle', 'Tandem Bicycle', 'BMX', 'One of A Kind' ]
   
   after_validation :geocode, :if => :address_changed?
   

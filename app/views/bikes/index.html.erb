@@ -1,7 +1,10 @@
+<div>
 <% form_tag bikes_path, :method => 'get' do %>
-  <%= select_tag :sort, options_for_select(Bike::BIKETYPES)%>
-  <%= submit_tag "Submit" %>
+	<strong>Filter Results by:   </strong>
+	<%= select_tag :sort, options_for_select(Bike::BIKETYPES), :include_blank => "All Bike Types", :class => "biketypedropdown"%>
+	<%= submit_tag "Filter", :class => "biketypefilter"  %>  
 <% end %>
+</div>
 
 <%= will_paginate @bikes %>
 
@@ -28,7 +31,7 @@
 <div id="indexbikes" class="round">
 <p>
 	<%= text_field_tag :search, params[:search], :size => 50, :class => 'hometextfield' %> 
-	<%= submit_tag "Find Bikes by City", :name => nil %> </br>
+	<%= submit_tag "Find Bikes by City", :name => nil, :class => "searchbutton"   %>  </br>
 </p>
 </div>
 <% end %>

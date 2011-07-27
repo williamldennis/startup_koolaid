@@ -3,6 +3,8 @@ class BikesController < ApplicationController
   before_filter :authenticate, :except => [:index, :show]
   before_filter :authorized_user, :only => [:destroy]
   
+
+  
   def listyourbike 
      @bike = Bike.new 
      @title = "List Your Bike"

@@ -81,7 +81,7 @@ div#findabike {
 	background: #99D6FF;
 	padding: 1em;
 	width: 410px;
-	height: 150px;
+	height: 120px;
     border: 1px solid #75C8FF;
 }
 
@@ -112,21 +112,26 @@ p#hometext {
 }
 
 .findabikebutton  {
-	-moz-border-radius:9px;
-	-webkit-border-radius:9px;
-	border-radius:9px;
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #F1DDDD), color-stop(1, #AA9C9C) );
+	background:-moz-linear-gradient( center top, #F1DDDD 5%, #AA9C9C 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#F1DDDD', endColorstr='#AA9C9C');
+	-moz-border-radius:14px;
+	-webkit-border-radius:14px;
+	border-radius:14px;
 	display:inline-block;
-	color: #fff;
+	color:#FFF;
 	font-family:Arial;
-	font-size:18px;
-	font-weight:normal;
-	padding:8px 29px;
+	font-size:20px;
+	font-weight: normal;
+	border: none;
+	padding:6px 18px;
 	text-decoration:none;
-	text-shadow:1px 1px 0px #000000;
-	margin-left: 245px;
+	text-shadow:1px 1px 2px #1a021a;
+	text-align: center;
+	margin-left: 265px;
 	cursor: pointer;
-	background: ;
 }
+
 
 
 
@@ -433,9 +438,69 @@ strong#indexinfo {
 			color:#FFF;
 			font-family:Arial;
 			font-size:20px;
-			font-weight:bold;
+			font-weight: normal;
 			font-color: #fff;
 			padding:8px 18px;
+			text-decoration:none;
+			text-shadow:1px 1px 2px #1a021a;
+			text-align: center;
+			margin: 0px auto;
+}
+
+.biketypedropdown {
+			background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #F1DDDD), color-stop(1, #AA9C9C) );
+			background:-moz-linear-gradient( center top, #F1DDDD 5%, #AA9C9C 100% );
+			filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#F1DDDD', endColorstr='#AA9C9C');
+			-moz-border-radius:14px;
+			-webkit-border-radius:14px;
+			border-radius:14px;
+			display:inline-block;
+			color:#FFF;
+			font-family:Arial;
+			font-size:14px;
+			font-weight: normal;
+			border: none;
+			padding: 9px 19px;
+			text-decoration:none;
+			text-shadow:1px 1px 2px #1a021a;
+			text-align: center;
+			margin: 0px auto;
+}
+
+.biketypefilter {
+			background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #F1DDDD), color-stop(1, #AA9C9C) );
+			background:-moz-linear-gradient( center top, #F1DDDD 5%, #AA9C9C 100% );
+			filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#F1DDDD', endColorstr='#AA9C9C');
+			-moz-border-radius:14px;
+			-webkit-border-radius:14px;
+			border-radius:14px;
+			display:inline-block;
+			color:#FFF;
+			font-family:Arial;
+			font-size:14px;
+			font-weight: normal;
+			border: none;
+			padding:3px 9px;
+			text-decoration:none;
+			text-shadow:1px 1px 2px #1a021a;
+			text-align: center;
+			margin: 0px auto;
+}
+
+.searchbutton {
+			background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #F1DDDD), color-stop(1, #AA9C9C) );
+			background:-moz-linear-gradient( center top, #F1DDDD 5%, #AA9C9C 100% );
+			filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#F1DDDD', endColorstr='#AA9C9C');
+			-moz-border-radius:14px;
+			-webkit-border-radius:14px;
+			border-radius:14px;
+			display:inline-block;
+			color:#FFF;
+			font-family:Arial;
+			font-size:16px;
+			font-weight: normal;
+			border: none;
+			padding:6px 12px 2px 12px;
 			text-decoration:none;
 			text-shadow:1px 1px 2px #1a021a;
 			text-align: center;
