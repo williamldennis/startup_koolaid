@@ -1,0 +1,13 @@
+one:
+  cart_id: 1
+  ip_address: MyString
+  last_name: MyString
+  card_type: MyString
+  card_expires_on: 2011-07-25
+
+two:
+  cart_id: 1
+  ip_address: MyString
+  last_name: MyString
+  card_type: MyString
+  card_expires_on: 2011-07-25

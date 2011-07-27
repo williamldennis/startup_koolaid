@@ -4,6 +4,8 @@ class ApplicationController < ActionController::Base
   
   USER_NAME, PASSWORD = "spinlisterbeta", "peertopeer"
   before_filter :authenticate
+  
+  filter_parameter_logging :card_number, :card_verification
 
   private
     def authenticate

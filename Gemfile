@@ -10,6 +10,8 @@ gem 'rmagick'
 gem 'aws-s3'
 gem 'geocoder'
 gem 'meta_search'
+gem 'activemerchant'
+gem 'nifty-generators', :group => :development
 
 group :development do
    gem 'rspec-rails', '2.6.1'
@@ -24,3 +26,4 @@ group :test do
   gem 'webrat', '0.7.1'
   gem 'factory_girl_rails', '1.0'
 end
+gem "mocha", :group => :test

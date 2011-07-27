@@ -27,6 +27,13 @@
 
 class Bike < ActiveRecord::Base
   
+  
+  
+  scope :road, where(:biketype=>'road')
+  
+  scope :biketype, lambda{ |biketype|  where(:biketype=>biketype) }
+  
+  
   has_attached_file :photo, :styles => { :small => "200X200>", 
                                          :medium => "300X300>", 
                                          :thumb => "100X100#", 
@@ -42,9 +49,16 @@ class Bike < ActiveRecord::Base
   
   attr_accessible :name, :description, :size, :biketype, :price, :photo, :id, :address, :city, :state, :zip, :latitude, :longitude, :neighborhood 
                   
-  
+  BIKETYPES = ['Road', 'Mountain', 'Cruiser', 'Fixed Gear', 'Single Speed', 'Profesional Road', 'Professional Mountain', 'Unicycle', 'Tandem Bicycle', 'BMX', 'One of A Kind' ]
   
   after_validation :geocode, :if => :address_changed?
+  
+
+  BIKETYPES.each do |b|
+    scope b.to_sym, where(:biketype, b)
+  end
+
+    
   
   geocoded_by :address
   
@@ -63,8 +77,7 @@ class Bike < ActiveRecord::Base
   validates_attachment_presence :photo
   validates_attachment_size :photo, :less_than => 5.megabytes
   # validates_attachment_content_type :photo, :content_type => ['image/jpeg', 'image/png']
-   
-  
+
   def feed
     Bike.where("user_id = ?", id)
   end

@@ -1,5 +1,7 @@
 Spinlister::Application.routes.draw do
   
+  resources :orders
+
   resources :users
   resources :bikes
   resources :sessions, :only => [:new, :create, :destroy]
@@ -13,7 +15,6 @@ Spinlister::Application.routes.draw do
   
   match '/listyourbike',  :to =>'bikes#listyourbike'
   match '/mybikes',       :to =>'bikes#bikeshow'
-  # match '/bikeshow',      :to =>'bikes#bikeshow'
   match'/rentit',          :to =>'bikes#checkout'
 
   
