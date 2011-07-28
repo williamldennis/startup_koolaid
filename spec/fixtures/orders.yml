@@ -1,3 +1,20 @@
+# == Schema Information
+# Schema version: 20110728153946
+#
+# Table name: orders
+#
+#  id              :integer         not null, primary key
+#  cart_id         :integer
+#  ip_address      :string(255)
+#  last_name       :string(255)
+#  card_type       :string(255)
+#  card_expires_on :date
+#  created_at      :datetime
+#  updated_at      :datetime
+#  first_name      :string(255)
+#  billing_address :string(255)
+#
+
 one:
   cart_id: 1
   ip_address: MyString

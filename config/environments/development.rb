@@ -26,9 +26,9 @@ Spinlister::Application.configure do
   config.after_initialize do
     ActiveMerchant::Billing::Base.mode = :test
     ::GATEWAY = ActiveMerchant::Billing::PaypalGateway.new(
-      :login => "seller_1229899173_biz_api1.railscasts.com",
-      :password => "FXWU58S7KXFC6HBE",
-      :signature => "AGjv6SW.mTiKxtkm6L9DcSUCUgePAUDQ3L-kTdszkPG8mRfjaRZDYtSu"
+      :login => "will_1311623063_biz_api1.spinlister.com",
+      :password => "1311623115",
+      :signature => "AFoNPc-EqJBXvzxewU.Fm2cASik6A36h7h5CzKiTyFjFlZvc5Fx-MPBI"
     )
   end
 end

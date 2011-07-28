@@ -1,0 +1,6 @@
+<h2>Your Spinlister Cart</h2>
+	<ul>
+		<% @cart.line_items.each do |f| %>
+		<li><%= f.bike.name %></li>
+		<% end %>
+	</ul>

@@ -107,8 +107,9 @@ p#hometext {
 }
 
 .hometextfield {
-	font-size: 14pt;
+	font-size: 18pt;
 	width: 300px;
+
 }
 
 .findabikebutton  {
@@ -130,6 +131,7 @@ p#hometext {
 	text-align: center;
 	margin-left: 265px;
 	cursor: pointer;
+    border: 1px solid #999;
 }
 
 
@@ -445,6 +447,9 @@ strong#indexinfo {
 			text-shadow:1px 1px 2px #1a021a;
 			text-align: center;
 			margin: 0px auto;
+			border: 1px solid #999;
+		    
+
 }
 
 .biketypedropdown {
@@ -465,6 +470,8 @@ strong#indexinfo {
 			text-shadow:1px 1px 2px #1a021a;
 			text-align: center;
 			margin: 0px auto;
+			border: 1px solid #999;
+		    
 }
 
 .biketypefilter {
@@ -485,6 +492,8 @@ strong#indexinfo {
 			text-shadow:1px 1px 2px #1a021a;
 			text-align: center;
 			margin: 0px auto;
+			border: 1px solid #999;
+		    
 }
 
 .searchbutton {
@@ -505,6 +514,7 @@ strong#indexinfo {
 			text-shadow:1px 1px 2px #1a021a;
 			text-align: center;
 			margin: 0px auto;
+			border: 1px solid #999;
 }
 
 

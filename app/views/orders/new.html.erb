@@ -1,14 +1,10 @@
-<% title "New Order" %>
+<strong >New Order</strong>
 
 <%= form_for @order do |f| %>
-  <%= f.error_messages %>
+  <%= render 'shared/error_messages', :object => f.object %>
   <p>
-    <%= f.label :cart_id %><br />
-    <%= f.text_field :cart_id %>
-  </p>
-  <p>
-    <%= f.label :ip_address %><br />
-    <%= f.text_field :ip_address %>
+    <%= f.label :first_name %><br />
+    <%= f.text_field :first_name %>
   </p>
   <p>
     <%= f.label :last_name %><br />
@@ -16,12 +12,25 @@
   </p>
   <p>
     <%= f.label :card_type %><br />
-    <%= f.text_field :card_type %>
+    <%= f.select :card_type, [["Visa", "visa"], ["MasterCard", "master"], ["Discover", "discover"], ["American Express", "american_express"]] %>
+  </p>
+  <p>
+    <%= f.label :card_number %><br />
+    <%= f.text_field :card_number %>
+  </p>
+  <p>
+    <%= f.label :card_verification, "CVV " %><br />
+    <%= f.text_field :card_verification %>
   </p>
   <p>
     <%= f.label :card_expires_on %><br />
-    <%= f.date_select :card_expires_on %>
+    <%= f.date_select :card_expires_on, :discard_day => true, :start_year => Date.today.year, :end_year => (Date.today.year+10), :add_month_numbers => true %>
   </p>
+  <p>
+    <%= f.label :billing_address %><br />
+    <%= f.text_field :billing_address %>
+  </p>
+
   <p><%= f.submit %></p>
 <% end %>
 

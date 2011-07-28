@@ -1,0 +1,12 @@
+<% title "New Cart" %>
+
+<%= form_for @cart do |f| %>
+  <%= f.error_messages %>
+  <p>
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </p>
+  <p><%= f.submit %></p>
+<% end %>
+
+

@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110719224430) do
+ActiveRecord::Schema.define(:version => 20110728171748) do
 
   create_table "bikes", :force => true do |t|
     t.string   "name"
@@ -35,6 +35,32 @@ ActiveRecord::Schema.define(:version => 20110719224430) do
   end
 
   add_index "bikes", ["user_id"], :name => "index_bikes_on_user_id"
+
+  create_table "carts", :force => true do |t|
+    t.integer  "user_id"
+    t.integer  "integer"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "line_items", :force => true do |t|
+    t.integer  "bike_id"
+    t.integer  "cart_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "orders", :force => true do |t|
+    t.integer  "cart_id"
+    t.string   "ip_address"
+    t.string   "last_name"
+    t.string   "card_type"
+    t.date     "card_expires_on"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.string   "first_name"
+    t.string   "billing_address"
+  end
 
   create_table "users", :force => true do |t|
     t.string   "name"

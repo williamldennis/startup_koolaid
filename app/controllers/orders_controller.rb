@@ -4,9 +4,14 @@ class OrdersController < ApplicationController
   end
 
   def create
-    @order = Order.new(params[:order])
+    @order = current_cart.build_order(params[:order])
+    @order.ip_address = request.remote_ip
     if @order.save
-      redirect_to root_url, :notice => "Successfully created order."
+      if @order.purchase
+        render :action => "success"
+      else
+        render :action => "failure"
+      end
     else
       render :action => 'new'
     end

@@ -18,6 +18,7 @@ class User < ActiveRecord::Base
   attr_accessible :name, :email, :password, :password_confirmation, :photo
   
   has_many :bikes, :dependent => :destroy
+  has_one :cart
     
     email_regex = /\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i
     

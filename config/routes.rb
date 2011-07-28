@@ -1,5 +1,9 @@
 Spinlister::Application.routes.draw do
   
+  resources :line_items
+
+  resources :carts
+
   resources :orders
 
   resources :users

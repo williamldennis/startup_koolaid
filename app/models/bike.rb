@@ -53,16 +53,11 @@ class Bike < ActiveRecord::Base
   
   after_validation :geocode, :if => :address_changed?
   
-
-  BIKETYPES.each do |b|
-    scope b.to_sym, where(:biketype, b)
-  end
-
-    
-  
   geocoded_by :address
   
   belongs_to :user
+  has_many :line_items
+  before_destroy :ensure_not_referenced_by_any_line_item
   
   default_scope :order => 'bikes.created_at DESC'
   
@@ -81,5 +76,16 @@ class Bike < ActiveRecord::Base
   def feed
     Bike.where("user_id = ?", id)
   end
+  
+  private
+      
+      def ensure_not_referenced_by_any_line_item
+        if line_items.empty?
+          return true
+        else
+          errors.add(:base, 'Line Items present')
+          return false
+        end
+      end
   
 end
