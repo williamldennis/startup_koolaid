@@ -16,6 +16,6 @@ class LineItem < ActiveRecord::Base
   
   accepts_nested_attributes_for :bike, :cart
   
-  attr_accessible :name, :description, :size, :biketype, :price, :photo, :id, :address, :city, :state, :zip, :latitude, :longitude, :neighborhood 
+  attr_accessible :bike_id, :bike, :cart, :name, :description, :size, :biketype, :price, :photo, :id, :address, :city, :state, :zip, :latitude, :longitude, :neighborhood 
     
 end

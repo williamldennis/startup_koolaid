@@ -16,7 +16,7 @@ class Cart < ActiveRecord::Base
   
   accepts_nested_attributes_for :line_items
   
-  attr_accessible :bike_id, :name, :description, :size, :biketype, :price, :photo, :id, :address, :city, :state, :zip, :latitude, :longitude, :neighborhood 
+  attr_accessible :bike_id, :line_items, :name, :description, :size, :biketype, :price, :photo, :id, :address, :city, :state, :zip, :latitude, :longitude, :neighborhood 
   
   def total_price
     bikes.to_a.sum(&:price)

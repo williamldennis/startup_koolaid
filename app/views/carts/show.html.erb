@@ -1,6 +1,6 @@
 <h2>Your Spinlister Cart</h2>
 	<ul>
 		<% @cart.line_items.each do |f| %>
-		<li><%= f.bike.name %></li>
+		<li id="mybikes"><%= image_tag f.bike.photo(:thumb) %> <%= f.bike.name unless f.bike.blank? || f.bike.name.blank? %> <%= number_to_currency(f.bike.price, :unit => "$") %> per day </li>
 		<% end %>
 	</ul>
