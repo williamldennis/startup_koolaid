@@ -778,3 +778,26 @@ div#orderpage {
 		cursor: pointer;
 	    border: 1px solid #00C322;
 }
+
+.continueshopping {
+	font-size: 15pt;
+}
+
+#showcartitem {
+	border: 1px solid #999;
+	padding: 1em 2em 1em 2em;
+	-moz-box-shadow: 4px 4px 2px #989898;
+	-webkit-box-shadow: 4px 4px 2px #989898;
+	box-shadow: 4px 4px 2px #989898;
+	font-size: 15pt;
+	list-style: none;
+	display: inline-block;
+}
+
+#showcartpadding {
+	padding-bottom: 2em;
+}
+
+#cartitemtitle {
+	float: top;
+}

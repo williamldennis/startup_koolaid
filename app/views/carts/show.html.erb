@@ -10,14 +10,19 @@
 
 <ul>
 	<% @cart.line_items.each do |f| %>
-		<li id="mybikes"> 
-			<%= image_tag f.bike.photo(:small) %>
-			<%= f.bike.name unless f.bike.blank? || f.bike.name.blank? %> 
+	<div id="showcartpadding">
+		<li id="showcartitem" class="round">
+			<div id="cartitemtitle">
+			<%= f.bike.name unless f.bike.blank? || f.bike.name.blank? %> |
 			<%= number_to_currency(f.bike.price, :unit => "$") %> per day 
+			</div>
+		    <%= image_tag f.bike.photo(:bigsquare) %> <%= image_tag "http://maps.googleapis.com/maps/api/staticmap?zoom=14&size=300x300&sensor=false&markers=#{f.bike.latitude}%2C#{f.bike.longitude}" %>	
 		</li>
+	</div>
 	<% end %>
+	
 </ul>
 
-<strong><%= link_to 'Continue Shopping', bikes_path %></strong>
+<strong class="continueshopping"><%= link_to 'Continue Shopping', bikes_path %></strong>
 
 
