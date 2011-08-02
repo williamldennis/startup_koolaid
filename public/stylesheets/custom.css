@@ -108,12 +108,12 @@ p#hometext {
 
 .hometextfield {
 	font-size: 18pt;
-	width: 300px;
+	width: 395px;
 
 }
 
 .findabikebutton  {
-	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #F1DDDD), color-stop(1, #AA9C9C) );
+/* GREY BUTTON ->	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #F1DDDD), color-stop(1, #AA9C9C) );
 	background:-moz-linear-gradient( center top, #F1DDDD 5%, #AA9C9C 100% );
 	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#F1DDDD', endColorstr='#AA9C9C');
 	-moz-border-radius:14px;
@@ -131,9 +131,27 @@ p#hometext {
 	text-align: center;
 	margin-left: 265px;
 	cursor: pointer;
-    border: 1px solid #999;
-}
+    border: 1px solid #999;*/
 
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #1DD300), color-stop(1, #138900) );
+	background:-moz-linear-gradient( center top, #1DD300 5%, #138900 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#1DD300', endColorstr='#138900');
+	-moz-border-radius:14px;
+	-webkit-border-radius:14px;
+	border-radius:14px;
+	display:inline-block;
+	color: #fff;
+	font-family:Arial;
+	font-size:20px;
+	font-weight: normal;
+	padding:6px 16px;
+	text-decoration:none;
+	text-shadow:1px 1px 2px #1a021a;
+	text-align: center;
+	cursor: pointer;
+    border: 1px solid #00C322;
+    margin-left: 265px;
+}
 
 
 
@@ -716,3 +734,47 @@ p.rentitbutton:active {
 			position:relative;
 			top:1px;
 		}
+		
+/*shopping cart page*/
+
+#checkoutinfo {
+	float: right;
+	background: #99D6FF;
+	padding: 1em 1em 0em 1em;
+	border: 1px solid #75C8FF;
+	font-size: 18pt;
+}
+
+div#orderpage {
+	background: #99D6FF;
+	padding: 2em;
+	width: 300px;
+	border: 1px solid #75C8FF;
+	margin: 0px auto;
+}
+
+#emptycart {
+	font-size: 12pt;
+	font-weight: normal;
+	float: right;
+}
+
+.checkoutbutton {
+		background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #1DD300), color-stop(1, #138900) );
+		background:-moz-linear-gradient( center top, #1DD300 5%, #138900 100% );
+		filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#1DD300', endColorstr='#138900');
+		-moz-border-radius:12px;
+		-webkit-border-radius:12px;
+		border-radius:12px;
+		display:inline-block;
+		color: #fff;
+		font-family:Arial;
+		font-size:22px;
+		font-weight: normal;
+		padding:12px 48px;
+		text-decoration:none;
+		text-shadow:1px 1px 2px #1a021a;
+		text-align: center;
+		cursor: pointer;
+	    border: 1px solid #00C322;
+}

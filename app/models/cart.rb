@@ -13,13 +13,14 @@
 class Cart < ActiveRecord::Base
   has_many :line_items, :dependent => :destroy
   belongs_to :user
+  has_one :order
   
   accepts_nested_attributes_for :line_items
   
   attr_accessible :bike_id, :line_items, :name, :description, :size, :biketype, :price, :photo, :id, :address, :city, :state, :zip, :latitude, :longitude, :neighborhood 
   
   def total_price
-    bikes.to_a.sum(&:price)
+    line_items.to_a.sum { |item| item.total_price }
   end
   
 end

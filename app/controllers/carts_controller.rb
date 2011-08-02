@@ -15,5 +15,17 @@ class CartsController < ApplicationController
   def show
    @cart = Cart.find(params[:id])
   end
+  
+  def destroy
+    @cart = Cart.find(params[:id])
+    @cart.destroy
+    session[:cart_id] = nil
+  
+    respond_to do |format|
+      format.html { redirect_to(bikes_path,
+        :notice => 'Your cart is currently empty') }
+      format.xml { head :ok }
+    end
+  end
 
 end

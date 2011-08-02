@@ -1,6 +1,23 @@
 <h2>Your Spinlister Cart</h2>
-	<ul>
-		<% @cart.line_items.each do |f| %>
-		<li id="mybikes"><%= image_tag f.bike.photo(:thumb) %> <%= f.bike.name unless f.bike.blank? || f.bike.name.blank? %> <%= number_to_currency(f.bike.price, :unit => "$") %> per day </li>
-		<% end %>
-	</ul>
+
+
+<div id="checkoutinfo" class="round">
+	Cart Total: <%= number_to_currency(@cart.total_price) %> </br>
+	<%= button_to 'Checkout', new_order_path, :class => "checkoutbutton", :method => :get %> </br>
+	<%= link_to 'Empty cart', @cart, :method => :delete, :confirm => 'Are you sure?', :id => "emptycart" %>
+</div>
+
+
+<ul>
+	<% @cart.line_items.each do |f| %>
+		<li id="mybikes"> 
+			<%= image_tag f.bike.photo(:small) %>
+			<%= f.bike.name unless f.bike.blank? || f.bike.name.blank? %> 
+			<%= number_to_currency(f.bike.price, :unit => "$") %> per day 
+		</li>
+	<% end %>
+</ul>
+
+<strong><%= link_to 'Continue Shopping', bikes_path %></strong>
+
+

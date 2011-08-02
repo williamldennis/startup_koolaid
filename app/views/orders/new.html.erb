@@ -1,4 +1,6 @@
-<strong >New Order</strong>
+<h2 >New Rental Order</h2>
+
+<div id="orderpage" class="round">
 
 <%= form_for @order do |f| %>
   <%= render 'shared/error_messages', :object => f.object %>
@@ -34,4 +36,4 @@
   <p><%= f.submit %></p>
 <% end %>
 
-
+</div>

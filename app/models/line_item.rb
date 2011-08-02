@@ -18,4 +18,7 @@ class LineItem < ActiveRecord::Base
   
   attr_accessible :bike_id, :bike, :cart, :name, :description, :size, :biketype, :price, :photo, :id, :address, :city, :state, :zip, :latitude, :longitude, :neighborhood 
     
+  def total_price
+    bike.price
+  end
 end
