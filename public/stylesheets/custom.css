@@ -113,7 +113,7 @@ p#hometext {
 }
 
 .findabikebutton  {
-/* GREY BUTTON ->	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #F1DDDD), color-stop(1, #AA9C9C) );
+    background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #F1DDDD), color-stop(1, #AA9C9C) );
 	background:-moz-linear-gradient( center top, #F1DDDD 5%, #AA9C9C 100% );
 	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#F1DDDD', endColorstr='#AA9C9C');
 	-moz-border-radius:14px;
@@ -131,9 +131,9 @@ p#hometext {
 	text-align: center;
 	margin-left: 265px;
 	cursor: pointer;
-    border: 1px solid #999;*/
+    border: 1px solid #999;
 
-	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #1DD300), color-stop(1, #138900) );
+/*	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #1DD300), color-stop(1, #138900) );
 	background:-moz-linear-gradient( center top, #1DD300 5%, #138900 100% );
 	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#1DD300', endColorstr='#138900');
 	-moz-border-radius:14px;
@@ -150,7 +150,7 @@ p#hometext {
 	text-align: center;
 	cursor: pointer;
     border: 1px solid #00C322;
-    margin-left: 265px;
+    margin-left: 265px;*/
 }
 
 
