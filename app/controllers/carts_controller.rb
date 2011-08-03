@@ -23,7 +23,7 @@ class CartsController < ApplicationController
   
     respond_to do |format|
       format.html { redirect_to(bikes_path,
-        :notice => 'Your cart is currently empty') }
+      :flash => { :success => "Your cart has been cleared." }) }
       format.xml { head :ok }
     end
   end
