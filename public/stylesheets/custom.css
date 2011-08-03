@@ -790,14 +790,22 @@ div#orderpage {
 	-webkit-box-shadow: 4px 4px 2px #989898;
 	box-shadow: 4px 4px 2px #989898;
 	font-size: 15pt;
-	list-style: none;
+	list-style: decimal;
 	display: inline-block;
+	width: 600px;
 }
 
 #showcartpadding {
-	padding-bottom: 2em;
+	padding-bottom: 1em;
 }
 
 #cartitemtitle {
-	float: top;
+	float:right;
+
+	text-align: right;
+}
+
+#cartpic {
+	float: left;
+
 }

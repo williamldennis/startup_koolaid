@@ -13,10 +13,14 @@
 	<div id="showcartpadding">
 		<li id="showcartitem" class="round">
 			<div id="cartitemtitle">
-			<%= f.bike.name unless f.bike.blank? || f.bike.name.blank? %> |
-			<%= number_to_currency(f.bike.price, :unit => "$") %> per day 
+			<strong><%= f.bike.name unless f.bike.blank? || f.bike.name.blank? %></strong></br>
+			<%= number_to_currency(f.bike.price, :unit => "$") %> per day</br>
+			<%= f.bike.neighborhood %>
+			
 			</div>
-		    <%= image_tag f.bike.photo(:bigsquare) %> <%= image_tag "http://maps.googleapis.com/maps/api/staticmap?zoom=14&size=300x300&sensor=false&markers=#{f.bike.latitude}%2C#{f.bike.longitude}" %>	
+			<div id="cartpic">
+		    <%= image_tag f.bike.photo(:thumb) %>  <%= image_tag "http://maps.googleapis.com/maps/api/staticmap?zoom=14&size=100x100&sensor=false&markers=#{f.bike.latitude}%2C#{f.bike.longitude}" %>
+			</div>
 		</li>
 	</div>
 	<% end %>

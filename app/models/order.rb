@@ -16,7 +16,7 @@
 #
 
 class Order < ActiveRecord::Base
-  attr_accessible :cart_id, :ip_address, :last_name, :card_type, :card_expires_on
+  attr_accessible :cart_id, :ip_address, :first_name, :last_name, :card_type, :card_expires_on, :billing_address, :card_verification, :card_number, :purchased_at
   
   belongs_to :cart
   has_many :bikes
@@ -29,7 +29,7 @@ class Order < ActiveRecord::Base
   def purchase
       response = GATEWAY.purchase(price_in_cents, credit_card, purchase_options)
       transactions.create!(:action => "purchase", :amount => price_in_cents, :response => response)
-      cart.update_attribute(:purchased_at, Time.now) if response.success?
+      # cart.update_attribute(:purchased_at, Time.now) if response.success?
       response.success?
   end
 
