@@ -94,10 +94,9 @@ div#listabike {
 
 div#indexbikes {
 	background: #99D6FF;
-	padding: 1em;
-	width: 500px;
-	margin-left: 280px;
-	height: 40px;
+	padding: 1em 0em 0em 1em;
+	width: 495px;
+	margin: 0px auto;
 	border: 1px solid #75C8FF;
 }
 
@@ -109,6 +108,11 @@ div#indexbikes {
 .hometextfield {
 	font-size: 18pt;
 	width: 405px;
+}
+
+.indextextfield {
+	font-size: 18pt;
+	width: 300px;
 }
 
 .homedateandbutton {
