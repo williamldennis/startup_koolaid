@@ -26,14 +26,14 @@
   </p>
   <p>
     <%= f.label :card_expires_on %><br />
-    <%= f.date_select :card_expires_on, :discard_day => true, :start_year => Date.today.year, :end_year => (Date.today.year+10), :add_month_numbers => true %>
+    <%= f.date_select :card_expires_on, :discard_day => true, :add_month_numbers => true, :start_year => Date.today.year, :end_year => (Date.today.year+10) %>
   </p>
   <p>
     <%= f.label :billing_address %><br />
     <%= f.text_field :billing_address %>
   </p>
 
-  <p><%= f.submit %></p>
+  <p><%= f.submit "Create Order", :class => 'checkoutbutton' %></p>
 <% end %>
 
 </div>

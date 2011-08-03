@@ -81,7 +81,6 @@ div#findabike {
 	background: #99D6FF;
 	padding: 1em;
 	width: 410px;
-	height: 120px;
     border: 1px solid #75C8FF;
 }
 
@@ -102,14 +101,22 @@ div#indexbikes {
 	border: 1px solid #75C8FF;
 }
 
-p#hometext {
+#hometext {
 	font-size: 15pt;
 }
 
+
 .hometextfield {
 	font-size: 18pt;
-	width: 395px;
+	width: 405px;
+}
 
+.homedateandbutton {
+
+}
+
+#enddatefield {
+	margin-left: 18px;
 }
 
 .findabikebutton  {
@@ -122,14 +129,14 @@ p#hometext {
 	display:inline-block;
 	color:#FFF;
 	font-family:Arial;
-	font-size:20px;
+	font-size:25px;
 	font-weight: normal;
 	border: none;
-	padding:6px 18px;
+	padding:12px 36px;
 	text-decoration:none;
 	text-shadow:1px 1px 2px #1a021a;
 	text-align: center;
-	margin-left: 265px;
+	float: right;
 	cursor: pointer;
     border: 1px solid #999;
 

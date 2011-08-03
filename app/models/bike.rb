@@ -61,6 +61,7 @@ class Bike < ActiveRecord::Base
   
   default_scope :order => 'bikes.created_at DESC'
   
+  validates :location,     :presence => true
   validates :name,         :presence => true 
   validates :description,  :presence => true
   validates :size,         :presence => true
