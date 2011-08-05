@@ -124,9 +124,12 @@ div#indexbikes {
 }
 
 .findabikebutton  {
-    background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #F1DDDD), color-stop(1, #AA9C9C) );
+/*    background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #F1DDDD), color-stop(1, #AA9C9C) );
 	background:-moz-linear-gradient( center top, #F1DDDD 5%, #AA9C9C 100% );
-	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#F1DDDD', endColorstr='#AA9C9C');
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#F1DDDD', endColorstr='#AA9C9C');*/
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #86A9BF), color-stop(1, #3278A6) );
+	background:-moz-linear-gradient( center top, #86A9BF 5%, #3278A6 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#86A9BF', endColorstr='#3278A6');
 	-moz-border-radius:14px;
 	-webkit-border-radius:14px;
 	border-radius:14px;
@@ -142,7 +145,7 @@ div#indexbikes {
 	text-align: center;
 	float: right;
 	cursor: pointer;
-    border: 1px solid #999;
+    border: 1px solid #3278A6;
 
 /*	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #1DD300), color-stop(1, #138900) );
 	background:-moz-linear-gradient( center top, #1DD300 5%, #138900 100% );
