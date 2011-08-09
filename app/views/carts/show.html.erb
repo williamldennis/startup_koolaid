@@ -17,7 +17,8 @@
 			<div id="cartitemtitle">
 			<strong><%= f.bike.name unless f.bike.blank? || f.bike.name.blank? %></strong></br>
 			<%= number_to_currency(f.bike.price, :unit => "$") %> per day</br>
-			<%= f.bike.neighborhood %>
+			<%= f.bike.neighborhood %></br>
+			<%= button_to 'Empty cart', f, :method => :delete, :confirm => 'Remove this bike?' %>
 			
 			</div>
 			<div id="cartpic">
