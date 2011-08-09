@@ -47,8 +47,6 @@ GEM
       builder (>= 2.0.0)
     builder (2.1.2)
     cocaine (0.1.0)
-    devise (1.1.rc0)
-      warden (~> 0.10.3)
     diff-lcs (1.1.2)
     erubis (2.6.6)
       abstract (>= 1.0.0)
@@ -124,8 +122,6 @@ GEM
       polyglot
       polyglot (>= 0.3.1)
     tzinfo (0.3.29)
-    warden (0.10.7)
-      rack (>= 1.0.0)
     webrat (0.7.1)
       nokogiri (>= 1.2.0)
       rack (>= 1.0)
@@ -141,7 +137,6 @@ DEPENDENCIES
   annotate-models (= 1.0.4)
   autotest
   aws-s3
-  devise (= 1.1.rc0)
   factory_girl_rails (= 1.0)
   faker (= 0.3.1)
   geocoder

@@ -13,7 +13,7 @@ gem 'meta_search'
 gem 'activemerchant'
 gem 'nifty-generators', :group => :development
 gem 'jquery-rails', '>= 1.0.12'
-gem 'devise', '1.1.rc0'
+
 
 group :development do
    gem 'rspec-rails', '2.6.1'
