@@ -1,21 +1,31 @@
 # == Schema Information
-# Schema version: 20110711162655
+# Schema version: 20110810151026
 #
 # Table name: users
 #
-#  id                 :integer         not null, primary key
-#  name               :string(255)
-#  email              :string(255)
-#  created_at         :datetime
-#  updated_at         :datetime
-#  encrypted_password :string(255)
-#  salt               :string(255)
-#  admin              :boolean
+#  id                   :integer         not null, primary key
+#  name                 :string(255)
+#  email                :string(255)
+#  user_created_at      :datetime
+#  user_updated_at      :datetime
+#  encrypted_password   :string(255)
+#  salt                 :string(255)
+#  admin                :boolean
+#  reset_password_token :string(255)
+#  remember_token       :string(255)
+#  remember_created_at  :datetime
+#  sign_in_count        :integer         default(0)
+#  current_sign_in_at   :datetime
+#  last_sign_in_at      :datetime
+#  current_sign_in_ip   :string(255)
+#  last_sign_in_ip      :string(255)
+#  created_at           :datetime
+#  updated_at           :datetime
 #
 
 class User < ActiveRecord::Base
   attr_accessor   :password
-  attr_accessible :name, :email, :password, :password_confirmation, :photo
+  attr_accessible :name, :email, :password, :password_confirmation, :photo, :startdate, :enddate
   
   has_many :bikes, :dependent => :destroy
   has_one :cart

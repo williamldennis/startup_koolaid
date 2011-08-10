@@ -3,7 +3,7 @@
 	margin: 0px auto;
 }
 
-/*light green background = #90EE90, light grey = #E0E0E0*/
+/*light green background = #90EE90, light grey = #E0E0E0*, other light green #ccffcc*/
 
 
 body {
@@ -12,7 +12,8 @@ body {
 
 h1#hometitle {
 	text-align: left;
-	font-size: 40pt;
+	font-size: 45pt;
+	font-family: 'Lobster', cursive;
 }
 
 div.bikeinfo {
@@ -104,6 +105,9 @@ div#indexbikes {
 	font-size: 15pt;
 }
 
+p#hometext {
+	margin-top: -15pt;
+}
 
 .hometextfield {
 	font-size: 18pt;
@@ -127,9 +131,9 @@ div#indexbikes {
 /*    background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #F1DDDD), color-stop(1, #AA9C9C) );
 	background:-moz-linear-gradient( center top, #F1DDDD 5%, #AA9C9C 100% );
 	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#F1DDDD', endColorstr='#AA9C9C');*/
-	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #86A9BF), color-stop(1, #3278A6) );
-	background:-moz-linear-gradient( center top, #86A9BF 5%, #3278A6 100% );
-	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#86A9BF', endColorstr='#3278A6');
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #339966), color-stop(1, #003300) );
+	background:-moz-linear-gradient( center top, #339966 5%, #003300 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#339966', endColorstr='#003300');
 	-moz-border-radius:14px;
 	-webkit-border-radius:14px;
 	border-radius:14px;
@@ -759,7 +763,8 @@ p.rentitbutton:active {
 	background: #99D6FF;
 	padding: 1em 1em 0em 1em;
 	border: 1px solid #75C8FF;
-	font-size: 18pt;
+	font-size: 14pt;
+	margin-top: -62px ;
 }
 
 div#orderpage {

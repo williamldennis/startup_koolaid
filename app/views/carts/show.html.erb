@@ -1,7 +1,18 @@
 <h2>Your Spinlister Cart</h2>
 
-
 <div id="checkoutinfo" class="round">
+		Dates You Want to Ride
+		<%= form_for @cart do |f| %>
+		  From <%= f.text_field :startdate, :id => "startdate" %> </br>
+		  To <%= f.text_field :enddate, :id => "enddate" %>
+		  <%= f.submit "Set Dates" %>
+		<% end %>
+		
+		Rental Dates: </br>
+		From <%= @cart.startdate %> </br>
+		To <%= @cart.enddate %> </br>
+		</br>
+	
 	Cart Total: <%= number_to_currency(@cart.total_price) %> </br>
 	<%= button_to 'Checkout', new_order_path, :class => "checkoutbutton", :method => :get %> </br>
 	<%= link_to 'Empty cart', @cart, :method => :delete, :confirm => 'Are you sure?', :id => "emptycart" %>
@@ -18,7 +29,7 @@
 			<strong><%= f.bike.name unless f.bike.blank? || f.bike.name.blank? %></strong></br>
 			<%= number_to_currency(f.bike.price, :unit => "$") %> per day</br>
 			<%= f.bike.neighborhood %></br>
-			<%= button_to 'Empty cart', f, :method => :delete, :confirm => 'Remove this bike?' %>
+			<%= button_to 'Remove Bike', f, :method => :delete, :confirm => 'Remove this bike?' %>
 			
 			</div>
 			<div id="cartpic">
@@ -32,6 +43,6 @@
 	
 </ol>
 
-<strong class="continueshopping"><%= link_to 'Continue Shopping', bikes_path %></strong>
 
+<strong class="continueshopping"><%= link_to 'Continue Shopping', bikes_path %></strong>
 

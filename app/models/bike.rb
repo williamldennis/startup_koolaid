@@ -1,5 +1,5 @@
 # == Schema Information
-# Schema version: 20110719180737
+# Schema version: 20110810151026
 #
 # Table name: bikes
 #
@@ -23,6 +23,11 @@
 #  longitude          :float
 #  price              :decimal(8, 2)
 #  neighborhood       :string(255)
+#  phone_number       :string(255)
+#  bike_imperfections :text
+#  lock_type          :string(255)
+#  reviews            :text
+#  pick_up_type       :string(255)
 #
 
 class Bike < ActiveRecord::Base

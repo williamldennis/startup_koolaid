@@ -27,5 +27,15 @@ class CartsController < ApplicationController
       format.xml { head :ok }
     end
   end
+  
+  def update
+    @cart = Cart.find(params[:id])
+     respond_to do |format|
+        if @cart.update_attributes(params[:cart])
+          format.html { redirect_to(@cart, :notice => 'Dates Set.') }
+          format.xml  { head :ok }
+        end
+      end
+  end
 
 end

@@ -1,5 +1,5 @@
 # == Schema Information
-# Schema version: 20110728171748
+# Schema version: 20110810151026
 #
 # Table name: line_items
 #
@@ -8,6 +8,7 @@
 #  cart_id    :integer
 #  created_at :datetime
 #  updated_at :datetime
+#  quantity   :integer         default(1)
 #
 
 class LineItem < ActiveRecord::Base
