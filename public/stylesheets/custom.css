@@ -277,11 +277,12 @@ td.main {
 }
 
 
-td.sidebar {
-	width: 30%;
+.sidebar {
+	width: 150px;
 	padding: 1em;
 	vertical-align: top;
 	background: #99D6FF;
+	height: 300px;
 }
 
 li#mybikes {
@@ -465,6 +466,15 @@ strong#indexinfo {
 	font-size: 13pt;
 	width: 300px;
 }
+
+#bikeownerinfo {
+	float: left;
+	padding-bottom: 1em;
+	padding-right: 6em;
+}
+
+/*#bikeusergravatar {
+    float: right;}*/
 
 #rentthisbike {
 			background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #88c4f2), color-stop(1, #0b28e0) );
@@ -834,3 +844,4 @@ div#orderpage {
 #liststyle {
 	list-style-type: none;
 }
+

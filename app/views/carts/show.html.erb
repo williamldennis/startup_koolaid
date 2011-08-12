@@ -9,11 +9,11 @@
 		<% end %></br>
 		
 		Rental Dates: </br>
-		From <%= @cart.startdate.strftime('%B %e, %Y') unless @cart.startdate.nil? %> </br>
-		To <%= @cart.enddate.strftime('%B %e, %Y') unless @cart.enddate.nil? %> </br>
+		From: <%= @cart.startdate.strftime('%B %e, %Y') unless @cart.startdate.nil? %> </br>
+		To: <%= @cart.enddate.strftime('%B %e, %Y') unless @cart.enddate.nil? %> </br>
 		</br>
 	
-	Cart Total: <%= number_to_currency(@cart.total_price*((@cart.enddate.to_date - @cart.startdate.to_date).to_i)) unless @cart.enddate.nil? %> </br>
+	Cart Total: <%= number_to_currency(@cart.total_price*((@cart.enddate.to_date - @cart.startdate.to_date).to_i + 1)) unless @cart.enddate.nil? %> </br>
 	<%= button_to 'Checkout', new_order_path, :class => "checkoutbutton", :method => :get %> </br>
 	<%= link_to 'Empty cart', @cart, :method => :delete, :confirm => 'Are you sure?', :id => "emptycart" %>
 </div>

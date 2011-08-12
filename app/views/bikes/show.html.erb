@@ -5,23 +5,34 @@
 <div id="everythingshow">
 	<div id="showtable">
 	<ul id="showlist">
+
 		<div id="showitemoutside">
 			<li id="showbikeitem" class="round">
 						    <%= @bike.name %></br>
 							<%= image_tag(@bike.photo.url(:large)) %> </br>
 						    <%= number_to_currency(@bike.price, :unit => "$") %> per day </br>
-							<%= button_to "Rent this Bicycle!", line_items_path(:bike_id => @bike), {:class => "checkoutbutton"} %> </br>
 			</li>
 		</div>
 					
 		<div id="showitemoutside">
 			<div id="showinfopadding">
 				<li id="showinfoitem" class="round">
-						<strong>Owner:</strong>       <%= link_to @bike.user.name, @bike.user %> </br>
+						<div id="bikeownerinfo">
+							<strong>Owner:</strong> </br>
+							<%= link_to @bike.user.name, @bike.user %> </br>
+							Owns <%= @bike.user.bikes.count %> Bikes </br>
+						</div>
+						<div id="bikeusergravatar"><%= gravatar_for @bike.user, :size => 75%> </div>
+				</li>
+			</div>
+			<div id="showinfopadding">
+				<li id="showinfoitem" class="round">
 						<strong>Height Range:</strong>  <%= @bike.size %> (+/- 3 inches) </br>
 						<strong>Bike Type:</strong>   <%= @bike.biketype %> </br>
 						<strong>Neighborhood:</strong> <%= @bike.neighborhood %> </br>
-						<strong>Description:</strong> <%= @bike.description %> 
+						<strong>Description:</strong> <%= @bike.description %> </br>
+						</br>
+						<%= button_to "Rent this Bicycle!", line_items_path(:bike_id => @bike), {:class => "checkoutbutton"} %> 
 				</li>
 			</div>
 			<div id="showinfopadding">

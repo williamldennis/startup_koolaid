@@ -1,4 +1,12 @@
+<div id="showcartpadding">
+
+	<div id="showcartitem" class="round">
+		<li id="liststyle">
+		<div id="cartitemtitle">
+
+
 <li id="mybikes">
+
 	<%= image_tag bike.photo.url(:thumb) %>
 	<%= link_to bike.name, bike %>
 	<% if current_user=bike.user%>
@@ -9,5 +17,11 @@
 	<%= link_to "edit", edit_bike_path(bike) %>
 	<% else %>
 	<% end %>
+
 </li>
 
+</div>
+
+	</div>
+		</li>
+		</div>
