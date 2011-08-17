@@ -77,7 +77,7 @@ class ReviewsController < ApplicationController
           params[:sort]
         end
 
-  end
+
   
 end
 
