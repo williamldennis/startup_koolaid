@@ -447,6 +447,21 @@ strong#indexinfo {
 	text-align: center;
 }
 
+#reviewitem {
+	border: 1px solid #999;
+	padding: 1em;
+	-moz-box-shadow: 4px 4px 2px #989898;
+	-webkit-box-shadow: 4px 4px 2px #989898;
+	box-shadow: 4px 4px 2px #989898;
+	font-size: 17pt;
+	width: auto;
+	text-align: center;
+}
+
+#reviewoutside {
+	padding-top: 2em;
+}
+
 
 #showmapitem {
 	border: 1px solid #999;

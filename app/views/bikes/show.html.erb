@@ -5,14 +5,41 @@
 <div id="everythingshow">
 	<div id="showtable">
 	<ul id="showlist">
-
+		
 		<div id="showitemoutside">
+
+
+
 			<li id="showbikeitem" class="round">
 						    <%= @bike.name %></br>
 							<%= image_tag(@bike.photo.url(:large)) %> </br>
 						    <%= number_to_currency(@bike.price, :unit => "$") %> per day </br>
 			</li>
+			
+			<div id="reviewoutside">
+			
+			<li id="reviewitem" class="round">
+						    Reviews </br>
+						
+								<%= render 'reviews/review'%>
+				
+							<% if @user = signed_in? %>
+							
+
+							
+								<%= form_for @bike do |f| %>
+								  Add a Review <%= f.text_field :reviews %> </br>
+								  <%= f.submit "Set Dates" %>
+								<% end %></br>
+								
+							<% end %>
+							</div>
+
+			</li>
+			
 		</div>
+		
+
 					
 		<div id="showitemoutside">
 			<div id="showinfopadding">
@@ -31,7 +58,6 @@
 						<strong>Bike Type:</strong>   <%= @bike.biketype %> </br>
 						<strong>Neighborhood:</strong> <%= @bike.neighborhood %> </br>
 						<strong>Description:</strong> <%= @bike.description %> </br>
-						</br>
 						<%= button_to "Rent this Bicycle!", line_items_path(:bike_id => @bike), {:class => "checkoutbutton"} %> 
 				</li>
 			</div>

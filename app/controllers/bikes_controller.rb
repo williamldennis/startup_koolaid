@@ -48,6 +48,7 @@ class BikesController < ApplicationController
      @bike = Bike.find(params[:id])
      @title = @bike.name
      # @feed_items = current_user.feed
+     @reviews = @bike.reviews
    end
    
    def edit

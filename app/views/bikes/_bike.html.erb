@@ -9,7 +9,7 @@
 
 	<%= image_tag bike.photo.url(:thumb) %>
 	<%= link_to bike.name, bike %>
-	<% if current_user=bike.user%>
+	<% if current_user = bike.user%>
 	|
 	<%= link_to "delete", bike, :method => :delete, :confirm => "You sure?",
 	 							:title => "Delete #{bike.name}"%>
