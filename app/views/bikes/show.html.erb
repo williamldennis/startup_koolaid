@@ -23,16 +23,7 @@
 						
 								<%= render 'reviews/review'%>
 				
-							<% if @user = signed_in? %>
-							
 
-							
-								<%= form_for @bike do |f| %>
-								  Add a Review <%= f.text_field :reviews %> </br>
-								  <%= f.submit "Set Dates" %>
-								<% end %></br>
-								
-							<% end %>
 							</div>
 
 			</li>
