@@ -10,23 +10,14 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110810153634) do
-
-  create_table "assets", :force => true do |t|
-    t.integer  "bike_id"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-    t.string   "image_file_name"
-    t.string   "image_content_type"
-    t.integer  "image_file_size"
-    t.datetime "image_updated_at"
-  end
+ActiveRecord::Schema.define(:version => 20110817195203) do
 
   create_table "bikes", :force => true do |t|
     t.string   "name"
     t.text     "description"
     t.string   "size"
     t.string   "biketype"
+    t.decimal  "price"
     t.datetime "created_at"
     t.datetime "updated_at"
     t.integer  "user_id"
@@ -40,13 +31,7 @@ ActiveRecord::Schema.define(:version => 20110810153634) do
     t.string   "zip"
     t.float    "latitude"
     t.float    "longitude"
-    t.decimal  "price",              :precision => 8, :scale => 2
     t.string   "neighborhood"
-    t.string   "phone_number"
-    t.text     "bike_imperfections"
-    t.string   "lock_type"
-    t.text     "reviews"
-    t.string   "pick_up_type"
   end
 
   add_index "bikes", ["user_id"], :name => "index_bikes_on_user_id"
@@ -93,27 +78,25 @@ ActiveRecord::Schema.define(:version => 20110810153634) do
     t.string   "billing_address"
   end
 
-  create_table "users", :force => true do |t|
-    t.string   "name"
-    t.string   "email"
-    t.datetime "user_created_at"
-    t.datetime "user_updated_at"
-    t.string   "encrypted_password"
-    t.string   "salt"
-    t.boolean  "admin"
-    t.string   "reset_password_token"
-    t.string   "remember_token"
-    t.datetime "remember_created_at"
-    t.integer  "sign_in_count",        :default => 0
-    t.datetime "current_sign_in_at"
-    t.datetime "last_sign_in_at"
-    t.string   "current_sign_in_ip"
-    t.string   "last_sign_in_ip"
+  create_table "reviews", :force => true do |t|
+    t.integer  "review_id"
+    t.string   "the_review"
+    t.integer  "bike_id"
+    t.integer  "user_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
+  create_table "users", :force => true do |t|
+    t.string   "name"
+    t.string   "email"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.string   "encrypted_password"
+    t.string   "salt"
+    t.boolean  "admin",              :default => false
+  end
+
   add_index "users", ["email"], :name => "index_users_on_email", :unique => true
-  add_index "users", ["reset_password_token"], :name => "index_users_on_reset_password_token", :unique => true
 
 end

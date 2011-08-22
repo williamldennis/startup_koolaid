@@ -11,7 +11,7 @@ body {
 }
 
 h1#hometitle {
-	text-align: left;
+	text-align: center;
 	font-size: 45pt;
 	font-family: 'Lobster', cursive;
 }
@@ -46,7 +46,7 @@ header img {
 	padding: 1em;
 	float: left;
 	height: 50px;
-	margin-top: 5px;
+	margin-top: -5px;
 	margin-left: -20px;
 	
 }
@@ -861,3 +861,19 @@ div#orderpage {
 	list-style-type: none;
 }
 
+.schoollogo {
+	margin-left: 220px;
+	padding-top: 2em;
+	display: inline-block;
+}
+
+#homevid {
+	margin-left: 250px;
+	padding-top: 10em;
+	display: inline-block;
+}
+
+#uklinks {
+	float: right;
+	font-size: 15pt;
+}

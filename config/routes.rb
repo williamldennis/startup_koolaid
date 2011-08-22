@@ -17,9 +17,33 @@ Spinlister::Application.routes.draw do
   match '/faq',           :to =>'pages#faq'
   match '/howitworks',    :to =>'pages#howitworks'
   
+  match '/uschome',       :to =>'pages#uschome'
+  match '/uscwater',      :to =>'pages#uscwater'
+  match '/uscsoda',       :to =>'pages#uscsoda'
+  match '/usccoffee',     :to =>'pages#usccoffee'
+  match '/uscenergy',     :to =>'pages#uscenergy'
+  match '/uscjuice',      :to =>'pages#uscjuice'
+  match '/uscsports',     :to =>'pages#uscsports'
+  
+  match '/uahome',       :to =>'pages#uahome'
+  match '/uawater',      :to =>'pages#uawater'
+  match '/uasoda',       :to =>'pages#uasoda'
+  match '/uacoffee',     :to =>'pages#uacoffee'
+  match '/uaenergy',     :to =>'pages#uaenergy'
+  match '/uajuice',      :to =>'pages#uajuice'
+  match '/uasports',     :to =>'pages#uasports'
+  
+  match '/ukhome',       :to =>'pages#ukhome'
+  match '/ukwater',      :to =>'pages#ukwater'
+  match '/uksoda',       :to =>'pages#uksoda'
+  match '/ukcoffee',     :to =>'pages#ukcoffee'
+  match '/ukenergy',     :to =>'pages#ukenergy'
+  match '/ukjuice',      :to =>'pages#ukjuice'
+  match '/uksports',     :to =>'pages#uksports'
+  
   match '/listyourbike',  :to =>'bikes#listyourbike'
   match '/mybikes',       :to =>'bikes#bikeshow'
-  match'/rentit',          :to =>'bikes#checkout'
+  match'/rentit',         :to =>'bikes#checkout'
 
   
   match '/signup',        :to =>'users#new'

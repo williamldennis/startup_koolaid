@@ -2,7 +2,7 @@ class ApplicationController < ActionController::Base
   protect_from_forgery
   include SessionsHelper
   
-  USER_NAME, PASSWORD = "spinlisterbeta", "peertopeer"
+  USER_NAME, PASSWORD = "campusbeta", "drinks"
   before_filter :authenticate
   
   filter_parameter_logging :card_number, :card_verification
