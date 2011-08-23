@@ -133,9 +133,9 @@ p#hometext {
 /*    background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #F1DDDD), color-stop(1, #AA9C9C) );
 	background:-moz-linear-gradient( center top, #F1DDDD 5%, #AA9C9C 100% );
 	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#F1DDDD', endColorstr='#AA9C9C');*/
-	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #005EFF), color-stop(1, #003DA6) );
-	background:-moz-linear-gradient( center top, #005EFF 5%, #003DA6 100% );
-	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#005EFF', endColorstr='#003DA6');
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #339966), color-stop(1, #003300) );
+	background:-moz-linear-gradient( center top, #339966 5%, #003300 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#339966', endColorstr='#003300');
 	-moz-border-radius:14px;
 	-webkit-border-radius:14px;
 	border-radius:14px;

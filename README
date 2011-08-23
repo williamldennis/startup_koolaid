@@ -1,1 +1,1 @@
-Spinlister is a peer-to-peer bike rental marketplace. Find a bike to rent from real people all over the world. Whether you're an adventurous local or curious travelers, there is no better way to travel. List your bike to make some money or rent a bike to have fun. http://Spinlister.com
+Campus Deliveries
