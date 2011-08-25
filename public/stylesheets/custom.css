@@ -1,5 +1,5 @@
 .container {
-	width: 1100px;
+	width: 900px;
 	margin: 0px auto;
 }
 
@@ -862,7 +862,6 @@ div#orderpage {
 }
 
 .schoollogo {
-	margin-left: 220px;
 	padding-top: 2em;
 	display: inline-block;
 }
@@ -874,6 +873,100 @@ div#orderpage {
 }
 
 #uklinks {
+	float: left;
+	font-size: 20pt;
+}
+
+#homelinks {
+	float: left;
+	font-size: 35pt;
+}
+
+#usclogo {
+	float: left;
+	margin-left: 40px;
+}
+
+#ualogo {
+   	margin-left: 330px;
+	margin-top: -1px;
+}
+
+#uklogo {
 	float: right;
+	margin-right: 35px;
+	margin-top: 10px;
+}
+
+#uahomelogo {
+	float: right;
+}
+
+.bigtype {
+	font-size: 180pt;
+	font-style: freshman;
+	color: #E0E0E0;
+	float: right;
+	margin-top: -50px;
+}
+
+#flowerlink {
+	font-size: 40pt;
+	float: right;
+	margin-top: 320px;
+	margin-right: -200px;
+}
+
+#customerquotes {
 	font-size: 15pt;
+	background: #99D6FF;
+	padding: 1em;
+}
+
+#drinkgroup {
+	margin-left: 200px;
+	height: 200px;
+}
+
+#homedrinks {
+	margin-left: 130px;
+	
+}
+
+#smartwaterhome {
+	padding-right: 2em;
+}
+
+#wedeliver {
+	font-style: italic;
+}
+
+#topdrinkrow {
+	margin-left: 50px;
+}
+
+#water {
+	padding-right: 4em;
+}
+
+#juice {
+	padding-right: 1.2em;
+}
+
+#bottomdrinkrow {
+	margin-left: 20px;
+}
+
+#flowers {
+	float: right;
+	margin-right: 0px;
+}
+
+.drinkpics {
+	height: 200px;
+	display: inline-block;
+}
+
+#drink3 {
+	float: right;
 }

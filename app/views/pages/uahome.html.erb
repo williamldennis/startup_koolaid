@@ -1,10 +1,24 @@
-	<%= link_to image_tag("uofalogo.svg", :alt => "Great looking bike", :class => "round", :height => 400), uahome_path %>
+<div id="uahomelogo">	<%= link_to image_tag("uofalogo.svg", :alt => "Great looking bike", :class => "round", :height => 200), uahome_path %>
+</div>
 	
-	<div id="uklinks">
-	<%= link_to "Water", uawater_path %>
-	<%= link_to "Coffee", uacoffee_path %>
-	<%= link_to "Soda", uasoda_path %>
-	<%= link_to "Energy", uaenergy_path %>
-	<%= link_to "Juice", uajuice_path %>
-	<%= link_to "Sports", uasports_path %>
+	<div id="homelinks">
+	<%= link_to "Water", uawater_path %></br>
+	<%= link_to "Coffee", uacoffee_path %></br>
+	<%= link_to "Soda", uasoda_path %></br>
+	<%= link_to "Energy", uaenergy_path %></br>
+	<%= link_to "Juice", uajuice_path %></br>
+	<%= link_to "Sports", uasports_path %></br>
+	</div>
+	
+	<div id="drinkgroup">
+		<div id="topdrinkrow">
+	<%= link_to image_tag("smartwater.jpg", :height => 140, :id => "water"), uawater_path %> 
+	<%= link_to image_tag("Coffee.jpg", :height => 140), uacoffee_path %> </br>
+	</div>
+	<%= link_to image_tag("coke.jpeg", :height => 140), uasoda_path %> 
+	<%= link_to image_tag("redbull.jpg", :height => 140), uaenergy_path %> </br>
+	<div id="bottomdrinkrow">
+	<%= link_to image_tag("martinellis.jpg", :height => 140, :id => "juice"), uajuice_path %>
+	<%= link_to image_tag("gatorade.jpg", :height => 140), uasports_path %> </br>
+	</div>
 	</div>

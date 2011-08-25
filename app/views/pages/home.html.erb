@@ -1,18 +1,59 @@
 
 	<h1 id="hometitle">Please Select Your Campus</h1> 
-	<div>
+
 
 
 <div class="schoollogo">
+	
+	<div id="uklogo">
+			<%= link_to image_tag("kulogo.svg", :alt => "Great looking bike", :class => "round", :height => 200), ukhome_path %>
+	</div>
+	
+	<div id="usclogo">
 	<%= link_to image_tag("USC_TrojanLogo.jpg", :alt => "Great looking bike", :class => "round", :height => 200), uschome_path %> 
+   </div>
 
-
+	<div id="ualogo">
 	<%= link_to image_tag("uofalogo.svg", :alt => "Great looking bike", :class => "round", :height => 200), uahome_path %>
+   </div> </br>
+</br>
 
 
-		<%= link_to image_tag("kulogo.svg", :alt => "Great looking bike", :class => "round", :height => 200), ukhome_path %>
+
+<h1 id="wedeliver">We deliver drinks and flowers right to your door. Free.</h1> </br>
+
+<div id="homedrinks">
+<%= link_to image_tag("smartwater.jpg", :height => 140, :id => "smartwaterhome"), uscwater_path %> 
+<%= link_to image_tag("Coffee.jpg", :height => 140), usccoffee_path %> 
+<%= link_to image_tag("coke.jpeg", :height => 140), uscsoda_path %> 
+<%= link_to image_tag("redbull.jpg", :height => 140), uscenergy_path %> 
+<%= link_to image_tag("martinellis.jpg", :height => 140), uscjuice_path %>
+<%= link_to image_tag("gatorade.jpg", :height => 140), uscsports_path %> 
 </div>
 
-<div id="homevid">
-	<iframe width="560" height="345" src="http://www.youtube.com/embed/Ui86peQZ74s" frameborder="0" allowfullscreen></iframe>
+</br>
+</br>
+</br>
+</br>
+
+
+<h1>What Customers are Saying</h1>
+<div id="customerquotes" class="round">
+<p>
+"Really easy to use. Just order and they bring it right to your door once a week."
+- Nicolai S. </br>
+</br>
+
+"Campus Deliveries got me the best fresh flowers for my invite date and they saved me the hassle of searching for a flower store by delivering it to my fraternity house! YAY!" - Bryan H. </br>
+</br>
+
+"Campus Deliveries is awesome! Not only do they get your order to you on time, but they carry it up all the stairs for you and bring it right to your door! At Campus Deliveries they know how to make customers feel special!" 
+- Hayden F. </br>
+</br>
+"Two days ago, I thought I died and went to heaven. I soon realized that I actually just blacked out and woke up to a case of fresh water from CampusDeliveries." - TJ H.  </br>
+</br>
+"The campus places are over priced, Campus Deliveries is a good deal and delivers." -Tommy M. </br>
+</br>
+</p>
+
 </div>
