@@ -2,22 +2,10 @@
 	<%= link_to logo, root_path	%>
 	<nav class="round">
 		<ul class="links">
-			<!-- <li id="listyourbike"><%= link_to "Browse Bikes", bikes_path %></li> -->
-			<!-- <li id="listyourbike"><%= link_to "List Your Bike", listyourbike_path(current_user) %></li> -->
-			
-			<!-- <li><%= link_to "Home", root_path %></li> -->
-			<% if signed_in?  %>
-			<!-- <li id="listyourbike"><%= link_to "Profile", current_user %></li> -->
-			<!-- <li id="listyourbike"><%= link_to "Bike Owners", users_path %></li> -->
-			<!-- <li id="listyourbike"><%= link_to "Settings", edit_user_path(current_user) %></li> -->
-			<% end %>
-			<% if signed_in? %>
-			<!-- <li id="listyourbike"><%= link_to "Sign Out", signout_path %></li> -->
-			<% else %>
+
 			<li id="listyourbike"><%= link_to "How It Works", howitworks_path %></li>
-			<!-- <li id="listyourbike"><%= link_to "Sign Up", signup_path %></li> -->
-			<!-- <li id="listyourbike"><%= link_to "Sign In", signin_path %></li> -->
-			<% end %>
+			<script  id='googlecart-script' type='text/javascript' src='https://checkout.google.com/seller/gsc/v2_2/cart.js?mid=542756221394641' integration='jscart-wizard' post-cart-to-sandbox='false' currency='USD' productWeightUnits='LB'></script>
+			
 		</ul>
 	</nav>
 </header>

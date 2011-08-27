@@ -74,34 +74,12 @@ section {
 	width: 100%;
 	margin-top: 40px;
 	border: 1px solid #B0B0B0 ;
-	min-height: 430px;
+	min-height: 1400px;
 }
 
 /*blue backgrounds */
 
-div#findabike {
-	background: #99D6FF;
-	padding: 1em;
-	width: 410px;
-    border: 1px solid #75C8FF;
-	height: 143px;
-}
 
-div#listabike {
-	background: #99D6FF;
-	padding: 2em;
-	width: 500px;
-	margin-left: 280px;
-	border: 1px solid #75C8FF;
-}
-
-div#indexbikes {
-	background: #99D6FF;
-	padding: 1em 0em 0em 1em;
-	width: 495px;
-	margin: 0px auto;
-	border: 1px solid #75C8FF;
-}
 
 #hometext {
 	font-size: 15pt;
@@ -281,8 +259,7 @@ td.main {
 .sidebar {
 	width: 150px;
 	padding: 1em;
-	vertical-align: top;
-	background: #99D6FF;
+
 	height: 300px;
 }
 
@@ -874,7 +851,8 @@ div#orderpage {
 
 #uklinks {
 	float: left;
-	font-size: 20pt;
+	font-size: 25pt;
+	font-family: 'Lobster', cursive;
 }
 
 #homelinks {
@@ -908,6 +886,7 @@ div#orderpage {
 	color: #E0E0E0;
 	float: right;
 	margin-top: -50px;
+	font-family: 'Lobster', cursive;
 }
 
 #flowerlink {
@@ -953,9 +932,7 @@ div#orderpage {
 	padding-right: 1.2em;
 }
 
-#bottomdrinkrow {
-	margin-left: 20px;
-}
+
 
 #flowers {
 	float: right;
@@ -965,8 +942,57 @@ div#orderpage {
 .drinkpics {
 	height: 200px;
 	display: inline-block;
+	text-align: center;
+}
+
+#drink1 {
+	text-align: center;
+}
+
+#drink2 {
+	text-align: center;
+	margin-left: 10px;
 }
 
 #drink3 {
 	float: right;
+	text-align: center;
+}
+
+#drink4 {
+	float: left;
+	text-align: center;
+}
+
+.drinktable {
+	font-size: 15pt;
+	background-color: none;
+}
+
+.googlecart-add-button {
+	margin: 0px auto;
+}
+
+.product {
+
+}
+
+#leftcolumn {
+
+}
+
+#centercolumn {
+ padding-right: 2em;
+}
+
+#rightcolumn {
+
+}
+
+#row1 {
+	padding-bottom: 2em;
+}
+
+#row2 {
+	background-color: white;
 }
