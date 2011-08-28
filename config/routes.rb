@@ -24,7 +24,11 @@ Spinlister::Application.routes.draw do
   match '/uscenergy',     :to =>'pages#uscenergy'
   match '/uscjuice',      :to =>'pages#uscjuice'
   match '/uscsports',     :to =>'pages#uscsports'
+  
   match '/uscflowers',    :to =>'pages#uscflowers'
+  match '/usccustom',     :to =>'pages#usccustom'
+  match '/uscsunflowers', :to =>'pages#uscsunflowers'
+  match '/uscroses',      :to =>'pages#uscroses'
   
   match '/uahome',       :to =>'pages#uahome'
   match '/uawater',      :to =>'pages#uawater'

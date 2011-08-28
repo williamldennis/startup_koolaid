@@ -1022,3 +1022,12 @@ div#orderpage {
 #row2 {
 	background-color: white;
 }
+
+.bigtypeflowers {
+	font-size: 110pt;
+	color: #E0E0E0;
+	float: right;
+	margin-top: -50px;
+	font-family: 'Lobster', cursive;
+}
+
