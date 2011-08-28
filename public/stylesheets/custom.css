@@ -841,6 +841,7 @@ div#orderpage {
 .schoollogo {
 	padding-top: 2em;
 	display: inline-block;
+	
 }
 
 #homevid {
@@ -863,6 +864,7 @@ div#orderpage {
 #usclogo {
 	float: left;
 	margin-left: 40px;
+	
 }
 
 #ualogo {
@@ -889,6 +891,36 @@ div#orderpage {
 	font-family: 'Lobster', cursive;
 }
 
+.drinksbig {
+	font-size: 70pt;
+	color: #999;
+	float: right;
+	margin-top: -20px;
+	font-family: 'Lobster', cursive;
+}
+
+#drinkgroup {
+	float: left;
+	height: 200px;
+	margin-top: 10px;
+}
+
+.flowersbig {
+	font-size: 70pt;
+	color: #999;
+	float: left;
+	margin-top: 0px;
+	font-family: 'Lobster', cursive;
+}
+
+#flowers {
+	float: left;
+	margin-top: 0px;
+	
+	height: 200px;
+	width: 900px;
+}
+
 #flowerlink {
 	font-size: 40pt;
 	float: right;
@@ -902,10 +934,7 @@ div#orderpage {
 	padding: 1em;
 }
 
-#drinkgroup {
-	margin-left: 200px;
-	height: 200px;
-}
+
 
 #homedrinks {
 	margin-left: 130px;
@@ -934,10 +963,7 @@ div#orderpage {
 
 
 
-#flowers {
-	float: right;
-	margin-right: 0px;
-}
+
 
 .drinkpics {
 	height: 200px;
