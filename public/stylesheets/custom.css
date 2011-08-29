@@ -841,9 +841,8 @@ div#orderpage {
 }
 
 .schoollogo {
-	padding-top: 2em;
 	padding-bottom: 2em;
-	margin-left: 160px;
+	margin-left: 150px;
 	
 }
 
@@ -1076,6 +1075,6 @@ div#orderpage {
 	font-family: 'Open Sans', sans-serif;
 	font-size: 35pt;
 /*	font-weight: 700;*/
-	padding-bottom: 20px;
+	padding: 10px;
 	text-align: center;
 }
