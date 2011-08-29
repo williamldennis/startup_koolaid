@@ -8,9 +8,9 @@ section {
 	font-size: 120%;
 	padding: 20px;
 	background: #fff;
-	-moz-box-shadow: 4px 4px 2px #989898;
+/*	-moz-box-shadow: 4px 4px 2px #989898;
 	-webkit-box-shadow: 4px 4px 2px #989898;
-	box-shadow: 4px 4px 2px #989898;
+	box-shadow: 4px 4px 2px #989898;*/
 	width: 100%;
 	margin-top: 40px;
 	border: 1px solid #B0B0B0 ;
@@ -101,7 +101,7 @@ td.main {
 
 
 body {
-	background: #E0E0E0 ;
+/*	background: #E0E0E0 ;*/
 }
 
 h1#hometitle {
@@ -843,7 +843,7 @@ div#orderpage {
 .schoollogo {
 	padding-top: 2em;
 	padding-bottom: 2em;
-	margin-left: 60px;
+	margin-left: 160px;
 	
 }
 
@@ -856,7 +856,9 @@ div#orderpage {
 #uklinks {
 
 	font-size: 25pt;
-	font-family: 'Lobster', cursive;
+	/*font-family: 'Lobster', cursive;*/
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 700;
 	padding-top: 0px;
 }
 
@@ -891,7 +893,9 @@ div#orderpage {
 	color: #E0E0E0;
 	float: right;
 	margin-top: -50px;
-	font-family: 'Lobster', cursive;
+	/*font-family: 'Lobster', cursive;*/
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 700;
 	z-index: 999;
 }
 
@@ -900,7 +904,9 @@ div#orderpage {
 	color: #999;
 	float: right;
 	margin-top: -20px;
-	font-family: 'Lobster', cursive;
+/*	font-family: 'Lobster', cursive;*/
+	font-family: 'Open Sans', sans-serif;
+/*	font-weight: 700;*/
 }
 
 #drinkgroup {
@@ -914,7 +920,9 @@ div#orderpage {
 	color: #999;
 	float: left;
 	margin-top: 0px;
-	font-family: 'Lobster', cursive;
+/*	font-family: 'Lobster', cursive;*/
+	font-family: 'Open Sans', sans-serif;
+/*	font-weight: 700;*/
 }
 
 #flowers {
@@ -1047,16 +1055,27 @@ div#orderpage {
 
 
 #howitworkspage {
-	margin-left:30px;
+	text-align: center;
 	font-size: 25pt;
+	font-family: 'Open Sans', sans-serif;
 }
 
 #ordering {
-	font-family: 'Lobster', cursive;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 700;
 	font-size: 30pt;
 }
 
 #itemtext {
 	text-align: center;
 	padding-top: 5px;
+	font-family: 'Open Sans', sans-serif;
+}
+
+#homepagetext {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 35pt;
+/*	font-weight: 700;*/
+	padding-bottom: 20px;
+	text-align: center;
 }

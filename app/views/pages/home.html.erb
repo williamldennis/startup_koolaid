@@ -1,7 +1,21 @@
+
 <div id="listyourbike"><%= link_to "How It Works", howitworks_path %></div></br>
-	<h1 id="hometitle">Please Select Your Campus</h1> 
+<div id="homedrinks">
+		<table class="uschomedrinks" summary="drinksuschome">
+			<tr>
+	<td><%= 	 image_tag("smartwater.jpg", :height => 180, :id => "water") 	 %> </td>
+	<td><%= 	 image_tag("coffee.jpg", :height => 180) %> </td>
+	<td><%= 	 image_tag("coke.jpeg", :height => 180) %> </td>
+	<td><%= 	 image_tag("redbull.jpg", :height => 180) %> </td>
+	<td><%= 	 image_tag("martinellis.jpg", :height => 180, :id => "juice") %></td>
+	<td><%= 	 image_tag("gatorade.jpg", :height => 180) %> </td>
+	</tr>
+	</table>
+</div>
+<div id="homepagetext">your source for college refreshment.</div>
+<div id="homepagetext">drinks & flowers. delivered free.</div>
 
-
+	<!-- <h1 id="hometitle">Please Select Your Campus</h1>  -->
 
 <div class="schoollogo">
 	
@@ -9,20 +23,20 @@
 		<tr>
 			<td>
 				<div id="usclogo">
-				<%= link_to image_tag("usclogo.jpg", :alt => "USC", :height => 200), uschome_path %> 
+				<%= link_to image_tag("usclogo.jpg", :alt => "USC", :height => 100), uschome_path %> 
 			   </div>
 
 			</td>
 			<td>
 
 				<div id="ualogo">
-					<%= link_to image_tag("ualogo.jpeg", :alt => "U of A", :height => 200), uawater_path %>
+					<%= link_to image_tag("ualogo.jpeg", :alt => "U of A", :height => 100), uawater_path %>
 					
 				</div>
 			</td>
 			<td>
 				<div id="uklogo">
-				<%= link_to image_tag("kulogo.jpg", :alt => "KU", :height => 230), ukwater_path %>
+				<%= link_to image_tag("kulogo.jpg", :alt => "KU", :height => 120), ukwater_path %>
 				
 			   </div> </br>
 			</td>
@@ -33,21 +47,9 @@
 </div>
 
 
-	
+<!-- <h1 id="wedeliver">We deliver drinks and flowers right to your door. Free.</h1> -->
 
 
-
-
-<h1 id="wedeliver">We deliver drinks and flowers right to your door. Free.</h1>
-
-<div id="homedrinks">
-<%= image_tag("smartwater.jpg", :height => 200, :id => "smartwaterhome") %> 
-<%= image_tag("coffee.jpg", :height => 200) %> 
-<%= image_tag("coke.jpeg", :height => 200)%> 
-<%= image_tag("redbull.jpg", :height => 200)%> 
-<%= image_tag("martinellis.jpg", :height => 200) %>
-<%= image_tag("gatorade.jpg", :height => 200) %> 
-</div>
 
 
 <!-- <h1>What Customers are Saying</h1>
