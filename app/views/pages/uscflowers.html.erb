@@ -1,10 +1,8 @@
 <div class="bigtypeflowers">Bouquets</div>
-<div id="uklinks">
-<%= link_to "Mixed Bouquets", uscflowers_path %> </br>
-<%= link_to "Roses", uscroses_path %> </br>
-<%= link_to "Sunflowers", uscsunflowers_path %> </br>
-<%= link_to "Custom Bouquets", usccustom_path %> </br>
-</div>
+<div id="uklinks"><%= link_to "Mixed Bouquets", uscflowers_path  %> </div>
+<div id="uklinks"><%= link_to "Roses", uscroses_path %> </div>
+<div id="uklinks"><%= link_to "Sunflowers", uscsunflowers_path  %> </div>
+<div id="uklinks"><%= link_to "Custom Bouquets", usccustom_path %> </div>
 
 <div class="drinkpics">
 	
@@ -12,9 +10,9 @@
 		<tr id="row1">
 			<td id="leftcolumn"> 
 				<div id="drink1">
-						<%= image_tag("smallflowers.jpg", :height => 250) %> </br>
-						Mixed Bouquet</br>
-						$15.99
+						<div class="itemtext"><%= image_tag("smallflowers.jpg", :height => 250) %> </div>
+						<div class="itemtext">Mixed Bouquet</div>
+						<div class="itemtext">$15.99</div>
 
 					<div class="product"><input type="hidden" class="product-title" value="Mixed Bouquet"><input type="hidden" class="product-image" value=><input type="hidden" class="product-price" value="15.99"><div class="googlecart-add-button" tabindex="0" role="button" title="Add to cart"></div></div>
 
@@ -25,9 +23,9 @@
 				<div id="drink2">
 
 
-					<%= image_tag("flowersbig.jpg", :height => 250) %> </br>
-					Large Mixed Bouquet</br>
-					$29.99
+					<div class="itemtext"><%= image_tag("flowersbig.jpg", :height => 250) %> </div>
+					<div class="itemtext">Large Mixed Bouquet</div>
+					<div class="itemtext">$29.99</div>
 					<div class="product"><input type="hidden" class="product-title" value="Large Mixed Bouquet"><input type="hidden" class="product-image" value=><input type="hidden" class="product-price" value="29.99"><div class="googlecart-add-button" tabindex="0" role="button" title="Add to cart"></div></div>
 
 				</div>
@@ -36,9 +34,9 @@
 			<td id="rightcolumn">
 				<div id="drink3">
 	
-					<%= image_tag("glassvase.jpg", :height => 250) %> </br>
-					Glass Vase</br>
-					$3.99
+					<div class="itemtext"><%= image_tag("glassvase.jpg", :height => 250) %> </div>
+					<div class="itemtext">Glass Vase</div>
+					<div class="itemtext">$3.99</div>
 
 					<div class="product"><input type="hidden" class="product-title" value="Glass Vase"><input type="hidden" class="product-image" value=><input type="hidden" class="product-price" value="3.99"><div class="googlecart-add-button" tabindex="0" role="button" title="Add to cart"></div></div>
 	

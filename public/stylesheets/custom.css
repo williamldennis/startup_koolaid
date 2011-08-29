@@ -3,6 +3,100 @@
 	margin: 0px auto;
 }
 
+section {
+	margin-top: 1em;
+	font-size: 120%;
+	padding: 20px;
+	background: #fff;
+	-moz-box-shadow: 4px 4px 2px #989898;
+	-webkit-box-shadow: 4px 4px 2px #989898;
+	box-shadow: 4px 4px 2px #989898;
+	width: 100%;
+	margin-top: 40px;
+	border: 1px solid #B0B0B0 ;
+	min-height: 1400px;
+}
+
+
+header {
+	padding-top: 10px; 
+	padding-bottom: 20px;
+	margin-right: -30px;
+	margin-left: 30px;
+}
+
+header nav {
+	margin-top: 35px;
+	margin-right: -25px;
+	font-size: 13pt;
+}
+
+/* Links */
+nav {
+	float: right;
+/*	background: #fff;*/
+	padding: 0 0.7em;
+	white-space: nowrap;
+}
+
+nav ul {
+	margin: 0;
+	padding: 0;
+}
+
+nav ul li {
+	list-style-type: none;
+	display: inline-block;
+	padding: 0.2em 0;
+}
+
+nav ul li a {
+	padding: 0 5px;
+	font-weight: bold;
+}
+
+nav ul li a:visited {
+	color: #09c;
+}
+
+nav ul li a:hover {
+	text-decoration: underline;
+}
+
+.round {
+  -moz-border-radius:    10px;
+  -webkit-border-radius: 10px;
+  border-radius:         10px;
+}
+
+/* Footer */
+
+footer {
+  text-align: center;
+  margin: 0px auto;
+  padding: 5px;
+}
+
+footer nav {
+  float: none;
+  font-size: 12pt ;
+}
+
+/*User Show Page*/
+
+table.profile {
+	width: 100%;
+	margin-bottom: 0;
+	margin-top: 20px;
+}
+
+
+td.main {
+	width: 70%;
+	padding: 1em;
+}
+
+
 /*light green background = #90EE90, light grey = #E0E0E0*, other light green #ccffcc*/
 
 
@@ -12,30 +106,13 @@ body {
 
 h1#hometitle {
 	text-align: center;
-	font-size: 45pt;
+	font-size: 25pt;
 	font-family: 'Lobster', cursive;
 }
 
 div.bikeinfo {
     float: right;
 	font-size: 15pt;
-}
-
-header {
-	padding-top: 10px; 
-	padding-bottom: 20px;
-	margin-right: -30px;
-	margin-left: 30px;
-}
-
-#listyourbike {
-	padding: 0 14px 0 0;
-}
-
-header nav {
-	margin-top: 35px;
-	margin-right: -25px;
-	font-size: 13pt;
 }
 
 #filefield {
@@ -50,7 +127,6 @@ header img {
 	margin-left: -20px;
 	
 }
-
 #faqquestion {
 	font-size: 13pt;
 	font-weight: bold;
@@ -62,19 +138,6 @@ header img {
 
 #userinfobox {
 	text-align: right;
-}
-section {
-	margin-top: 1em;
-	font-size: 120%;
-	padding: 20px;
-	background: #fff;
-	-moz-box-shadow: 4px 4px 2px #989898;
-	-webkit-box-shadow: 4px 4px 2px #989898;
-	box-shadow: 4px 4px 2px #989898;
-	width: 100%;
-	margin-top: 40px;
-	border: 1px solid #B0B0B0 ;
-	min-height: 1400px;
 }
 
 /*blue backgrounds */
@@ -182,37 +245,7 @@ a:visited {
 	color: #069;
 }
 
-/* Links */
-nav {
-	float: right;
-/*	background: #fff;*/
-	padding: 0 0.7em;
-	white-space: nowrap;
-}
 
-nav ul {
-	margin: 0;
-	padding: 0;
-}
-
-nav ul li {
-	list-style-type: none;
-	display: inline-block;
-	padding: 0.2em 0;
-}
-
-nav ul li a {
-	padding: 0 5px;
-	font-weight: bold;
-}
-
-nav ul li a:visited {
-	color: #09c;
-}
-
-nav ul li a:hover {
-	text-decoration: underline;
-}
 
 /* Sign up button */
 
@@ -222,38 +255,7 @@ nav ul li a:hover {
 
 /* Round corners */
 
-.round {
-  -moz-border-radius:    10px;
-  -webkit-border-radius: 10px;
-  border-radius:         10px;
-}
 
-/* Footer */
-
-footer {
-  text-align: center;
-  margin: 0px auto;
-  padding: 5px;
-}
-
-footer nav {
-  float: none;
-  font-size: 12pt ;
-}
-
-/*User Show Page*/
-
-table.profile {
-	width: 100%;
-	margin-bottom: 0;
-	margin-top: 20px;
-}
-
-
-td.main {
-	width: 70%;
-	padding: 1em;
-}
 
 
 .sidebar {
@@ -840,7 +842,8 @@ div#orderpage {
 
 .schoollogo {
 	padding-top: 2em;
-	display: inline-block;
+	padding-bottom: 2em;
+	margin-left: 60px;
 	
 }
 
@@ -851,9 +854,10 @@ div#orderpage {
 }
 
 #uklinks {
-	float: left;
+
 	font-size: 25pt;
 	font-family: 'Lobster', cursive;
+	padding-top: 0px;
 }
 
 #homelinks {
@@ -861,21 +865,20 @@ div#orderpage {
 	font-size: 35pt;
 }
 
-#usclogo {
+/*#usclogo {
 	float: left;
-	margin-left: 40px;
+	margin-left: 0px;
 	
 }
 
 #ualogo {
-   	margin-left: 330px;
-	margin-top: -1px;
-}
+   	margin-left: 0px;
+	margin-top: 0px;
+}*/
 
 #uklogo {
-	float: right;
-	margin-right: 35px;
-	margin-top: 10px;
+
+	margin-top: 25px;
 }
 
 #uahomelogo {
@@ -889,6 +892,7 @@ div#orderpage {
 	float: right;
 	margin-top: -50px;
 	font-family: 'Lobster', cursive;
+	z-index: 999;
 }
 
 .drinksbig {
@@ -947,6 +951,7 @@ div#orderpage {
 
 #wedeliver {
 	font-style: italic;
+	padding-bottom: 2em;
 }
 
 #topdrinkrow {
@@ -1031,3 +1036,27 @@ div#orderpage {
 	font-family: 'Lobster', cursive;
 }
 
+#listyourbike {
+	padding: 0 14px 0 0;
+	z-index: 1000;
+	float: right;
+	font-size: 15pt;
+	margin-top: -50px;
+}
+
+
+
+#howitworkspage {
+	margin-left:30px;
+	font-size: 25pt;
+}
+
+#ordering {
+	font-family: 'Lobster', cursive;
+	font-size: 30pt;
+}
+
+#itemtext {
+	text-align: center;
+	padding-top: 5px;
+}

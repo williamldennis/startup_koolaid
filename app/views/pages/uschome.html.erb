@@ -5,12 +5,16 @@
 	<div class="drinksbig"><%= link_to "Shop Drinks", uscwater_path %></div>
 	
 	<div id="drinkgroup">
-	<%= link_to image_tag("smartwater.jpg", :height => 200, :id => "water"), uscwater_path %> 
-	<%= link_to image_tag("coffee.jpg", :height => 200), usccoffee_path %> 
-	<%= link_to image_tag("coke.jpeg", :height => 200), uscsoda_path %> 
-	<%= link_to image_tag("redbull.jpg", :height => 200), uscenergy_path %> 
-	<%= link_to image_tag("martinellis.jpg", :height => 200, :id => "juice"), uscjuice_path %>
-	<%= link_to image_tag("gatorade.jpg", :height => 200), uscsports_path %> 
+		<table class="uschomedrinks" summary="drinksuschome">
+			<tr>
+	<td><%= link_to image_tag("smartwater.jpg", :height => 180, :id => "water"), uscwater_path %> </td>
+	<td><%= link_to image_tag("coffee.jpg", :height => 180), usccoffee_path %> </td>
+	<td><%= link_to image_tag("coke.jpeg", :height => 180), uscsoda_path %> </td>
+	<td><%= link_to image_tag("redbull.jpg", :height => 180), uscenergy_path %> </td>
+	<td><%= link_to image_tag("martinellis.jpg", :height => 180, :id => "juice"), uscjuice_path %></td>
+	<td><%= link_to image_tag("gatorade.jpg", :height => 180), uscsports_path %> </td>
+	</tr>
+	</table>
 	</div>
 	
 	<div class="flowersbig"><%= link_to "Shop Flowers", uscflowers_path %></div>
