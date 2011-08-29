@@ -841,6 +841,7 @@ div#orderpage {
 }
 
 .schoollogo {
+	padding-top: 1em;
 	padding-bottom: 2em;
 	margin-left: 150px;
 	
@@ -878,8 +879,9 @@ div#orderpage {
 }*/
 
 #uklogo {
+	margin-top: 20px;
 
-	margin-top: 25px;
+
 }
 
 #uahomelogo {
@@ -1036,7 +1038,7 @@ div#orderpage {
 }
 
 .bigtypeflowers {
-	font-size: 110pt;
+	font-size: 100pt;
 	color: #E0E0E0;
 	float: right;
 	margin-top: -50px;
