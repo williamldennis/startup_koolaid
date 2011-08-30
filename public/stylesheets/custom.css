@@ -232,7 +232,7 @@ section p {
 /* Links */
 
 a {
-	color: #09c;
+	color: #424343;
 	text-decoration: none;
 }
 
@@ -242,8 +242,10 @@ a:hover {
 }
 
 a:visited {
-	color: #069;
+	color: #424343;
 }
+
+
 
 
 
@@ -842,7 +844,7 @@ div#orderpage {
 
 .schoollogo {
 	padding-top: 1em;
-	margin-left: 150px;
+	margin-left: 160px;
 	
 }
 
@@ -857,7 +859,7 @@ div#orderpage {
 	font-size: 25pt;
 	/*font-family: 'Lobster', cursive;*/
 	font-family: 'Open Sans', sans-serif;
-	font-weight: 700;
+	font-weight: 400;
 	padding-top: 0px;
 }
 
@@ -888,7 +890,7 @@ div#orderpage {
 }
 
 .bigtype {
-	font-size: 180pt;
+	font-size: 160pt;
 	font-style: freshman;
 	color: #E0E0E0;
 	float: right;
@@ -901,13 +903,10 @@ div#orderpage {
 
 .drinksbig {
 	font-size: 70pt;
-	color: #999;
 	float: right;
 	margin-top: -20px;
-/*	font-family: 'Lobster', cursive;*/
 	font-family: 'Open Sans', sans-serif;
-/*	font-weight: 700;*/
-}
+	}
 
 #drinkgroup {
 	float: left;
@@ -1080,10 +1079,19 @@ div#orderpage {
 	text-align: center;
 }
 
+#homepagesub {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 20pt;
+/*	font-weight: 700;*/
+	padding: 10px;
+	text-align: center;
+}
+
 #school {
 	font-family: 'Open Sans', sans-serif;
-	font-size: 35pt;
+	font-size: 20pt;
 /*	font-weight: 700;*/
-	margin-top: -40px;
+	padding-bottom: 2em;
+/*	margin-top: -40px;*/
 	text-align: center;
 }
