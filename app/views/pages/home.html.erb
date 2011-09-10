@@ -5,46 +5,13 @@
 
 <div class="schoollogo">
 	
-	<table class="hometable" summary="hometable">
-		<tr>
-			<td>
-				<div id="usclogo">
-				<%= link_to image_tag("usclogo.jpg", :alt => "USC", :height => 100), uschome_path %> 
-			   </div>
-
-			</td>
-			<td>
-
-				<div id="ualogo">
-					<%= link_to image_tag("ualogo.jpeg", :alt => "U of A", :height => 100), uawater_path %>
-					
-				</div>
-			</td>
-			<td>
-				<div id="uklogo">
-				<%= link_to image_tag("kulogo.jpg", :alt => "KU", :height => 100), kuwater_path %>
-				
-			   </div> </br>
-			</td>
-		</tr>
-	</table>
+<%= render 'shared/homelogos' %>
 	
 
 </div>
 <div id="school">choose your school</div>
 
-<div id="homedrinks">
-		<table class="uschomedrinks" summary="drinksuschome">
-			<tr>
-	<td><%= 	 image_tag("smartwater.jpg", :height => 180, :id => "water") 	 %> </td>
-	<td><%= 	 image_tag("coffee.jpg", :height => 180) %> </td>
-	<td><%= 	 image_tag("coke.jpeg", :height => 180) %> </td>
-	<td><%= 	 image_tag("redbull.jpg", :height => 180) %> </td>
-	<td><%= 	 image_tag("martinellis.jpg", :height => 180, :id => "juice") %></td>
-	<td><%= 	 image_tag("gatorade.jpg", :height => 180) %> </td>
-	</tr>
-	</table>
-</div>
+<div id="drinksrow"><%= image_tag("drinksrow.jpg") %></div>
 
 
 	<!-- <h1 id="hometitle">Please Select Your Campus</h1>  -->

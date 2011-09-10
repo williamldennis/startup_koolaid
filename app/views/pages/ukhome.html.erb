@@ -1,9 +1,4 @@
-<div id="uklinks"><%= link_to "Water", ukwater_path %> </div>
-<div id="uklinks"><%= link_to "Coffee", ukcoffee_path %> </div>
-<div id="uklinks"><%= link_to "Soda", uksoda_path %> </div>
-<div id="uklinks"><%= link_to "Energy", ukenergy_path %> </div>
-<div id="uklinks"><%= link_to "Juice", ukjuice_path %> </div>
-<div id="uklinks"><%= link_to "Sports", uksports_path %> </div>
+<%= render 'shared/kulinks' %>
 
 
 <div id="uahomelogo">	<%= link_to image_tag("kulogo.svg", :alt => "Great looking bike", :class => "round", :height => 200), kuhome_path %></div>

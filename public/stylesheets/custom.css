@@ -948,7 +948,7 @@ div#orderpage {
 
 
 #homedrinks {
-	margin-left: 30px;
+	margin-left: 60px;
 	
 }
 
@@ -966,11 +966,11 @@ div#orderpage {
 }
 
 #water {
-	padding-right: 4em;
+	padding-right: 2em;
 }
 
 #juice {
-	padding-right: 1.2em;
+	padding-right: 0em;
 }
 
 
@@ -1094,4 +1094,8 @@ div#orderpage {
 	padding-bottom: 2em;
 /*	margin-top: -40px;*/
 	text-align: center;
+}
+
+#drinksrow {
+	margin-left: 100px;
 }
