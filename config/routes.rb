@@ -50,6 +50,13 @@ Spinlister::Application.routes.draw do
   match '/mybikes',       :to =>'bikes#bikeshow'
   match'/rentit',         :to =>'bikes#checkout'
 
+  match '/cchome',       :to =>'pages#cchome'
+  match '/ccwater',      :to =>'pages#ccwater'
+  match '/ccsoda',       :to =>'pages#ccsoda'
+  match '/cccoffee',     :to =>'pages#cccoffee'
+  match '/ccenergy',     :to =>'pages#ccenergy'
+  match '/ccjuice',      :to =>'pages#ccjuice'
+  match '/ccsports',     :to =>'pages#ccsports'
   
   match '/signup',        :to =>'users#new'
   
