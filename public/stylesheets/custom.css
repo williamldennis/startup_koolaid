@@ -1,3 +1,5 @@
+
+
 .container {
 	width: 900px;
 	margin: 0px auto;
@@ -846,6 +848,7 @@ div#orderpage {
 	padding-top: 1em;
 	margin-left: 80px;
 	display: ;
+		z-index: 1;
 	
 }
 
@@ -1062,7 +1065,7 @@ div#orderpage {
 
 #ordering {
 	font-family: 'Open Sans', sans-serif;
-	font-weight: 700;
+	font-weight: 400;
 	font-size: 30pt;
 }
 
@@ -1106,3 +1109,13 @@ div#orderpage {
 	margin-top: 25px;
 	margin-right: 25px;
 }
+
+#hiwpic {
+
+}
+
+#paper {
+	margin-top: -100px;
+	z-index: 100;
+}
+

@@ -1,36 +1,12 @@
-<h1 id="ordering">Ordering drinks is as easy as 1, 2, Free</h1></br>
+<h1 id="ordering">Ordering drinks is as easy as 1, 2, Free</h1>
 
-<div id="howitworkspage">
-<p> 1. Browse drinks online at CampusDeliveries.com. </br></br>
- 2. Complete your order securely using Google Checkout. </br></br>
- 3. We deliver to your door on Sunday evening. For Free.</p>
-</div>
+<div id="hiwpic"><%= image_tag 'cdhowitworks.jpg' %></div>
+
 
 <div class="schoollogo">
 	
-	<table class="hometable" summary="hometable">
-		<tr>
-			<td>
-				<div id="usclogo">
-				<%= link_to image_tag("usclogo.jpg", :alt => "USC", :height => 100), uschome_path %> 
-			   </div>
-
-			</td>
-			<td>
-
-				<div id="ualogo">
-					<%= link_to image_tag("ualogo.jpeg", :alt => "U of A", :height => 100), uawater_path %>
-					
-				</div>
-			</td>
-			<td>
-				<div id="uklogo">
-				<%= link_to image_tag("kulogo.jpg", :alt => "KU", :height => 120), kuwater_path %>
-				
-			   </div> </br>
-			</td>
-		</tr>
-	</table>
+<%= render 'shared/homelogos' %>
 	
-
 </div>
+
+<div id="school">go to your school!</div>
