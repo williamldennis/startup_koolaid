@@ -844,7 +844,7 @@ div#orderpage {
 
 .schoollogo {
 	padding-top: 1em;
-	margin-left: 100px;
+	margin-left: 80px;
 	display: ;
 	
 }
@@ -1100,4 +1100,8 @@ div#orderpage {
 #drinksrow {
 	margin-left: 100px;
 	margin-top: -20px;
+}
+
+#cclogo {
+	margin-top: 25px;
 }
