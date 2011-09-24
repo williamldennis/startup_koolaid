@@ -11,7 +11,7 @@ module ApplicationHelper
   end
   
   def logo
-    image_tag("startup_koolaidtemp.jpg", :alt => "Spinlister", :class => "round")
+    image_tag("suklogo.png", :alt => "Spinlister", :class => "round")
   end
   
   def bike
