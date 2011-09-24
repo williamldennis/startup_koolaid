@@ -8,8 +8,7 @@ Bundler.require(:default, Rails.env) if defined?(Bundler)
 
 module Spinlister
   class Application < Rails::Application
-  require 'spree_site'
-  config.middleware.use "RedirectLegacyProductUrl"
+
 
     # Settings in config/environments/* take precedence over those specified here.
     # Application configuration should go into files in config/initializers
