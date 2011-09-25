@@ -12,7 +12,8 @@
 	width: 940px;
 	height: 450px;
 	background: #fff url('orbit/loading.gif') no-repeat center center;
-	overflow: hidden; }
+	overflow: hidden;
+	padding-top: 10px }
 #featured>img,  
 #featured>div,
 #featured>a { display: none; }
