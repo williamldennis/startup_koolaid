@@ -1134,7 +1134,7 @@ div#orderpage {
 .producttextbox {
 	float: right;
 	width: 350px;
-	margin-top: 50px;
+	margin-top: 0px;
 }
 
 .producttext {
@@ -1174,7 +1174,7 @@ div#orderpage {
 
 #productprice {
 	font-size: 20pt;
-	padding-top: 80px;
+	padding-top: 40px;
 }
 
 #sliderdiv {

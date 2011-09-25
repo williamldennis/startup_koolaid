@@ -17,7 +17,17 @@ Spinlister::Application.routes.draw do
   match '/faq',           :to =>'pages#faq'
   match '/howitworks',    :to =>'pages#howitworks'
   
-  match '/waldo',  :to => 'pages#waldo'
+  match '/wherescto',              :to => 'pages#waldo'
+  match '/dorseytechies',          :to => 'pages#techies'
+  match '/themeanstartup',         :to => 'pages#meanstartup'
+  match '/ctoinahaystack',         :to => 'pages#haystack'
+  match '/startupkoolaid',         :to => 'pages#koolaid'
+  match '/whatwouldchrisdixondo',  :to => 'pages#chrisdixon'
+  match '/fredwilsonismyhomeboy',  :to => 'pages#fredwilson'
+  match '/sociallubricant',        :to => 'pages#startupjelly'
+  
+  
+  
   
   match '/signup',        :to =>'users#new'
   
