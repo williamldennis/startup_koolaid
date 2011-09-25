@@ -1,6 +1,8 @@
 
 <div class="producttextbox">
 		<div class="producttext" id="producttitle">Incubator Ramen</div>
+		
+		<div class="twitterbutton"><%= tweet_button( :via => "StartupKoolAid", :count => "none", :text => "The official noodles of @techstars. @davetisch approved." ) %></div>
 
 		<div class="producttext" id="productsubtitle">Hungry and broke? Of course. Enjoy a three month supply of ramen in the type and flavor of your favorite incubator. Odds of acceptance are low, at least you blood sodium will be high!</div>
 		
@@ -11,5 +13,8 @@
 
 </div>
 
-<div class="productimage"><%= image_tag("ramen.png") %></div> 
+<div class="productimage"><%= image_tag("ramen.jpg") %></div> 
 
+
+
+<%= render 'shared/producttable' %>

@@ -1,5 +1,7 @@
 module ApplicationHelper
   
+  include TweetButton
+  
   # Return a title on a per-page basis.
   def title
     base_title = "Startup Koolaid"
@@ -17,4 +19,5 @@ module ApplicationHelper
   def bike
     image_tag("bike-jpeg-blog.gif", :alt => "Great looking bike", :class => "round")
   end
+  
 end

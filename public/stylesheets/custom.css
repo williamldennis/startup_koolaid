@@ -1151,6 +1151,7 @@ div#orderpage {
 	font-size: 30pt;
 	text-align: left;
 	color: #666;
+	padding-bottom: 25px;
 }
 
 #productsubtitle {
@@ -1184,4 +1185,17 @@ div#orderpage {
 
 .thumbnail {
 	height: 262px;
+}
+
+.twitterbutton{
+	float: left;
+	margin-top: -20px;
+	margin-left: 10px;
+
+
+	
+}
+
+#producttable {
+	padding-top: 80px;
 }

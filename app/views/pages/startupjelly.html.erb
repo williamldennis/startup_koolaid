@@ -1,6 +1,8 @@
 
 <div class="producttextbox">
 		<div class="producttext" id="producttitle">Startup Jelly</div>
+		
+		<div class="twitterbutton"><%= tweet_button( :via => "StartupKoolAid", :count => "none", :text => "Found this Social Lubricant and my branded content is flying around the interwebs!" ) %></div>
 
 		<div class="producttext" id="productsubtitle">Product traction not where you hoped? Apply this Social Lubricant twice daily to have your viral coefficient spike! Best when used with a crafty social media campaign.</div>
 		
@@ -13,3 +15,6 @@
 
 <div class="productimage"><%= image_tag("jelly_sq.png") %></div> 
 
+
+
+<%= render 'shared/producttable' %>

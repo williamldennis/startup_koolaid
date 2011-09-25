@@ -1,6 +1,8 @@
 
 <div class="producttextbox">
 		<div class="producttext" id="producttitle">Fred Wilson is My Homeboy</div>
+		
+		<div class="twitterbutton"><%= tweet_button( :via => "StartupKoolAid", :count => "none", :text => "I just met @fredwilson. We're homies. Got the shirt to prove it." ) %></div>
 
 		<div class="producttext" id="productsubtitle">Fred Wilson is a great investor to have in your roll-a-dex. Let people know how connected you are by association. </div>
 		
@@ -16,3 +18,6 @@
 
 <div class="productimage"><%= image_tag("fredwilsonhomeboy.jpg") %></div> 
 
+
+
+<%= render 'shared/producttable' %>

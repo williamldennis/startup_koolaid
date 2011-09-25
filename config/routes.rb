@@ -28,6 +28,12 @@ Spinlister::Application.routes.draw do
   match '/techbubblebubblegum',    :to => 'pages#techbubble'
   match '/incubatorramen',    :to => 'pages#ramen'
   match '/thisweekinjason',    :to => 'pages#thisweekin'
+  match '/chiavestingschedule',    :to => 'pages#vesting'
+  match '/twentyundertwo',    :to => 'pages#twentyundertwo'
+  match '/investinlinesnotdots',    :to => 'pages#suster'
+  
+  
+  
   
   
   

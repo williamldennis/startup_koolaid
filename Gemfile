@@ -13,6 +13,7 @@ gem 'meta_search'
 gem 'activemerchant'
 gem 'nifty-generators', :group => :development
 gem 'jquery-rails', '>= 1.0.12'
+gem 'tweet-button'
 
 
 group :development do
