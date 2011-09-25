@@ -1168,8 +1168,6 @@ div#orderpage {
 	display: block;
 	float: left;
 	padding-left: 20px;
-
-
 }
 
 #productprice {
@@ -1179,4 +1177,11 @@ div#orderpage {
 
 #sliderdiv {
 	margin-top: 25px;
+	padding-bottom: 10px;
+	padding-left: 18px;
+	
+}
+
+.thumbnail {
+	height: 262px;
 }
