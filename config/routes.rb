@@ -25,6 +25,10 @@ Spinlister::Application.routes.draw do
   match '/whatwouldchrisdixondo',  :to => 'pages#chrisdixon'
   match '/fredwilsonismyhomeboy',  :to => 'pages#fredwilson'
   match '/sociallubricant',        :to => 'pages#startupjelly'
+  match '/techbubblebubblegum',    :to => 'pages#techbubble'
+  match '/incubatorramen',    :to => 'pages#ramen'
+  match '/thisweekinjason',    :to => 'pages#thisweekin'
+  
   
   
   
