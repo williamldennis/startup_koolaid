@@ -1,6 +1,19 @@
-<div id="listyourbike"><%= link_to "About", howitworks_path %></div>
+<div id="listyourbike"><%= link_to "About", about_path %></div>
 
-<div id="landimage"><%= image_tag("steve_koolaid.jpg") %></div>
+<div id="featured"> 
+		     <a href="http://startupkoolaid.com/startupjelly"><img src="/images/jelly.png" alt="Overflow: Hidden No More" /></a>
+		     <a href="http://startupkoolaid.com/meanstartup"><img src="/images/meanstartup.png" alt="Overflow: Hidden No More" /></a>
+		     <a href="http://startupkoolaid.com/waldo"><img src="/images/jelly.png" alt="Overflow: Hidden No More" /></a>
+</div>
+
+<script type="text/javascript">
+     $(window).load(function() {
+         $('#featured').orbit({
+	animationSpeed: 10,
+	advanceSpeed: 6000
+	});
+     });
+</script>
 
 
 

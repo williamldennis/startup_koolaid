@@ -2,7 +2,7 @@
 
 .container {
 	width: 900px;
-	margin: 0px auto;
+	margin: 20px auto;
 }
 
 section {
@@ -16,12 +16,12 @@ section {
 	width: 100%;
 	margin-top: 40px;
 	border: 1px solid #B0B0B0 ;
-	min-height: 1400px;
-}
+/*	min-height: 1400px;
+*/}
 
 
 header {
-	padding-top: 10px; 
+	padding-top: 0px; 
 	padding-bottom: 20px;
 	margin-right: -30px;
 	margin-left: 30px;
@@ -58,7 +58,7 @@ nav ul li a {
 }
 
 nav ul li a:visited {
-	color: #09c;
+/*	color: #09c;*/
 }
 
 nav ul li a:hover {
@@ -1122,8 +1122,60 @@ div#orderpage {
 /*STARTUP KOOLAID*/
 
 #landimage {
-	margin: auto 0px;
+	cursor: pointer;
+
 }
 
+#suklogo {
+	height: 75px;
+	margin-top: -12px;
+}
 
+.producttextbox {
+	float: right;
+	width: 350px;
+	margin-top: 50px;
+}
+
+.producttext {
+	padding: 10px;
+	color: #666;
+}
+
+.productimage {
+
+}
+
+#producttitle {
+	font-family: 'Bevan';
+	font-size: 30pt;
+	text-align: left;
+	color: #666;
+}
+
+#productsubtitle {
+	/*font-family: 'Bevan';*/
+	font-size: 15pt;
+	color: #666;
+	text-align: left;
+	
+}
+
+.googlecart-add-button{
+	background: transparent url(/images/pre-order.png) no-repeat scroll center top !important;
+	height: 51px !important;
+	width: 138px !important;
+	display: block;
+	float: left;
+	padding-left: 20px;
+
+
+}
+
+#productprice {
+	font-size: 20pt;
+	padding-top: 80px;
+	
+	
+}
 

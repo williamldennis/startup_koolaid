@@ -17,46 +17,7 @@ Spinlister::Application.routes.draw do
   match '/faq',           :to =>'pages#faq'
   match '/howitworks',    :to =>'pages#howitworks'
   
-  match '/uschome',       :to =>'pages#uschome'
-  match '/uscwater',      :to =>'pages#uscwater'
-  match '/uscsoda',       :to =>'pages#uscsoda'
-  match '/usccoffee',     :to =>'pages#usccoffee'
-  match '/uscenergy',     :to =>'pages#uscenergy'
-  match '/uscjuice',      :to =>'pages#uscjuice'
-  match '/uscsports',     :to =>'pages#uscsports'
-  
-  match '/uscflowers',    :to =>'pages#uscflowers'
-  match '/usccustom',     :to =>'pages#usccustom'
-  match '/uscsunflowers', :to =>'pages#uscsunflowers'
-  match '/uscroses',      :to =>'pages#uscroses'
-  
-  match '/uahome',       :to =>'pages#uahome'
-  match '/uawater',      :to =>'pages#uawater'
-  match '/uasoda',       :to =>'pages#uasoda'
-  match '/uacoffee',     :to =>'pages#uacoffee'
-  match '/uaenergy',     :to =>'pages#uaenergy'
-  match '/uajuice',      :to =>'pages#uajuice'
-  match '/uasports',     :to =>'pages#uasports'
-  
-  match '/kuhome',       :to =>'pages#ukhome'
-  match '/kuwater',      :to =>'pages#ukwater'
-  match '/kusoda',       :to =>'pages#uksoda'
-  match '/kucoffee',     :to =>'pages#ukcoffee'
-  match '/kuenergy',     :to =>'pages#ukenergy'
-  match '/kujuice',      :to =>'pages#ukjuice'
-  match '/kusports',     :to =>'pages#uksports'
-  
-  match '/listyourbike',  :to =>'bikes#listyourbike'
-  match '/mybikes',       :to =>'bikes#bikeshow'
-  match'/rentit',         :to =>'bikes#checkout'
-
-  match '/cchome',       :to =>'pages#cchome'
-  match '/ccwater',      :to =>'pages#ccwater'
-  match '/ccsoda',       :to =>'pages#ccsoda'
-  match '/cccoffee',     :to =>'pages#cccoffee'
-  match '/ccenergy',     :to =>'pages#ccenergy'
-  match '/ccjuice',      :to =>'pages#ccjuice'
-  match '/ccsports',     :to =>'pages#ccsports'
+  match '/waldo',  :to => 'pages#waldo'
   
   match '/signup',        :to =>'users#new'
   
