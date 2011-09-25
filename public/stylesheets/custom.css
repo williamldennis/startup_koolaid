@@ -1060,7 +1060,7 @@ div#orderpage {
 #howitworkspage {
 	text-align: center;
 	font-size: 25pt;
-	font-family: 'Open Sans', sans-serif;
+	margin-left: 50px;
 }
 
 #ordering {
@@ -1187,15 +1187,21 @@ div#orderpage {
 	height: 262px;
 }
 
+.ourpic {
+	height: 180px;
+}
+
 .twitterbutton{
 	float: left;
 	margin-top: -20px;
 	margin-left: 10px;
-
-
 	
 }
 
 #producttable {
 	padding-top: 80px;
+}
+
+#peeps {
+	margin-left: 22px;
 }
