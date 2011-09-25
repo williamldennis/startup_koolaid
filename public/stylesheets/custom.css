@@ -1175,7 +1175,8 @@ div#orderpage {
 #productprice {
 	font-size: 20pt;
 	padding-top: 80px;
-	
-	
 }
 
+#sliderdiv {
+	margin-top: 25px;
+}
