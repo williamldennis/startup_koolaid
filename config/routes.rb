@@ -31,6 +31,8 @@ Spinlister::Application.routes.draw do
   match '/chiavestingschedule',    :to => 'pages#vesting'
   match '/twentyundertwo',    :to => 'pages#twentyundertwo'
   match '/investinlinesnotdots',    :to => 'pages#suster'
+  match '/scoblethumbofapproval',    :to => 'pages#scoble'
+  
   
   
   
